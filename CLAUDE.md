@@ -1,20 +1,15 @@
-# Instrucciones para Claude Code - Cuadernillos de español
+# CLAUDE.md
 
-## Contexto del proyecto
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-Este repositorio contiene ejercicios de español para niños entre 7 y 16 años que reciben su educación en japonés. Niños que escuchan español en casa, tienen vocabulario amplio y usan gramática natural, pero necesitan estructura formal. Saben leer y escribir, aunque en español les resulta un poco difícil.
+## Project Overview
 
-## Formato de los cuadernillos
+This repository contains Spanish language exercises for children aged 7-16 who receive their education primarily in Japanese. These children have good listening comprehension and natural grammar usage in Spanish but need formal structure. They can read and write in Japanese but find Spanish reading/writing challenging.
 
-- **Objetivo**: ejercicios para imprimir en DIN A5
-- **Extensión**: 6 páginas por unidad
-- **Tamaño del texto**: grande, máximo 12 líneas por página, máximo 10 palabras por línea
-- **Formato**: markdown
+## Content Structure and Standards
 
-## Estructura de archivos
-
-Crear archivos separados para cada página con esta nomenclatura:
-
+### File Organization
+Create separate files for each page using this nomenclature:
 ```
 unidad-[N]/
 ├── pagina-1-dialogo.md
@@ -25,89 +20,77 @@ unidad-[N]/
 └── pagina-6-bien-mal.md
 ```
 
-## Especificaciones por página
+### Page Specifications
 
-### Página 1: diálogo (pagina-1-dialogo.md)
+**Page 1: Dialogue (pagina-1-dialogo.md)**
+- Contextualized dialogue between 2 characters
+- 8-10 lines of dialogue
+- Simple, everyday vocabulary
+- Use at least 2 of the 4 unit verbs
+- Clear narrative with familiar situations
+- Format: **Name:** for each intervention
 
-- **Contenido**: diálogo contextualizado entre 2 personajes
-- **Longitud**: 8-10 líneas de diálogo
-- **Vocabulario**: simple y cotidiano, evitar palabras difíciles
-- **Verbos de la unidad**: usar al menos 2 de los 4 verbos seleccionados
-- **Otros verbos**: permitidos verbos básicos (ej: "haces" está bien)
-- **Narrativa**: clara y fácil de seguir, situación familiar
-- **Formato**: usar **Nombre:** para cada intervención
+**Page 2: Conjugation and completion (pagina-2-conjugacion-completar.md)**
+- Representative verb conjugation table
+- Complete sentence example using the verb
+- 5 completion exercises with personal pronouns
+- Balanced distribution of the 4 unit verbs
 
-### Página 2: conjugación y completar (pagina-2-conjugacion-completar.md)
+**Page 3: Choice exercises (pagina-3-eleccion.md)**
+- 6 multiple choice sentences
+- Format: "subject [option1 | option2] rest of sentence"
+- Blank line for writing complete sentence
+- Use clear names/nouns (no omitted pronouns)
 
-- **Tabla de conjugación**: un verbo representativo en formato tabla
-- **Ejemplo**: una frase completa usando el verbo
-- **Ejercicios**: 5 frases para completar con pronombres personales
-- **Verbos**: usar los 4 verbos de la unidad, distribución equilibrada
+**Page 4: Transformation (pagina-4-transformacion.md)**
+- 4 person-change exercises
+- 2 question-answer dialogue exercises
+- Format: "Yo verb → Nosotros **___**"
 
-### Página 3: elección (pagina-3-eleccion.md)
+**Page 5: Word ordering (pagina-5-ordenar.md)**
+- 6 word ordering exercises
+- Line 1: "[word1 / word2 / word3 / word4 / word5]"
+- Line 2: Japanese translation of the ordered sentence
+- Blank line for handwritten correct sentence
 
-- **Contenido**: 6 frases de elección múltiple
-- **Formato**: "sujeto [opción1 | opción2] resto de la frase"
-- **Respuesta**: línea en blanco para escribir la frase completa
-- **Sujetos**: usar nombres/sustantivos claros (no pronombres omitidos)
+**Page 6: Right/wrong (pagina-6-bien-mal.md)**
+- 6 sentences to evaluate
+- Format: "sentence. ___" (space for B/M)
+- "Corrección: **___**" below each sentence
 
-### Página 4: transformación (pagina-4-transformacion.md)
+## Verb Units
 
-- **Transformaciones**: 4 ejercicios de cambio de persona
-- **Preguntas y respuestas**: 2 ejercicios de diálogo
-- **Formato**: "Yo verbo → Nosotros **\_\_\_**"
+- **Unit 1**: First conjugation (-AR): dibujar, buscar, hablar, bailar
+- **Unit 2**: Second conjugation (-ER): comer, leer, aprender, beber  
+- **Unit 3**: Third conjugation (-IR): vivir, escribir, abrir, subir
 
-### Página 5: ordenar (pagina-5-ordenar.md)
+## Content Guidelines
 
-- **Contenido**: 6 ejercicios de ordenar palabras
-- **Formato línea 1**: "[palabra1 / palabra2 / palabra3 / palabra4 / palabra5]"
-- **Formato línea 2**: traducción al japonés de la frase ordenada
-- **Respuesta**: línea en blanco para escribir a mano la frase ordenada
+1. **Format requirements**: DIN A5 print format, large text, max 12 lines per page, max 10 words per line
+2. **Language**: Headers and instructions in Japanese (difficult for students to understand Spanish instructions)
+3. **Vocabulary**: Age-appropriate for 7-16 years, avoid complex words
+4. **Contexts**: Home, school, family, daily activities
+5. **Irregular verbs**: Avoid irregular verbs similar to study verbs (e.g., avoid "juego", use "jugar"; but "soy" or "haces" are acceptable)
+6. **Capitalization**: Normal sentence capitalization in titles/headers (not title case)
+7. **Progression**: From exposure to active production
+8. **Connections**: Subtle links between exercises without being obvious
 
-### Página 6: bien / mal (pagina-6-bien-mal.md)
+## Sample Content
 
-- **Contenido**: 6 frases para evaluar
-- **Formato**: "frase. \_\_\_" (espacio para B/M)
-- **Corrección**: "Corrección: **\_\_\_**" debajo de cada frase
+Reference materials are available in the `./samples/` directory:
+- `cuadernillos-espanol-1.md` (first conjugation -AR)
+- `cuadernillos-espanol-2.md` (second conjugation -ER)
+- `cuadernillos-espanol-3.md` (third conjugation -IR)
 
-## Verbos por unidad
+These samples are valid but need adaptation to current specifications (e.g., "bien/mal" instead of "verdadero/falso", Japanese headers, Japanese translations for word ordering exercises).
 
-### Unidad 1: Primera conjugación (-AR)
+## Markdown Template
 
-- dibujar, buscar, hablar, bailar
-
-### Unidad 2: segunda conjugación (-ER)
-
-- comer, leer, aprender, beber
-
-### Unidad 3: tercera conjugación (-IR)
-
-- vivir, escribir, abrir, subir
-
-## Consideraciones importantes
-
-1. **Evitar repetición excesiva**: conectar ejercicios sutilmente sin ser obvio
-2. **Progresión de dificultad**: de exposición a producción activa
-3. **Contextos familiares**: casa, escuela, familia, actividades cotidianas
-4. **Vocabulario apropiado**: para niños de 7 a 16 años, evitar palabras complejas
-5. **Verbos irregulares**: No conjugar verbos irregulares que sean parecidos a los que estamos estudiando (ej: evitar "juego", usar "jugar"; pero "soy" o "haces" están bien)
-6. Los encabezados y enunciados deben estar en japonés, porque es difícil entender los enunciados en español
-7. En los títulos y encabezados no se empiezan todas las palabras en mayúscula, sino normalmente solo la primera como en una frase normal
-
-## Plantillas de encabezado
-
-Cada archivo debe comenzar con:
-
+Each file should begin with:
 ```markdown
-# [Título de la página]
+# [Page Title]
 
-## [Subtítulo si aplica]
+## [Subtitle if applicable]
 
-[Contenido de la página]
+[Page content]
 ```
-
-## Tarea para Claude Code
-
-Genera los 18 archivos markdown (6 páginas × 3 unidades) siguiendo estas especificaciones exactas. Usa los contenidos ya desarrollados en el directorio `./samples`.
-
-Los contenidos ya desarrollados son válidos, pero adáptate a las nuevas reglas como "bien/mal" en vez de "verdadero/falso", o los encabezados y enunciados en japonés, o la inclusión de la traducción de la frase ordenada.
