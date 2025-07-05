@@ -2,16 +2,16 @@
 
 ## 指示に従って動詞の人称を変えてください:
 
-1. Yo como → Nosotros _____________
+1. Yo como → Nosotros _______________
 
-2. Tú lees → Él _____________
+2. Tú lees → Él _______________
 
-3. Ella aprende → Ellas _____________
+3. Ella aprende → Ellas _______________
 
-4. Nosotros bebemos → Yo _____________
+4. Nosotros bebemos → Yo _______________
 
 ## 質問に答えてください:
 
-5. ¿Tú lees novelas? → Sí, yo _______ novelas.
+5. ¿Tú lees novelas? → Sí, yo _______________ novelas.
 
-6. ¿Ellos comen pescado? → Sí, ellos _______ pescado.
+6. ¿Ellos comen pescado? → Sí, ellos _______________ pescado.

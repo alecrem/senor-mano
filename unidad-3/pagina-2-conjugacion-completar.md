@@ -11,12 +11,12 @@
 
 ## 正しい形で空欄を埋めてください (Completa con la forma correcta):
 
-1. Yo _______ (escribir) postales a mis amigos.
+1. Yo _______________ (escribir) postales a mis amigos.
 
-2. Tú _______ (abrir) la ventana cuando hace calor.
+2. Tú _______________ (abrir) la ventana cuando hace calor.
 
-3. Ella _______ (vivir) en el centro de la ciudad.
+3. Ella _______________ (vivir) en el centro de la ciudad.
 
-4. Nosotros _______ (subir) las escaleras todos los días.
+4. Nosotros _______________ (subir) las escaleras todos los días.
 
-5. Ellos _______ (escribir) sus nombres en la lista.
+5. Ellos _______________ (escribir) sus nombres en la lista.

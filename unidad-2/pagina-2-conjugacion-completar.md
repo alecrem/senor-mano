@@ -11,12 +11,12 @@
 
 ## 正しい形で空欄を埋めてください (Completa con la forma correcta):
 
-1. Yo _______ (leer) libros de aventuras.
+1. Yo _______________ (leer) libros de aventuras.
 
-2. Tú _______ (aprender) español muy rápido.
+2. Tú _______________ (aprender) español muy rápido.
 
-3. Ella _______ (beber) agua después del deporte.
+3. Ella _______________ (beber) agua después del deporte.
 
-4. Nosotros _______ (comer) en el comedor de la escuela.
+4. Nosotros _______________ (comer) en el comedor de la escuela.
 
-5. Ellos _______ (leer) el mismo libro para clase.
+5. Ellos _______________ (leer) el mismo libro para clase.

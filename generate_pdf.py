@@ -13,65 +13,60 @@ from weasyprint.text.fonts import FontConfiguration
 
 
 def create_css_style():
-    """Create CSS styling for DIN A5 format with large text."""
+    """Create CSS styling for DIN A5 format with compact layout."""
     return CSS(string="""
     @page {
         size: A5;
-        margin: 20mm;
+        margin: 10mm 8mm;
     }
     
     body {
         font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
-        font-size: 14pt;
-        line-height: 1.6;
+        font-size: 11pt;
+        line-height: 1.3;
         color: #333;
         margin: 0;
         padding: 0;
     }
     
     h1 {
-        font-size: 18pt;
+        font-size: 14pt;
         font-weight: bold;
-        margin-bottom: 15mm;
+        margin: 0 0 6mm 0;
         text-align: center;
         color: #2c3e50;
-        page-break-before: always;
-    }
-    
-    h1:first-child {
-        page-break-before: avoid;
     }
     
     h2 {
-        font-size: 16pt;
+        font-size: 12pt;
         font-weight: bold;
-        margin: 10mm 0 5mm 0;
+        margin: 4mm 0 2mm 0;
         color: #34495e;
     }
     
     h3 {
-        font-size: 14pt;
+        font-size: 11pt;
         font-weight: bold;
-        margin: 8mm 0 4mm 0;
+        margin: 3mm 0 1mm 0;
         color: #34495e;
     }
     
     p {
-        margin-bottom: 5mm;
+        margin-bottom: 1.5mm;
         text-align: left;
     }
     
     table {
         border-collapse: collapse;
         width: 100%;
-        margin: 5mm 0;
+        margin: 2mm 0;
+        font-size: 9pt;
     }
     
     th, td {
         border: 1px solid #ddd;
-        padding: 3mm;
+        padding: 2mm;
         text-align: center;
-        font-size: 12pt;
     }
     
     th {
@@ -92,36 +87,98 @@ def create_css_style():
     hr {
         border: none;
         border-top: 1px solid #bdc3c7;
-        margin: 8mm 0;
+        margin: 4mm 0;
     }
     
     /* Blank lines for answers */
     ._blank_line {
         border-bottom: 1px solid #333;
         display: inline-block;
-        width: 60mm;
-        margin: 0 2mm;
+        width: 50mm;
+        margin: 0 1mm;
+    }
+    
+    /* Longer blank lines for verb exercises (pages 2, 4) */
+    ._long_blank_line {
+        border-bottom: 1px solid #333;
+        display: inline-block;
+        width: 25mm;
+        margin: 0 1mm;
+    }
+    
+    /* Full-width correction lines (page 6) */
+    ._correction_line {
+        border-bottom: 1px solid #333;
+        display: inline-block;
+        width: 80mm;
+        margin: 0 1mm;
+        min-height: 3mm;
+    }
+    
+    /* Very short lines for B/M answers (page 6) */
+    ._short_line {
+        border-bottom: 1px solid #333;
+        display: inline-block;
+        width: 8mm;
+        margin: 0 1mm;
     }
     
     /* Page breaks between exercises */
     .page-break {
         page-break-before: always;
     }
+    
+    /* Compact list spacing */
+    ol, ul {
+        margin: 2mm 0;
+        padding-left: 5mm;
+    }
+    
+    li {
+        margin-bottom: 1mm;
+    }
+    
+    /* Compact paragraph spacing for exercises */
+    .exercise p {
+        margin-bottom: 1mm;
+    }
     """)
 
 
 def markdown_to_html(markdown_content):
     """Convert markdown content to HTML."""
+    # First, replace underscore patterns BEFORE markdown processing
+    # to avoid markdown treating them as emphasis
+    # IMPORTANT: Process longer patterns first to avoid partial matches
+    
+    # Long correction lines (page 6) - use 30+ underscores (FIRST!)
+    original_content = markdown_content
+    markdown_content = markdown_content.replace('_' * 33, '{{CORRECTION_LINE}}')
+    markdown_content = markdown_content.replace('_' * 30, '{{CORRECTION_LINE}}')
+    
+    
+    # Medium answer lines (pages 2, 4) - use 13-20 underscores  
+    markdown_content = markdown_content.replace('_' * 20, '{{LONG_BLANK_LINE}}')
+    markdown_content = markdown_content.replace('_' * 15, '{{LONG_BLANK_LINE}}')
+    markdown_content = markdown_content.replace('_' * 13, '{{LONG_BLANK_LINE}}')
+    
+    # Short answer lines (page 3) - use 10 underscores
+    markdown_content = markdown_content.replace('_' * 10, '{{BLANK_LINE}}')
+    
+    # Very short lines for B/M (page 6) - use 3 underscores (LAST!)
+    markdown_content = markdown_content.replace('_' * 3, '{{SHORT_LINE}}')
+    
     # Configure markdown with extensions
     md = markdown.Markdown(extensions=['tables', 'nl2br'])
     
     # Process the markdown content
     html_content = md.convert(markdown_content)
     
-    # Replace underscores with styled blank lines for answers
-    html_content = html_content.replace('_' * 20, '<span class="_blank_line"></span>')
-    html_content = html_content.replace('_' * 15, '<span class="_blank_line"></span>')
-    html_content = html_content.replace('_' * 10, '<span class="_blank_line"></span>')
+    # Now replace the placeholders with actual HTML
+    html_content = html_content.replace('{{CORRECTION_LINE}}', '<span class="_correction_line"></span>')
+    html_content = html_content.replace('{{LONG_BLANK_LINE}}', '<span class="_long_blank_line"></span>')
+    html_content = html_content.replace('{{BLANK_LINE}}', '<span class="_blank_line"></span>')
+    html_content = html_content.replace('{{SHORT_LINE}}', '<span class="_short_line"></span>')
     
     return html_content
 
@@ -162,7 +219,7 @@ def generate_unit_pdf(unit_number):
     combined_content = ""
     for i, page_content in enumerate(pages):
         if i > 0:
-            combined_content += "\n\n<div class='page-break'></div>\n\n"
+            combined_content += "\n\n<div style='page-break-before: always;'></div>\n\n"
         combined_content += page_content
     
     # Convert to HTML
