@@ -8,16 +8,27 @@ import os
 import sys
 from pathlib import Path
 import markdown
+import yaml
 from weasyprint import HTML, CSS
 from weasyprint.text.fonts import FontConfiguration
 
 
-def create_css_style():
+def create_css_style(unit_title=""):
     """Create CSS styling for DIN A5 format with compact layout."""
-    return CSS(string="""
+    css_template = """
     @page {
         size: A5;
-        margin: 10mm 8mm;
+        margin: 10mm 8mm 15mm 8mm;
+        @bottom-left {
+            content: "UNIT_TITLE_PLACEHOLDER";
+            font-size: 9pt;
+            color: #666;
+        }
+        @bottom-right {
+            content: counter(page);
+            font-size: 9pt;
+            color: #666;
+        }
     }
     
     body {
@@ -142,7 +153,11 @@ def create_css_style():
     .exercise p {
         margin-bottom: 1mm;
     }
-    """)
+    """
+    
+    # Replace the placeholder with the actual unit title
+    css_content = css_template.replace("UNIT_TITLE_PLACEHOLDER", unit_title)
+    return CSS(string=css_content)
 
 
 def markdown_to_html(markdown_content):
@@ -243,10 +258,24 @@ def generate_unit_pdf(unit_number):
     # Generate PDF
     output_file = f"unidad-{unit_number}.pdf"
     
+    # Read unit metadata
+    metadata_file = unit_dir / "unit.yaml"
+    unit_title = f"Unidad {unit_number}"  # Default fallback
+    
+    if metadata_file.exists():
+        try:
+            with open(metadata_file, 'r', encoding='utf-8') as f:
+                metadata = yaml.safe_load(f)
+                unit_title = metadata.get('title', unit_title)
+        except Exception as e:
+            print(f"Warning: Could not read metadata from {metadata_file}: {e}")
+    else:
+        print(f"Warning: No metadata file found at {metadata_file}")
+    
     try:
         font_config = FontConfiguration()
         html_doc = HTML(string=full_html)
-        css_style = create_css_style()
+        css_style = create_css_style(unit_title)
         
         html_doc.write_pdf(
             output_file,
