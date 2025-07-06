@@ -80,22 +80,43 @@ source venv/bin/activate  # En Linux/Mac
 venv\Scripts\activate  # En Windows
 ```
 
+### Generación completa
+
+Para generar todos los materiales (PDFs y sitio web):
+```bash
+./scripts/build_all.sh
+```
+
 ### Generación de PDFs
 
 Para generar todos los PDFs en todos los idiomas:
 ```bash
-python generators/generate_pdf.py
+python generators/generate_pdf_multilang.py --all-languages
 ```
 
 Para generar PDFs de una unidad específica:
 ```bash
-python generators/generate_pdf.py --unit 1 --language ja
+python generators/generate_pdf_multilang.py --unit 1 --language ja
 ```
 
 Parámetros disponibles:
 - `--unit`: Número de unidad (1, 2, 3)
 - `--language`: Código de idioma (ja, en, es)
 - `--output`: Directorio de salida (por defecto: output/pdfs/)
+- `--all-languages`: Generar en todos los idiomas
+
+### Generación de sitio web
+
+Para generar el sitio web GitHub Pages:
+```bash
+python generators/generate_html.py
+```
+
+Para vista previa local:
+```bash
+python generators/generate_html.py --preview
+cd docs && python -m http.server 8000
+```
 
 ### Estructura de directorios
 
