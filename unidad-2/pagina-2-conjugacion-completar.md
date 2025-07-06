@@ -20,3 +20,13 @@
 4. Nosotros _______________ (comer) en el comedor de la escuela.
 
 5. Ellos _______________ (leer) el mismo libro para clase.
+
+6. Vosotros _______________ (comer) paella en el restaurante.
+
+7. Usted _______________ (beber) café todas las mañanas.
+
+8. Mis padres _______________ (aprender) inglés en la academia.
+
+9. Tú _______________ (comer) verduras en la cena.
+
+10. Nosotras _______________ (leer) revistas en la biblioteca.

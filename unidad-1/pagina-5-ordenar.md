@@ -2,38 +2,38 @@
 
 ## 単語を並べ替えて正しい文を作ってください:
 
-1. [muy / Mi / baila / bien / hermano]
+**1.** [muy / Mi / baila / bien / hermano]
 
-   私の兄はとても上手に踊ります。
+私の兄はとても上手に踊ります。
 
-   _________________________________
+---
 
-2. [en / hablan / Los / español / niños / casa]
+**2.** [en / hablan / Los / español / niños / casa]
 
-   子供たちは家でスペイン語を話します。
+子供たちは家でスペイン語を話します。
 
-   _________________________________
+---
 
-3. [flores / El / dibuja / jardín / del]
+**3.** [flores / Él / dibuja / jardín / del]
 
-   彼は庭の花を描きます。
+彼は庭の花を描きます。
 
-   _________________________________
+---
 
-4. [sus / Nosotros / llaves / buscamos]
+**4.** [sus / Nosotros / llaves / buscamos]
 
-   私たちは鍵を探します。
+私たちは鍵を探します。
 
-   _________________________________
+---
 
-5. [salsa / Tú / los / bailas / sábados]
+**5.** [salsa / Tú / los / bailas / sábados]
 
-   君は土曜日にサルサを踊ります。
+君は土曜日にサルサを踊ります。
 
-   _________________________________
+---
 
-6. [francés / Ella / también / habla]
+**6.** [francés / Ella / también / habla]
 
-   彼女はフランス語も話します。
+彼女はフランス語も話します。
 
-   _________________________________
+---

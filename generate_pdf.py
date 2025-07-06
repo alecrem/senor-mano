@@ -230,11 +230,28 @@ def generate_unit_pdf(unit_number):
         print(f"Error: No pages found for unit {unit_number}")
         return False
     
+    # Read unit metadata for title insertion
+    metadata_file = unit_dir / "unit.yaml"
+    unit_title_for_page = f"Unidad {unit_number}"  # Default fallback
+    
+    if metadata_file.exists():
+        try:
+            with open(metadata_file, 'r', encoding='utf-8') as f:
+                metadata = yaml.safe_load(f)
+                unit_title_for_page = metadata.get('title', unit_title_for_page)
+        except Exception as e:
+            print(f"Warning: Could not read metadata for page title: {e}")
+    
     # Combine all pages with page breaks
     combined_content = ""
     for i, page_content in enumerate(pages):
         if i > 0:
             combined_content += "\n\n<div style='page-break-before: always;'></div>\n\n"
+        
+        # Add unit title as H1 before the first page content
+        if i == 0:
+            combined_content += f"# {unit_title_for_page}\n\n"
+        
         combined_content += page_content
     
     # Convert to HTML
@@ -258,19 +275,8 @@ def generate_unit_pdf(unit_number):
     # Generate PDF
     output_file = f"unidad-{unit_number}.pdf"
     
-    # Read unit metadata
-    metadata_file = unit_dir / "unit.yaml"
-    unit_title = f"Unidad {unit_number}"  # Default fallback
-    
-    if metadata_file.exists():
-        try:
-            with open(metadata_file, 'r', encoding='utf-8') as f:
-                metadata = yaml.safe_load(f)
-                unit_title = metadata.get('title', unit_title)
-        except Exception as e:
-            print(f"Warning: Could not read metadata from {metadata_file}: {e}")
-    else:
-        print(f"Warning: No metadata file found at {metadata_file}")
+    # Use the same unit title we read earlier for the footer
+    unit_title = unit_title_for_page
     
     try:
         font_config = FontConfiguration()
