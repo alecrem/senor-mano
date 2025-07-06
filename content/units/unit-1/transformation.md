@@ -1,29 +1,29 @@
 ## Transformaciones:
 
-**1.** Yo dibujo → Nosotros _______________
+**1.** Yo dibujo → Nosotros _____________
 
-**2.** Tú hablas → Él _______________
+**2.** Tú hablas → Él _____________
 
-**3.** Ella baila → Ellas _______________
+**3.** Ella baila → Ellas _____________
 
-**4.** Nosotros buscamos → Yo _______________
+**4.** Nosotros buscamos → Yo _____________
 
-**5.** Vosotros bailáis → Tú _______________
+**5.** Vosotros bailáis → Tú _____________
 
-**6.** Él habla → Nosotros _______________
+**6.** Él habla → Nosotros _____________
 
-**7.** Ellas dibujan → Ella _______________
+**7.** Ellas dibujan → Ella _____________
 
-**8.** Yo busco → Vosotros _______________
+**8.** Yo busco → Vosotros _____________
 
 ## Preguntas y respuestas:
 
-**1.** ¿Tú dibujas animales? → Sí, yo _______________ animales.
+**1.** ¿Tú dibujas animales? → Sí, yo _______ animales.
 
-**2.** ¿Ellos buscan trabajo? → Sí, ellos _______________ trabajo.
+**2.** ¿Ellos buscan trabajo? → Sí, ellos _______ trabajo.
 
-**3.** ¿Vosotros bailáis salsa? → Sí, nosotros _______________ salsa.
+**3.** ¿Vosotros bailáis salsa? → Sí, nosotros _______ salsa.
 
-**4.** ¿Ella habla japonés? → Sí, ella _______________ japonés.
+**4.** ¿Ella habla japonés? → Sí, ella _______ japonés.
 
-**5.** ¿Ustedes dibujan bien? → Sí, nosotros _______________ bien.
+**5.** ¿Ustedes dibujan bien? → Sí, nosotros _______ bien.
