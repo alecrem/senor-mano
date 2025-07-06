@@ -1,0 +1,58 @@
+# English translations for exercise instructions
+language: "en"
+language_name: "English"
+
+# Page headers
+dialogue_header: "Dialogue"
+conjugation_header: "Conjugation and completion exercises"
+choice_header: "Multiple choice exercises"
+transformation_header: "Transformation exercises"
+ordering_header: "Word ordering exercises"
+correction_header: "Right / Wrong"
+
+# Instructions
+conjugation_example: "Example:"
+conjugation_instructions: "Complete with the correct form:"
+choice_instructions: "Choose the correct form and write the complete sentence:"
+transformation_instructions: "Change the person of the verb as indicated:"
+transformation_qa_header: "Answer the questions:"
+ordering_instructions: "Put the words in order to form correct sentences:"
+correction_instructions: "Read the sentences. If correct, write B. If incorrect, write M and correct the sentence:"
+
+# Common elements
+correction_label: "Correction:"
+present_tense: "Present tense"
+
+# Verb translations for conjugation tables
+verb_speak: "to speak"
+verb_eat: "to eat"
+verb_live: "to live"
+
+# Unit-specific dialogue locations
+dialogue_location_1: "At home"
+dialogue_location_2: "In the kitchen"
+dialogue_location_3: "In the garden"
+
+# Ordering exercise translations
+ordering_translations:
+  unit1:
+    - "My brother dances very well."
+    - "The children speak Spanish at home."
+    - "He draws flowers from the garden."
+    - "We look for our keys."
+    - "You dance salsa on Saturdays."
+    - "She also speaks French."
+  unit2:
+    - "My sister drinks a lot of water."
+    - "The students learn English at home."
+    - "The boy eats chocolate."
+    - "We read newspapers on Sundays."
+    - "You drink hot tea."
+    - "She writes long letters."
+  unit3:
+    - "My family lives in Madrid."
+    - "The children open the boxes."
+    - "Grandfather writes letters."
+    - "We go up the stairs slowly."
+    - "You open the door."
+    - "She lives in a small apartment."

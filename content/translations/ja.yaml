@@ -1,0 +1,58 @@
+# Japanese translations for exercise instructions
+language: "ja"
+language_name: "日本語"
+
+# Page headers
+dialogue_header: "会話 (Diálogo)"
+conjugation_header: "動詞の活用と完成 (Conjugación y completar)"
+choice_header: "選択問題 (Ejercicios de elección)"
+transformation_header: "変換練習 (Ejercicios de transformación)"
+ordering_header: "語順並べ替え (Ejercicios de ordenar)"
+correction_header: "正しい・間違い (Bien / Mal)"
+
+# Instructions
+conjugation_example: "例文:"
+conjugation_instructions: "正しい形で空欄を埋めてください (Completa con la forma correcta):"
+choice_instructions: "正しい形を選んで完全な文を書いてください:"
+transformation_instructions: "指示に従って動詞の人称を変えてください:"
+transformation_qa_header: "質問に答えてください:"
+ordering_instructions: "単語を並べ替えて正しい文を作ってください:"
+correction_instructions: "文を読んで、正しければB、間違っていればMを書き、間違いを訂正してください:"
+
+# Common elements
+correction_label: "Corrección:"
+present_tense: "現在形"
+
+# Verb translations for conjugation tables
+verb_speak: "話す"
+verb_eat: "食べる"
+verb_live: "住む"
+
+# Unit-specific dialogue locations
+dialogue_location_1: "家で"
+dialogue_location_2: "キッチンで"
+dialogue_location_3: "庭で"
+
+# Ordering exercise translations
+ordering_translations:
+  unit1:
+    - "私の兄はとても上手に踊ります。"
+    - "子供たちは家でスペイン語を話します。"
+    - "彼は庭の花を描きます。"
+    - "私たちは鍵を探します。"
+    - "君は土曜日にサルサを踊ります。"
+    - "彼女はフランス語も話します。"
+  unit2:
+    - "私の姉は水をたくさん飲みます。"
+    - "学生たちは家で英語を学びます。"
+    - "男の子はチョコレートを食べます。"
+    - "私たちは日曜日に新聞を読みます。"
+    - "君は熱いお茶を飲みます。"
+    - "彼女は長い手紙を書きます。"
+  unit3:
+    - "私の家族はマドリードに住んでいます。"
+    - "子供たちは箱を開けます。"
+    - "おじいさんは手紙を書きます。"
+    - "私たちはゆっくりと階段を上がります。"
+    - "君はドアを開けます。"
+    - "彼女は小さなアパートに住んでいます。"

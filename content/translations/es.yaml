@@ -1,0 +1,58 @@
+# Spanish translations for exercise instructions
+language: "es"
+language_name: "Español"
+
+# Page headers
+dialogue_header: "Diálogo"
+conjugation_header: "Conjugación y ejercicios de completar"
+choice_header: "Ejercicios de elección"
+transformation_header: "Ejercicios de transformación"
+ordering_header: "Ejercicios de ordenar palabras"
+correction_header: "Bien / Mal"
+
+# Instructions
+conjugation_example: "Ejemplo:"
+conjugation_instructions: "Completa con la forma correcta:"
+choice_instructions: "Elige la forma correcta y escribe la oración completa:"
+transformation_instructions: "Cambia la persona del verbo como se indica:"
+transformation_qa_header: "Responde las preguntas:"
+ordering_instructions: "Ordena las palabras para formar oraciones correctas:"
+correction_instructions: "Lee las oraciones. Si son correctas, escribe B. Si son incorrectas, escribe M y corrige la oración:"
+
+# Common elements
+correction_label: "Corrección:"
+present_tense: "Presente de indicativo"
+
+# Verb translations for conjugation tables
+verb_speak: "hablar"
+verb_eat: "comer"
+verb_live: "vivir"
+
+# Unit-specific dialogue locations
+dialogue_location_1: "En casa"
+dialogue_location_2: "En la cocina"
+dialogue_location_3: "En el jardín"
+
+# Ordering exercise translations
+ordering_translations:
+  unit1:
+    - "Mi hermano baila muy bien."
+    - "Los niños hablan español en casa."
+    - "Él dibuja flores del jardín."
+    - "Nosotros buscamos nuestras llaves."
+    - "Tú bailas salsa los sábados."
+    - "Ella también habla francés."
+  unit2:
+    - "Mi hermana bebe mucha agua."
+    - "Los estudiantes aprenden inglés en casa."
+    - "El niño come chocolate."
+    - "Nosotros leemos periódicos los domingos."
+    - "Tú bebes té caliente."
+    - "Ella escribe cartas largas."
+  unit3:
+    - "Mi familia vive en Madrid."
+    - "Los niños abren las cajas."
+    - "El abuelo escribe cartas."
+    - "Nosotros subimos las escaleras despacio."
+    - "Tú abres la puerta."
+    - "Ella vive en un apartamento pequeño."
