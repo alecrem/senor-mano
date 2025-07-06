@@ -1,37 +1,29 @@
-**1.** Yo vivo → Nosotros ___________
+**1.** Yo vivo → Nosotros _____________
 
-**2.** Tú escribes → Él ___________
+**2.** Tú escribes → Él _____________
 
-**3.** Ella abre → Yo ___________
+**3.** Ella abre → Yo _____________
 
-**4.** Nosotros subimos → Tú ___________
+**4.** Nosotros subimos → Tú _____________
 
-**5.** Ellos viven → Usted ___________
+**5.** Ellos viven → Usted _____________
 
-**6.** Yo abro → Ellas ___________
+**6.** Yo abro → Ellas _____________
 
-**7.** Tú subes → Nosotras ___________
+**7.** Tú subes → Nosotras _____________
 
-**8.** Él escribe → Vosotros ___________
+**8.** Él escribe → Vosotros _____________
 
 ---
 
-**1.** ¿Dónde vives tú?
+## Preguntas y respuestas:
 
-Yo ________________________
+**1.** ¿Dónde vives tú? → Yo _______ en Madrid.
 
-**2.** ¿Quién escribe cartas en tu familia?
+**2.** ¿Quién escribe cartas en tu familia? → Mi abuela _______ cartas.
 
-Mi ________________________
+**3.** ¿Cuándo abres las ventanas? → Yo _______ las ventanas por la mañana.
 
-**3.** ¿Cuándo abres las ventanas?
+**4.** ¿Por qué suben ustedes por las escaleras? → Nosotros _______ porque es ejercicio.
 
-Yo ________________________
-
-**4.** ¿Por qué suben ustedes por las escaleras?
-
-Nosotros ________________________
-
-**5.** ¿Viven ellos en esta ciudad?
-
-Sí, ________________________
+**5.** ¿Viven ellos en esta ciudad? → Sí, ellos _______ aquí.

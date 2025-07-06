@@ -1,35 +1,20 @@
-## Verbo: comer
+## Presente de Indicativo - Verbo COMER
 
-| Persona | Forma |
-|---------|-------|
-| yo | como |
-| tú | comes |
-| él/ella/usted | come |
-| nosotros/nosotras | comemos |
-| vosotros/vosotras | coméis |
-| ellos/ellas/ustedes | comen |
+| yo | como | nosotros/nosotras | comemos |
+|---|---|---|---|
+| tú | comes | vosotros/vosotras | coméis |
+| él/ella/usted | come | ellos/ellas/ustedes | comen |
 
-### Ejemplo:
-Yo **como** frutas y verduras todos los días.
+**Ejemplo:** Yo como frutas y verduras todos los días.
 
----
+### Completa las frases con la forma correcta del verbo:
 
-**1.** Nosotros _______ el desayuno muy temprano.
+1. Yo _______ (leer) libros de aventuras.
 
-**2.** Ella _______ libros de aventuras.
+2. Tú _______ (aprender) español muy rápido.
 
-**3.** Tú _______ mucha agua durante el día.
+3. Ella _______ (beber) agua después del deporte.
 
-**4.** Ellos _______ español en la universidad.
+4. Nosotros _______ (comer) en el comedor de la escuela.
 
-**5.** Yo _______ chocolate los fines de semana.
-
-**6.** Ustedes _______ el periódico por la mañana.
-
-**7.** Mi hermano _______ café muy caliente.
-
-**8.** Vosotras _______ en este restaurante.
-
-**9.** Él _______ inglés con su profesor.
-
-**10.** Nosotras _______ cartas románticas.
+5. Ellos _______ (leer) el mismo libro para clase.

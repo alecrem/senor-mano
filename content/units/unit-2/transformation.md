@@ -1,37 +1,29 @@
-**1.** Yo como → Nosotros ___________
+**1.** Yo como → Nosotros _____________
 
-**2.** Tú lees → Ella ___________
+**2.** Tú lees → Ella _____________
 
-**3.** Él bebe → Yo ___________
+**3.** Él bebe → Yo _____________
 
-**4.** Nosotros aprendemos → Tú ___________
+**4.** Nosotros aprendemos → Tú _____________
 
-**5.** Ellas comen → Usted ___________
+**5.** Ellas comen → Usted _____________
 
-**6.** Yo leo → Ellos ___________
+**6.** Yo leo → Ellos _____________
 
-**7.** Tú aprendes → Nosotras ___________
+**7.** Tú aprendes → Nosotras _____________
 
-**8.** Ella bebe → Vosotros ___________
+**8.** Ella bebe → Vosotros _____________
 
 ---
 
-**1.** ¿Qué comes en el desayuno?
+## Preguntas y respuestas:
 
-Yo ________________________
+**1.** ¿Qué comes en el desayuno? → Yo _______ frutas.
 
-**2.** ¿Quién lee libros en tu familia?
+**2.** ¿Quién lee libros en tu familia? → Mi hermana _______ novelas.
 
-Mi ________________________
+**3.** ¿Cuándo beben ustedes café? → Nosotros _______ café por la mañana.
 
-**3.** ¿Cuándo beben ustedes café?
+**4.** ¿Dónde aprenden ellos español? → Ellos _______ español en clase.
 
-Nosotros ________________________
-
-**4.** ¿Dónde aprenden ellos español?
-
-Ellos ________________________
-
-**5.** ¿Bebes tú agua fría o caliente?
-
-Yo ________________________
+**5.** ¿Bebes tú agua fría o caliente? → Yo _______ agua fría.

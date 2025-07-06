@@ -1,18 +1,13 @@
-## Verbo: vivir
+## Presente de Indicativo - Verbo VIVIR
 
-| Persona | Forma |
-|---------|-------|
-| yo | vivo |
-| tú | vives |
-| él/ella/usted | vive |
-| nosotros/nosotras | vivimos |
-| vosotros/vosotras | vivís |
-| ellos/ellas/ustedes | viven |
+| yo | vivo | nosotros/nosotras | vivimos |
+|---|---|---|---|
+| tú | vives | vosotros/vosotras | vivís |
+| él/ella/usted | vive | ellos/ellas/ustedes | viven |
 
-### Ejemplo:
-Yo **vivo** en una casa grande con mi familia.
+**Ejemplo:** Yo vivo en una casa grande con mi familia.
 
----
+### Completa las frases con la forma correcta del verbo:
 
 **1.** Nosotros _______ en el centro de la ciudad.
 
