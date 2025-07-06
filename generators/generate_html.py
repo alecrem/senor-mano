@@ -13,16 +13,18 @@ import yaml
 from jinja2 import Template
 
 
-def load_translations(language='ja'):
+def load_translations(language="ja"):
     """Load translation strings for the specified language."""
     translation_file = Path(f"content/translations/{language}.yaml")
-    
+
     if not translation_file.exists():
-        print(f"Warning: Translation file {translation_file} not found, using Japanese as fallback")
+        print(
+            f"Warning: Translation file {translation_file} not found, using Japanese as fallback"
+        )
         translation_file = Path("content/translations/ja.yaml")
-    
+
     try:
-        with open(translation_file, 'r', encoding='utf-8') as f:
+        with open(translation_file, "r", encoding="utf-8") as f:
             return yaml.safe_load(f)
     except Exception as e:
         print(f"Error: Could not load translations: {e}")
@@ -32,45 +34,63 @@ def load_translations(language='ja'):
 def load_unit_metadata(unit_number):
     """Load metadata for a specific unit."""
     metadata_file = Path(f"content/units/unit-{unit_number}/metadata.yaml")
-    
+
     if not metadata_file.exists():
-        return {"title": f"Unidad {unit_number}", "verbs": [], "unit_number": unit_number}
-    
+        return {
+            "title": f"Unidad {unit_number}",
+            "verbs": [],
+            "unit_number": unit_number,
+        }
+
     try:
-        with open(metadata_file, 'r', encoding='utf-8') as f:
+        with open(metadata_file, "r", encoding="utf-8") as f:
             return yaml.safe_load(f)
     except Exception as e:
         print(f"Warning: Could not read metadata for unit {unit_number}: {e}")
-        return {"title": f"Unidad {unit_number}", "verbs": [], "unit_number": unit_number}
+        return {
+            "title": f"Unidad {unit_number}",
+            "verbs": [],
+            "unit_number": unit_number,
+        }
 
 
 def generate_page_html(unit_number, page_type, translations):
     """Generate HTML content for a specific page."""
     content_file = Path(f"content/units/unit-{unit_number}/{page_type}.md")
-    
+
     if not content_file.exists():
         return f"<p>Content not found: {content_file}</p>"
-    
+
     # Read the markdown content
-    with open(content_file, 'r', encoding='utf-8') as f:
+    with open(content_file, "r", encoding="utf-8") as f:
         content = f.read()
-    
+
     # Convert markdown to HTML
-    md = markdown.Markdown(extensions=['tables', 'nl2br'])
+    md = markdown.Markdown(extensions=["tables", "nl2br"])
     html_content = md.convert(content)
-    
+
     # Add page header
     header_map = {
-        'dialogue': translations.get('dialogue_header', '会話 (Diálogo)'),
-        'conjugation': translations.get('conjugation_header', '動詞の活用と完成 (Conjugación y completar)'),
-        'choice': translations.get('choice_header', '選択問題 (Ejercicios de elección)'),
-        'transformation': translations.get('transformation_header', '変換練習 (Ejercicios de transformación)'),
-        'ordering': translations.get('ordering_header', '語順並べ替え (Ejercicios de ordenar)'),
-        'correction': translations.get('correction_header', '正しい・間違い (Bien / Mal)')
+        "dialogue": translations.get("dialogue_header", "会話 (Diálogo)"),
+        "conjugation": translations.get(
+            "conjugation_header", "動詞の活用と完成 (Conjugación y completar)"
+        ),
+        "choice": translations.get(
+            "choice_header", "選択問題 (Ejercicios de elección)"
+        ),
+        "transformation": translations.get(
+            "transformation_header", "変換練習 (Ejercicios de transformación)"
+        ),
+        "ordering": translations.get(
+            "ordering_header", "語順並べ替え (Ejercicios de ordenar)"
+        ),
+        "correction": translations.get(
+            "correction_header", "正しい・間違い (Bien / Mal)"
+        ),
     }
-    
+
     header = header_map.get(page_type, page_type.title())
-    
+
     return f"""
     <div class="exercise-page" id="page-{page_type}">
         <h2>{header}</h2>
@@ -79,21 +99,29 @@ def generate_page_html(unit_number, page_type, translations):
     """
 
 
-def create_unit_page(unit_number, language='ja', output_dir='docs'):
+def create_unit_page(unit_number, language="ja", output_dir="docs"):
     """Create HTML page for a specific unit."""
     translations = load_translations(language)
     metadata = load_unit_metadata(unit_number)
-    
+
     # Generate content for each page
-    page_types = ['dialogue', 'conjugation', 'choice', 'transformation', 'ordering', 'correction']
+    page_types = [
+        "dialogue",
+        "conjugation",
+        "choice",
+        "transformation",
+        "ordering",
+        "correction",
+    ]
     pages_html = []
-    
+
     for page_type in page_types:
         page_html = generate_page_html(unit_number, page_type, translations)
         pages_html.append(page_html)
-    
+
     # HTML template for unit page
-    unit_template = Template("""
+    unit_template = Template(
+        """
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -153,7 +181,7 @@ def create_unit_page(unit_number, language='ja', output_dir='docs'):
     </main>
 
     <footer>
-        <p>&copy; 2024 Cuadernillos de Español. Diseñado para familias hispanohablantes.</p>
+        <p>&copy; 2025 Cuadernillos de Español. Diseñado para familias hispanohablantes.</p>
     </footer>
 
     <script>
@@ -172,53 +200,55 @@ def create_unit_page(unit_number, language='ja', output_dir='docs'):
     </script>
 </body>
 </html>
-    """)
-    
+    """
+    )
+
     # Render the template
     html_content = unit_template.render(
-        unit_title=metadata['title'],
-        unit_description=metadata.get('description', ''),
+        unit_title=metadata["title"],
+        unit_description=metadata.get("description", ""),
         unit_number=unit_number,
         language=language,
-        language_name=translations.get('language_name', 'Japanese'),
-        verbs_list=', '.join(metadata.get('verbs', [])),
-        dialogue_header=translations.get('dialogue_header', '会話'),
-        conjugation_header=translations.get('conjugation_header', '動詞の活用'),
-        choice_header=translations.get('choice_header', '選択問題'),
-        transformation_header=translations.get('transformation_header', '変換練習'),
-        ordering_header=translations.get('ordering_header', '語順並べ替え'),
-        correction_header=translations.get('correction_header', '正しい・間違い'),
-        pages_html=pages_html
+        language_name=translations.get("language_name", "Japanese"),
+        verbs_list=", ".join(metadata.get("verbs", [])),
+        dialogue_header=translations.get("dialogue_header", "会話"),
+        conjugation_header=translations.get("conjugation_header", "動詞の活用"),
+        choice_header=translations.get("choice_header", "選択問題"),
+        transformation_header=translations.get("transformation_header", "変換練習"),
+        ordering_header=translations.get("ordering_header", "語順並べ替え"),
+        correction_header=translations.get("correction_header", "正しい・間違い"),
+        pages_html=pages_html,
     )
-    
+
     # Create output directory
     output_path = Path(output_dir) / language
     output_path.mkdir(parents=True, exist_ok=True)
-    
+
     # Write HTML file
     output_file = output_path / f"unit-{unit_number}.html"
-    with open(output_file, 'w', encoding='utf-8') as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         f.write(html_content)
-    
+
     print(f"✅ Generated {output_file}")
     return True
 
 
-def create_index_page(output_dir='docs'):
+def create_index_page(output_dir="docs"):
     """Create main index page for all units and languages."""
-    
+
     # Load metadata for all units
     units_data = []
     for unit_num in [1, 2, 3]:
         metadata = load_unit_metadata(unit_num)
         units_data.append(metadata)
-    
+
     # Load translations for all languages
     translations_all = {}
-    for lang in ['ja', 'en', 'es']:
+    for lang in ["ja", "en", "es"]:
         translations_all[lang] = load_translations(lang)
-    
-    index_template = Template("""
+
+    index_template = Template(
+        """
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -309,9 +339,9 @@ def create_index_page(output_dir='docs'):
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Cuadernillos de Español. Proyecto de código abierto para familias hispanohablantes.</p>
+            <p>&copy; 2025 Cuadernillos de Español. Proyecto de código abierto para familias hispanohablantes.</p>
             <p>
-                <a href="https://github.com/tu-usuario/ejercicios-espanol">GitHub</a> |
+                <a href="https://github.com/alecrem/ejercicios-espanol">GitHub</a> |
                 <a href="#contacto">Contacto</a> |
                 <a href="#licencia">Licencia MIT</a>
             </p>
@@ -319,33 +349,35 @@ def create_index_page(output_dir='docs'):
     </footer>
 </body>
 </html>
-    """)
-    
+    """
+    )
+
     # Render the template
     html_content = index_template.render(units_data=units_data)
-    
+
     # Create output directory
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
-    
+
     # Write HTML file
     output_file = output_path / "index.html"
-    with open(output_file, 'w', encoding='utf-8') as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         f.write(html_content)
-    
+
     print(f"✅ Generated {output_file}")
     return True
 
 
-def create_language_index(language, output_dir='docs'):
+def create_language_index(language, output_dir="docs"):
     """Create index page for a specific language."""
     translations = load_translations(language)
     units_data = []
     for unit_num in [1, 2, 3]:
         metadata = load_unit_metadata(unit_num)
         units_data.append(metadata)
-    
-    lang_index_template = Template("""
+
+    lang_index_template = Template(
+        """
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -391,28 +423,29 @@ def create_language_index(language, output_dir='docs'):
     </main>
 
     <footer>
-        <p>&copy; 2024 Cuadernillos de Español</p>
+        <p>&copy; 2025 Cuadernillos de Español</p>
     </footer>
 </body>
 </html>
-    """)
-    
+    """
+    )
+
     # Render the template
     html_content = lang_index_template.render(
         language=language,
-        language_name=translations.get('language_name', language),
-        units_data=units_data
+        language_name=translations.get("language_name", language),
+        units_data=units_data,
     )
-    
+
     # Create output directory
     output_path = Path(output_dir) / language
     output_path.mkdir(parents=True, exist_ok=True)
-    
+
     # Write HTML file
     output_file = output_path / "index.html"
-    with open(output_file, 'w', encoding='utf-8') as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         f.write(html_content)
-    
+
     print(f"✅ Generated {output_file}")
     return True
 
@@ -740,56 +773,67 @@ footer {
     }
 }
 """
-    
+
     # Create CSS directory
     css_dir = Path("docs/assets/css")
     css_dir.mkdir(parents=True, exist_ok=True)
-    
+
     # Write CSS file
     css_file = css_dir / "style.css"
-    with open(css_file, 'w', encoding='utf-8') as f:
+    with open(css_file, "w", encoding="utf-8") as f:
         f.write(css_content)
-    
+
     print(f"✅ Generated {css_file}")
     return True
 
 
 def main():
     """Main function to generate HTML files."""
-    parser = argparse.ArgumentParser(description='Generate HTML files for GitHub Pages')
-    parser.add_argument('--unit', type=int, choices=[1, 2, 3], help='Generate specific unit')
-    parser.add_argument('--language', type=str, choices=['ja', 'en', 'es'], help='Generate specific language')
-    parser.add_argument('--output', type=str, default='docs', help='Output directory')
-    parser.add_argument('--preview', action='store_true', help='Generate for local preview')
-    
+    parser = argparse.ArgumentParser(description="Generate HTML files for GitHub Pages")
+    parser.add_argument(
+        "--unit", type=int, choices=[1, 2, 3], help="Generate specific unit"
+    )
+    parser.add_argument(
+        "--language",
+        type=str,
+        choices=["ja", "en", "es"],
+        help="Generate specific language",
+    )
+    parser.add_argument("--output", type=str, default="docs", help="Output directory")
+    parser.add_argument(
+        "--preview", action="store_true", help="Generate for local preview"
+    )
+
     args = parser.parse_args()
-    
+
     # Create CSS styles
     create_css()
-    
+
     # Generate main index page
     create_index_page(args.output)
-    
-    languages = [args.language] if args.language else ['ja', 'en', 'es']
+
+    languages = [args.language] if args.language else ["ja", "en", "es"]
     units = [args.unit] if args.unit else [1, 2, 3]
-    
+
     success_count = 0
     total_files = len(languages) * (len(units) + 1)  # +1 for language index
-    
+
     print(f"Generating {total_files} HTML files...")
-    
+
     for language in languages:
         # Create language index
         if create_language_index(language, args.output):
             success_count += 1
-        
+
         # Create unit pages
         for unit_num in units:
             if create_unit_page(unit_num, language, args.output):
                 success_count += 1
-    
-    print(f"\n🎉 Successfully generated {success_count + 1}/{total_files + 1} HTML files")
-    
+
+    print(
+        f"\n🎉 Successfully generated {success_count + 1}/{total_files + 1} HTML files"
+    )
+
     if args.preview:
         print("\n🌐 To preview locally, run:")
         print(f"  cd {args.output} && python -m http.server 8000")
