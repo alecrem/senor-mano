@@ -65,9 +65,31 @@ def generate_page_html(unit_number, page_type, translations):
     with open(content_file, "r", encoding="utf-8") as f:
         content = f.read()
 
+    # Process underscores BEFORE markdown conversion to preserve answer lines
+    # Long correction lines (page 6) - use 30+ underscores (FIRST!)
+    content = content.replace('_' * 33, '{{CORRECTION_LINE}}')
+    content = content.replace('_' * 30, '{{CORRECTION_LINE}}')
+    
+    # Medium answer lines (pages 2, 4) - use 13-20 underscores  
+    content = content.replace('_' * 20, '{{LONG_BLANK_LINE}}')
+    content = content.replace('_' * 15, '{{LONG_BLANK_LINE}}')
+    content = content.replace('_' * 13, '{{LONG_BLANK_LINE}}')
+    
+    # Short answer lines (page 3) - use 10 underscores
+    content = content.replace('_' * 10, '{{BLANK_LINE}}')
+    
+    # Very short lines for B/M (page 6) - use 3 underscores (LAST!)
+    content = content.replace('_' * 3, '{{SHORT_LINE}}')
+    
     # Convert markdown to HTML
     md = markdown.Markdown(extensions=["tables", "nl2br"])
     html_content = md.convert(content)
+    
+    # Replace placeholders with proper HTML underlined spaces
+    html_content = html_content.replace('{{CORRECTION_LINE}}', '<span style="border-bottom: 1px solid #333; display: inline-block; width: 200px; margin: 0 2px; min-height: 18px;"></span>')
+    html_content = html_content.replace('{{LONG_BLANK_LINE}}', '<span style="border-bottom: 1px solid #333; display: inline-block; width: 120px; margin: 0 2px; min-height: 18px;"></span>')
+    html_content = html_content.replace('{{BLANK_LINE}}', '<span style="border-bottom: 1px solid #333; display: inline-block; width: 180px; margin: 0 2px; min-height: 18px;"></span>')
+    html_content = html_content.replace('{{SHORT_LINE}}', '<span style="border-bottom: 1px solid #333; display: inline-block; width: 30px; margin: 0 2px; min-height: 18px;"></span>')
 
     # Add page header
     header_map = {

@@ -200,25 +200,25 @@ def markdown_to_html(markdown_content):
 
 def generate_unit_pdf(unit_number):
     """Generate PDF for a specific unit."""
-    unit_dir = Path(f"unidad-{unit_number}")
+    unit_dir = Path(f"content/units/unit-{unit_number}")
     
     if not unit_dir.exists():
         print(f"Error: Unit directory {unit_dir} does not exist")
         return False
     
-    # Collect all markdown files for the unit
+    # Collect all markdown files for the unit in the new structure
     pages = []
-    for i in range(1, 7):
-        page_files = {
-            1: "pagina-1-dialogo.md",
-            2: "pagina-2-conjugacion-completar.md", 
-            3: "pagina-3-eleccion.md",
-            4: "pagina-4-transformacion.md",
-            5: "pagina-5-ordenar.md",
-            6: "pagina-6-bien-mal.md"
-        }
-        
-        page_file = unit_dir / page_files[i]
+    page_files = [
+        "dialogue.md",
+        "conjugation.md", 
+        "choice.md",
+        "transformation.md",
+        "ordering.md",
+        "correction.md"
+    ]
+    
+    for page_file_name in page_files:
+        page_file = unit_dir / page_file_name
         if page_file.exists():
             with open(page_file, 'r', encoding='utf-8') as f:
                 content = f.read()
@@ -230,17 +230,13 @@ def generate_unit_pdf(unit_number):
         print(f"Error: No pages found for unit {unit_number}")
         return False
     
-    # Read unit metadata for title insertion
-    metadata_file = unit_dir / "unit.yaml"
-    unit_title_for_page = f"Unidad {unit_number}"  # Default fallback
-    
-    if metadata_file.exists():
-        try:
-            with open(metadata_file, 'r', encoding='utf-8') as f:
-                metadata = yaml.safe_load(f)
-                unit_title_for_page = metadata.get('title', unit_title_for_page)
-        except Exception as e:
-            print(f"Warning: Could not read metadata for page title: {e}")
+    # Set unit title based on unit number
+    unit_titles = {
+        1: "Unidad 1: Primera conjugación (-AR)",
+        2: "Unidad 2: Segunda conjugación (-ER)", 
+        3: "Unidad 3: Tercera conjugación (-IR)"
+    }
+    unit_title_for_page = unit_titles.get(unit_number, f"Unidad {unit_number}")
     
     # Combine all pages with page breaks
     combined_content = ""
@@ -272,8 +268,12 @@ def generate_unit_pdf(unit_number):
     </html>
     """
     
+    # Create output directory if it doesn't exist
+    output_dir = Path("docs/pdfs/es")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
     # Generate PDF
-    output_file = f"unidad-{unit_number}.pdf"
+    output_file = output_dir / f"unidad-{unit_number}.pdf"
     
     # Use the same unit title we read earlier for the footer
     unit_title = unit_title_for_page

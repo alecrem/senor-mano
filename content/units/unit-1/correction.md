@@ -1,15 +1,31 @@
-1. Yo hablas con mi profesora.
+**1.** Yo hablas con mi profesora. ___
 
-2. Los pájaros buscan comida en el parque.
+Corrección: _________________________________
 
-3. Tú dibujas mapas en geografía.
+**2.** Los pájaros buscan comida en el parque. ___
 
-4. Nosotros baila en el gimnasio.
+Corrección: _________________________________
 
-5. Mi gato busca ratones en la casa.
+**3.** Tú dibujas mapas en geografía. ___
 
-6. Vosotros habláis muy alto en clase.
+Corrección: _________________________________
 
-7. Ellas baila en la discoteca.
+**4.** Nosotros baila en el gimnasio. ___
 
-8. Tú busca tus llaves en el bolso.
+Corrección: _________________________________
+
+**5.** Mi gato busca ratones en la casa. ___
+
+Corrección: _________________________________
+
+**6.** Vosotros habláis muy alto en clase. ___
+
+Corrección: _________________________________
+
+**7.** Ellas baila en la discoteca. ___
+
+Corrección: _________________________________
+
+**8.** Tú busca tus llaves en el bolso. ___
+
+Corrección: _________________________________

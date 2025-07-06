@@ -1,15 +1,31 @@
-1. Mi hermana [baila | bailas] flamenco los martes.
+**1.** Mi hermana [baila | bailas] flamenco los martes.
 
-2. Los estudiantes [buscan | buscáis] información en la biblioteca.
+_________________________________
 
-3. Tú [hablas | habla] muy rápido cuando estás nervioso.
+**2.** Los estudiantes [buscan | buscáis] información en la biblioteca.
 
-4. El artista [dibujo | dibuja] retratos increíbles.
+_________________________________
 
-5. Nosotros [bailamos | bailan] salsa en la academia.
+**3.** Tú [hablas | habla] muy rápido cuando estás nervioso.
 
-6. Las niñas [busca | buscan] conchas en la playa.
+_________________________________
 
-7. Vosotros [dibujáis | dibujan] mapas en geografía.
+**4.** El artista [dibujo | dibuja] retratos increíbles.
 
-8. El profesor [habla | hablan] muy claro en clase.
+_________________________________
+
+**5.** Nosotros [bailamos | bailan] salsa en la academia.
+
+_________________________________
+
+**6.** Las niñas [busca | buscan] conchas en la playa.
+
+_________________________________
+
+**7.** Vosotros [dibujáis | dibujan] mapas en geografía.
+
+_________________________________
+
+**8.** El profesor [habla | hablan] muy claro en clase.
+
+_________________________________

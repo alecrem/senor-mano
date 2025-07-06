@@ -1,31 +1,31 @@
-**1.** Yo come frutas todos los días. ____
+**1.** Yo come frutas todos los días. ___
 
-Corrección: **________________________**
+Corrección: _________________________________
 
-**2.** Mis hermanos leen libros de aventuras. ____
+**2.** Mis hermanos leen libros de aventuras. ___
 
-Corrección: **________________________**
+Corrección: _________________________________
 
-**3.** Tú bebe agua fría en verano. ____
+**3.** Tú bebe agua fría en verano. ___
 
-Corrección: **________________________**
+Corrección: _________________________________
 
-**4.** Nosotros aprende español en casa. ____
+**4.** Nosotros aprende español en casa. ___
 
-Corrección: **________________________**
+Corrección: _________________________________
 
-**5.** Ella como chocolate los sábados. ____
+**5.** Ella como chocolate los sábados. ___
 
-Corrección: **________________________**
+Corrección: _________________________________
 
-**6.** Los estudiantes lee periódicos. ____
+**6.** Los estudiantes lee periódicos. ___
 
-Corrección: **________________________**
+Corrección: _________________________________
 
-**7.** Yo bebo café todas las mañanas. ____
+**7.** Yo bebo café todas las mañanas. ___
 
-Corrección: **________________________**
+Corrección: _________________________________
 
-**8.** Ustedes aprenden francés en la universidad. ____
+**8.** Ustedes aprenden francés en la universidad. ___
 
-Corrección: **________________________**
+Corrección: _________________________________

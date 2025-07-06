@@ -1,31 +1,31 @@
-**1.** Yo vives en una casa grande. ____
+**1.** Yo vives en una casa grande. ___
 
-Corrección: **________________________**
+Corrección: _________________________________
 
-**2.** Mis hermanos escriben cartas todos los días. ____
+**2.** Mis hermanos escriben cartas todos los días. ___
 
-Corrección: **________________________**
+Corrección: _________________________________
 
-**3.** Tú abres la ventana por la mañana. ____
+**3.** Tú abres la ventana por la mañana. ___
 
-Corrección: **________________________**
+Corrección: _________________________________
 
-**4.** Nosotros sube las escaleras rápido. ____
+**4.** Nosotros sube las escaleras rápido. ___
 
-Corrección: **________________________**
+Corrección: _________________________________
 
-**5.** Ella vivo cerca de la escuela. ____
+**5.** Ella vivo cerca de la escuela. ___
 
-Corrección: **________________________**
+Corrección: _________________________________
 
-**6.** Los niños abre sus libros de matemáticas. ____
+**6.** Los niños abre sus libros de matemáticas. ___
 
-Corrección: **________________________**
+Corrección: _________________________________
 
-**7.** Yo escribo en mi diario todas las noches. ____
+**7.** Yo escribo en mi diario todas las noches. ___
 
-Corrección: **________________________**
+Corrección: _________________________________
 
-**8.** Ustedes viven en el mismo barrio que nosotros. ____
+**8.** Ustedes viven en el mismo barrio que nosotros. ___
 
-Corrección: **________________________**
+Corrección: _________________________________
