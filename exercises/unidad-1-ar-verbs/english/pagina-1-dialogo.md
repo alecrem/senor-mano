@@ -1,6 +1,6 @@
-# Page 1: Dialogue
+# Page 1: Diálogo
 
-**At María's house**
+**En casa de María**
 
 **María:** ¡Hola, Luis! ¿Qué haces?
 

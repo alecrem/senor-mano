@@ -1,19 +1,31 @@
-# ページ 4: 変換練習
+# 変換練習 (Ejercicios de transformación)
 
-**指示に従って動詞の人称を変えなさい:**
+## 指示に従って動詞の人称を変えてください:
 
-1. Yo dibujo → Nosotros _____________
+1. Yo dibujo → Nosotros _______________
 
-2. Tú hablas → Él _____________
+2. Tú hablas → Él _______________
 
-3. Ella baila → Ellas _____________
+3. Ella baila → Ellas _______________
 
-4. Nosotros buscamos → Yo _____________
+4. Nosotros buscamos → Yo _______________
 
-## 質問と回答
+5. Vosotros bailáis → Tú _______________
 
-**質問に答えなさい:**
+6. Él habla → Nosotros _______________
 
-5. ¿Tú dibujas animales? → Sí, yo _______ animales.
+7. Ellas dibujan → Ella _______________
 
-6. ¿Ellos buscan trabajo? → Sí, ellos _______ trabajo.
+8. Yo busco → Vosotros _______________
+
+## 質問に答えてください:
+
+9. ¿Tú dibujas animales? → Sí, yo _______________ animales.
+
+10. ¿Ellos buscan trabajo? → Sí, ellos _______________ trabajo.
+
+11. ¿Vosotros bailáis salsa? → Sí, nosotros _______________ salsa.
+
+12. ¿Ella habla japonés? → Sí, ella _______________ japonés.
+
+13. ¿Ustedes dibujan bien? → Sí, nosotros _______________ bien.

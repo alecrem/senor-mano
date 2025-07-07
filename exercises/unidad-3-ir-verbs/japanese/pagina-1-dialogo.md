@@ -1,21 +1,21 @@
-# ページ 1: 対話
+# 会話 (Diálogo)
 
-**庭で**
+## 庭で (En el jardín)
 
 **Laura:** ¡Qué bonitas flores! ¿Tú las cuidas?
 
-**Diego:** Sí, yo vivo aquí con mis abuelos. Ellos tienen un jardín grande.
+**Diego:** Sí, yo **vivo** aquí con mis abuelos. Ellos tienen un jardín grande.
 
-**Laura:** ¿Vives aquí todo el año?
+**Laura:** ¿**Vives** aquí todo el año?
 
-**Diego:** Sí, vivo aquí desde el año pasado. Me gusta mucho.
+**Diego:** Sí, **vivo** aquí desde el año pasado. Me gusta mucho.
 
-**Laura:** Mis abuelos también viven en una casa con jardín.
+**Laura:** Mis abuelos también **viven** en una casa con jardín.
 
 **Diego:** ¿Ellos cuidan plantas también?
 
-**Laura:** No, pero mi abuela escribe sobre jardines en su blog.
+**Laura:** No, pero mi abuela **escribe** sobre jardines en su blog.
 
-**Diego:** ¡Qué interesante! ¿Tú también escribes?
+**Diego:** ¡Qué interesante! ¿Tú también **escribes**?
 
-**Laura:** Un poco. Escribo en mi diario todas las noches.
+**Laura:** Un poco. **Escribo** en mi diario todas las noches.

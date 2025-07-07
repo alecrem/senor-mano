@@ -1,39 +1,39 @@
-# ページ 5: 語順練習
+# 語順並べ替え (Ejercicios de ordenar)
 
-**単語を正しい順序に並べて文を作りなさい:**
+## 単語を並べ替えて正しい文を作ってください:
 
-1. [en / Mi / familia / Madrid / vive]
+**1.** [en / Mi / familia / Madrid / vive]
 
-   私の家族はマドリードに住んでいます
-
-   _________________________________
-
-2. [las / abren / Los / niños / cajas]
-
-   子供たちは箱を開けます
+   私の家族はマドリードに住んでいます。
 
    _________________________________
 
-3. [cartas / escribe / El / abuelo]
+**2.** [las / abren / Los / niños / cajas]
 
-   おじいさんは手紙を書きます
-
-   _________________________________
-
-4. [escaleras / subimos / las / Nosotros / despacio]
-
-   私たちはゆっくり階段を上ります
+   子供たちは箱を開けます。
 
    _________________________________
 
-5. [la / Tú / puerta / abres]
+**3.** [cartas / escribe / El / abuelo]
 
-   あなたはドアを開けます
+   おじいさんは手紙を書きます。
 
    _________________________________
 
-6. [apartamento / Ella / un / vive / pequeño / en]
+**4.** [escaleras / subimos / las / Nosotros / despacio]
 
-   彼女は小さなアパートに住んでいます
+   私たちはゆっくりと階段を上がります。
+
+   _________________________________
+
+**5.** [la / Tú / puerta / abres]
+
+   君はドアを開けます。
+
+   _________________________________
+
+**6.** [apartamento / Ella / un / vive / pequeño / en]
+
+   彼女は小さなアパートに住んでいます。
 
    _________________________________

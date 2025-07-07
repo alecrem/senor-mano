@@ -1,27 +1,35 @@
-# ページ 3: 選択練習
+# 選択問題 (Ejercicios de elección)
 
-**動詞の正しい形を選んで、完全な文を書きなさい:**
+## 正しい形を選んで完全な文を書いてください:
 
-1. Mi hermano [vive | vives] en el segundo piso.
-
-   _________________________________
-
-2. Los estudiantes [suben | subís] al autobús escolar.
+**1.** Mi hermano [vive | vives] en el segundo piso.
 
    _________________________________
 
-3. Tú [abre | abres] los libros en clase.
+**2.** Los estudiantes [suben | subís] al autobús escolar.
 
    _________________________________
 
-4. La escritora [escribo | escribe] novelas para niños.
+**3.** Tú [abre | abres] los libros en clase.
 
    _________________________________
 
-5. Nosotros [vivimos | viven] cerca del parque.
+**4.** La escritora [escribo | escribe] novelas para niños.
 
    _________________________________
 
-6. Las niñas [abren | abrís] sus mochilas.
+**5.** Nosotros [vivimos | viven] cerca del parque.
+
+   _________________________________
+
+**6.** Las niñas [abren | abrís] sus mochilas.
+
+   _________________________________
+
+**7.** Vosotros [vivís | viven] en el centro de la ciudad.
+
+   _________________________________
+
+**8.** El escritor [escribo | escribe] libros de aventuras.
 
    _________________________________

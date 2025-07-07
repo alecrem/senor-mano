@@ -1,39 +1,39 @@
-# ページ 5: 語順練習
+# 語順並べ替え (Ejercicios de ordenar)
 
-**単語を正しい順序に並べて文を作りなさい:**
+## 単語を並べ替えて正しい文を作ってください:
 
-1. [mucha / Mi / agua / bebe / hermana]
+**1.** [mucha / Mi / agua / bebe / hermana]
 
-   私の姉はたくさん水を飲みます
+私の姉は水をたくさん飲みます。
 
-   _________________________________
+---
 
-2. [en / aprenden / Los / inglés / estudiantes / casa]
+**2.** [en / aprenden / Los / inglés / estudiantes / casa]
 
-   学生たちは家で英語を学びます
+学生たちは家で英語を学びます。
 
-   _________________________________
+---
 
-3. [chocolate / come / El / niño]
+**3.** [chocolate / come / El / niño]
 
-   男の子はチョコレートを食べます
+男の子はチョコレートを食べます。
 
-   _________________________________
+---
 
-4. [periódicos / leemos / los / Nosotros / domingos]
+**4.** [periódico / el / leemos / los / Nosotros / domingos]
 
-   私たちは日曜日に新聞を読みます
+私たちは日曜日に新聞を読みます。
 
-   _________________________________
+---
 
-5. [té / Tú / caliente / bebes]
+**5.** [té / Tú / caliente / bebes]
 
-   あなたは熱いお茶を飲みます
+君は熱いお茶を飲みます。
 
-   _________________________________
+---
 
-6. [cartas / Ella / largas / escribe]
+**6.** [cartas / Ella / largas / escribe]
 
-   彼女は長い手紙を書きます
+彼女は長い手紙を書きます。
 
-   _________________________________
+---

@@ -1,22 +1,32 @@
-# ページ 2: 動詞の活用と完成練習
+# 動詞の活用と完成 (Conjugación y completar)
 
-## 直説法現在 - 動詞 VIVIR
+## 現在形 - 動詞 VIVIR (住む)
 
 | yo | vivo | nosotros/nosotras | vivimos |
 |---|---|---|---|
 | tú | vives | vosotros/vosotras | vivís |
 | él/ella/usted | vive | ellos/ellas/ustedes | viven |
 
-**例:** Yo vivo en una casa cerca de la escuela.
+**例文:** Yo vivo en una casa cerca de la escuela.
 
-## 動詞の正しい形で文を完成させなさい:
+## 正しい形で空欄を埋めてください (Completa con la forma correcta):
 
-1. Yo _______ (escribir) postales a mis amigos.
+1. Yo _______________ (escribir) postales a mis amigos.
 
-2. Tú _______ (abrir) la ventana cuando hace calor.
+2. Tú _______________ (abrir) la ventana cuando hace calor.
 
-3. Ella _______ (vivir) en el centro de la ciudad.
+3. Ella _______________ (vivir) en el centro de la ciudad.
 
-4. Nosotros _______ (subir) las escaleras todos los días.
+4. Nosotros _______________ (subir) las escaleras todos los días.
 
-5. Ellos _______ (escribir) sus nombres en la lista.
+5. Ellos _______________ (escribir) sus nombres en la lista.
+
+6. Vosotros _______________ (vivir) cerca del parque.
+
+7. Usted _______________ (abrir) la tienda a las nueve.
+
+8. Mis abuelos _______________ (subir) despacio las escaleras.
+
+9. Tú _______________ (escribir) cartas a tus amigos.
+
+10. Nosotras _______________ (vivir) en el mismo barrio.
