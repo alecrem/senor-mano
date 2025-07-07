@@ -256,10 +256,7 @@ def generate_unit_pdf(unit_number, language="japanese"):
             except Exception as e:
                 print(f"Warning: Could not read metadata from {meta_path}: {e}")
     
-    # Add language indicator to title
-    lang_suffix = {"japanese": "日本語", "english": "English"}
-    if language in lang_suffix:
-        unit_title_for_page += f" ({lang_suffix[language]})"
+    # No need for language indicator in title - families use only one language
     
     # Combine all pages with page breaks
     combined_content = ""
