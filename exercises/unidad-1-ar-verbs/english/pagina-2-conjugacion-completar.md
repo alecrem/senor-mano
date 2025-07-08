@@ -11,12 +11,12 @@
 
 ## Complete the sentences with the correct verb form:
 
-1. Yo _______ (dibujar) un gato en mi cuaderno.
+1. Yo _______________ (dibujar) un gato en mi cuaderno.
 
-2. Tú _______ (buscar) tu mochila en el aula.
+2. Tú _______________ (buscar) tu mochila en el aula.
 
-3. Ella _______ (bailar) muy bien en las fiestas.
+3. Ella _______________ (bailar) muy bien en las fiestas.
 
-4. Nosotros _______ (hablar) japonés en la escuela.
+4. Nosotros _______________ (hablar) japonés en la escuela.
 
-5. Ellos _______ (dibujar) flores en el jardín.
+5. Ellos _______________ (dibujar) flores en el jardín.

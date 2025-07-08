@@ -2,16 +2,16 @@
 
 ## Change the person of the verb as indicated:
 
-1. Yo dibujo → Nosotros _____________
+1. Yo dibujo → Nosotros _____________________
 
-2. Tú hablas → Él _____________
+2. Tú hablas → Él _____________________
 
-3. Ella baila → Ellas _____________
+3. Ella baila → Ellas _____________________
 
-4. Nosotros buscamos → Yo _____________
+4. Nosotros buscamos → Yo _____________________
 
 ## Answer the questions:
 
-5. ¿Tú dibujas animales? → Sí, yo _______ animales.
+5. ¿Tú dibujas animales? → Sí, yo _______________ animales.
 
-6. ¿Ellos buscan trabajo? → Sí, ellos _______ trabajo.
+6. ¿Ellos buscan trabajo? → Sí, ellos _______________ trabajo.

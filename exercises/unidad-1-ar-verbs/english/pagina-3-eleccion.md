@@ -1,4 +1,4 @@
-****# Choice exercises
+# Choice exercises
 
 ## Choose the correct form and write the complete sentence:
 
