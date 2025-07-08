@@ -1,6 +1,6 @@
-# Page 5: Word ordering exercises
+# Word ordering exercises
 
-**Put the words in the correct order to form sentences:**
+## Put the words in the correct order to form sentences:
 
 1. [mucha / Mi / agua / bebe / hermana]
 

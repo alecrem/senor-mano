@@ -1,4 +1,4 @@
-# 会話 (Diálogo)
+# 会話
 
 ## 家で (En casa de María)
 

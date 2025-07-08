@@ -1,15 +1,15 @@
-# Page 2: Conjugation and completion exercises
+# Conjugation and completion
 
-## Present tense - Verb VIVIR
+## Present tense - Verb VIVIR (to live)
 
-| yo | vivo | nosotros/nosotras | vivimos |
-|---|---|---|---|
-| tú | vives | vosotros/vosotras | vivís |
-| él/ella/usted | vive | ellos/ellas/ustedes | viven |
+| yo            | vivo  | nosotros/nosotras   | vivimos |
+| ------------- | ----- | ------------------- | ------- |
+| tú            | vives | vosotros/vosotras   | vivís   |
+| él/ella/usted | vive  | ellos/ellas/ustedes | viven   |
 
-**Example:** Yo vivo en una casa cerca de la escuela.
+**Example (Ejemplo):** Yo vivo en una casa cerca de la escuela.
 
-## Complete the sentences with the correct form of the verb:
+## Complete the sentences with the correct verb form:
 
 1. Yo _______ (escribir) postales a mis amigos.
 

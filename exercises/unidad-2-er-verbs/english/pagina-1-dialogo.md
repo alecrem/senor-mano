@@ -1,6 +1,6 @@
-# Page 1: Dialogue
+# Dialogue
 
-**In the kitchen**
+## In the kitchen (En la cocina)
 
 **Pedro:** ¡Mamá! ¿Qué comes?
 

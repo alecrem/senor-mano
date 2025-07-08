@@ -1,6 +1,6 @@
-# Page 6: Right or wrong
+# Right or wrong (Bien / Mal)
 
-**Read the sentences. If they are correct, write R. If they are incorrect, write W and correct the sentence:**
+## Read the sentences. If correct, write R. If incorrect, write W and correct:
 
 1. Yo comes pan en el desayuno. ___
 

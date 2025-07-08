@@ -1,6 +1,6 @@
-# Page 4: Transformation exercises
+# Transformation exercises
 
-**Change the person of the verb as indicated:**
+## Change the person of the verb as indicated:
 
 1. Yo dibujo → Nosotros _____________
 
@@ -10,9 +10,7 @@
 
 4. Nosotros buscamos → Yo _____________
 
-## Questions and answers
-
-**Answer the questions:**
+## Answer the questions:
 
 5. ¿Tú dibujas animales? → Sí, yo _______ animales.
 

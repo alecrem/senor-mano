@@ -1,15 +1,15 @@
-# Page 2: Conjugation and completion exercises
+# Conjugation and completion (Conjugación y completar)
 
-## Present tense - Verb COMER
+## Present tense - Verb COMER (to eat)
 
-| yo | como | nosotros/nosotras | comemos |
-|---|---|---|---|
-| tú | comes | vosotros/vosotras | coméis |
-| él/ella/usted | come | ellos/ellas/ustedes | comen |
+| yo            | como  | nosotros/nosotras   | comemos |
+| ------------- | ----- | ------------------- | ------- |
+| tú            | comes | vosotros/vosotras   | coméis  |
+| él/ella/usted | come  | ellos/ellas/ustedes | comen   |
 
-**Example:** Yo como frutas y verduras todos los días.
+**Example (Ejemplo):** Yo como frutas y verduras todos los días.
 
-## Complete the sentences with the correct form of the verb:
+## Complete the sentences with the correct verb form:
 
 1. Yo _______ (leer) libros de aventuras.
 

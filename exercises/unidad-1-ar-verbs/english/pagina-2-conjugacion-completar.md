@@ -1,15 +1,15 @@
-# Page 2: Conjugación y completar
+# Conjugation and completion
 
-## Presente de Indicativo - Verbo HABLAR
+## Present tense - Verb HABLAR (to speak / to talk)
 
-| yo | hablo | nosotros/nosotras | hablamos |
-|---|---|---|---|
-| tú | hablas | vosotros/vosotras | habláis |
-| él/ella/usted | habla | ellos/ellas/ustedes | hablan |
+| yo            | hablo  | nosotros/nosotras   | hablamos |
+| ------------- | ------ | ------------------- | -------- |
+| tú            | hablas | vosotros/vosotras   | habláis  |
+| él/ella/usted | habla  | ellos/ellas/ustedes | hablan   |
 
-**Ejemplo:** Yo hablo español en casa con mi familia.
+**Example (Ejemplo):** Yo hablo español en casa con mi familia.
 
-## Completa las frases con la forma correcta del verbo:
+## Complete the sentences with the correct verb form:
 
 1. Yo _______ (dibujar) un gato en mi cuaderno.
 

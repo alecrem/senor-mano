@@ -1,4 +1,4 @@
-# 会話 (Diálogo)
+# 会話
 
 ## キッチンで (En la cocina)
 

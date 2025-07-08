@@ -1,6 +1,6 @@
-# Page 1: Dialogue
+# Dialogue
 
-**In the garden**
+## In the garden (En el jardín)
 
 **Laura:** ¡Qué bonitas flores! ¿Tú las cuidas?
 

@@ -1,4 +1,4 @@
-# 変換練習 (Ejercicios de transformación)
+# 変換練習
 
 ## 指示に従って動詞の人称を変えてください:
 

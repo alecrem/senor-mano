@@ -1,15 +1,15 @@
-# 動詞の活用と完成 (Conjugación y completar)
+# 動詞の活用と完成
 
 ## 現在形 - 動詞 HABLAR (話す)
 
-| yo | hablo | nosotros/nosotras | hablamos |
-|---|---|---|---|
-| tú | hablas | vosotros/vosotras | habláis |
-| él/ella/usted | habla | ellos/ellas/ustedes | hablan |
+| yo            | hablo  | nosotros/nosotras   | hablamos |
+| ------------- | ------ | ------------------- | -------- |
+| tú            | hablas | vosotros/vosotras   | habláis  |
+| él/ella/usted | habla  | ellos/ellas/ustedes | hablan   |
 
 **例文:** Yo hablo español en casa con mi familia.
 
-## 正しい形で空欄を埋めてください (Completa con la forma correcta):
+## 正しい形で空欄を埋めてください:
 
 1. Yo _______________ (dibujar) un gato en mi cuaderno.
 

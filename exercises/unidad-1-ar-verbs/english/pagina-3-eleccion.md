@@ -1,6 +1,6 @@
-# Page 3: Choice exercises
+****# Choice exercises
 
-**Choose the correct form of the verb and write the complete sentence:**
+## Choose the correct form and write the complete sentence:
 
 1. Mi hermana [baila | bailas] flamenco los martes.
 

@@ -1,4 +1,4 @@
-# 会話 (Diálogo)
+# 会話
 
 ## 庭で (En el jardín)
 

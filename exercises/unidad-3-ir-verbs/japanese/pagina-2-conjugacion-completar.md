@@ -1,15 +1,15 @@
-# 動詞の活用と完成 (Conjugación y completar)
+# 動詞の活用と完成
 
 ## 現在形 - 動詞 VIVIR (住む)
 
-| yo | vivo | nosotros/nosotras | vivimos |
-|---|---|---|---|
-| tú | vives | vosotros/vosotras | vivís |
-| él/ella/usted | vive | ellos/ellas/ustedes | viven |
+| yo            | vivo  | nosotros/nosotras   | vivimos |
+| ------------- | ----- | ------------------- | ------- |
+| tú            | vives | vosotros/vosotras   | vivís   |
+| él/ella/usted | vive  | ellos/ellas/ustedes | viven   |
 
 **例文:** Yo vivo en una casa cerca de la escuela.
 
-## 正しい形で空欄を埋めてください (Completa con la forma correcta):
+## 正しい形で空欄を埋めてください:
 
 1. Yo _______________ (escribir) postales a mis amigos.
 
