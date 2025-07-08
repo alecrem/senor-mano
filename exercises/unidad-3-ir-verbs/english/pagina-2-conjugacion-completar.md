@@ -20,3 +20,13 @@
 **4.** Nosotros _______________ (subir) las escaleras todos los días.
 
 **5.** Ellos _______________ (escribir) sus nombres en la lista.
+
+**6.** Vosotros _______________ (vivir) cerca de la playa.
+
+**7.** Usted _______________ (abrir) la tienda por la mañana.
+
+**8.** Mis primos _______________ (subir) la montaña en verano.
+
+**9.** Tú _______________ (escribir) muy bien las cartas.
+
+**10.** Nosotras _______________ (vivir) en el mismo barrio.

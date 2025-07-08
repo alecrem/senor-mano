@@ -20,3 +20,13 @@
 **4.** Nosotros _______________ (hablar) japonés en la escuela.
 
 **5.** Ellos _______________ (dibujar) flores en el jardín.
+
+**6.** Vosotros _______________ (bailar) flamenco los viernes.
+
+**7.** Usted _______________ (buscar) trabajo en la ciudad.
+
+**8.** Mis hermanos _______________ (hablar) con sus amigos.
+
+**9.** Tú _______________ (dibujar) muy bien los animales.
+
+**10.** Nosotras _______________ (buscar) un regalo para mamá.

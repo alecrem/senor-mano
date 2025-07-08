@@ -25,3 +25,11 @@
 **6.** Vosotros habláis muy alto en clase. ___
 
    Correction: _________________________________
+
+**7.** Ellas baila en la discoteca. ___
+
+   Correction: _________________________________
+
+**8.** Tú busca tus llaves en el bolso. ___
+
+   Correction: _________________________________

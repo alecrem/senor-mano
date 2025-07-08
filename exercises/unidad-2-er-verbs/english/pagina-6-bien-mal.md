@@ -25,3 +25,11 @@
 **6.** Vosotros bebéis zumo de naranja. ___
 
    Correction: _________________________________
+
+**7.** Ellas come pescado los viernes. ___
+
+   Correction: _________________________________
+
+**8.** Tú aprende matemáticas rápido. ___
+
+   Correction: _________________________________

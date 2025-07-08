@@ -20,3 +20,13 @@
 **4.** Nosotros _______________ (comer) en el comedor de la escuela.
 
 **5.** Ellos _______________ (leer) el mismo libro para clase.
+
+**6.** Vosotros _______________ (beber) zumo de naranja.
+
+**7.** Usted _______________ (aprender) inglés en la academia.
+
+**8.** Mis hermanas _______________ (comer) frutas cada día.
+
+**9.** Tú _______________ (leer) muy rápido los periódicos.
+
+**10.** Nosotras _______________ (aprender) canciones nuevas.

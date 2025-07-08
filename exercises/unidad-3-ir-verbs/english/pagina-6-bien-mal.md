@@ -25,3 +25,11 @@
 **6.** Vosotros subís la montaña en verano. ___
 
    Correction: _________________________________
+
+**7.** Ellas abren las ventanas. ___
+
+   Correction: _________________________________
+
+**8.** Tú escribes emails importantes. ___
+
+   Correction: _________________________________
