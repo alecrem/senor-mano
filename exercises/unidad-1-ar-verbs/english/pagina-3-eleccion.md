@@ -25,3 +25,11 @@
 **6.** Las niñas [busca | buscan] conchas en la playa.
 
    _________________________________
+
+**7.** Vosotros [dibujáis | dibujan] mapas en geografía.
+
+   _________________________________
+
+**8.** El profesor [habla | hablan] muy claro en clase.
+
+   _________________________________

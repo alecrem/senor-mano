@@ -25,3 +25,11 @@
 **6.** Las hermanas [aprenden | aprendéis] francés en la escuela.
 
    _________________________________
+
+**7.** Vosotros [coméis | comen] tapas en el bar.
+
+   _________________________________
+
+**8.** El médico [bebe | beben] té verde después de comer.
+
+   _________________________________

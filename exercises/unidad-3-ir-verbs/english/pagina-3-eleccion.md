@@ -25,3 +25,11 @@
 **6.** Las niñas [abren | abrís] sus mochilas.
 
    _________________________________
+
+**7.** Vosotros [vivís | viven] en el centro de la ciudad.
+
+   _________________________________
+
+**8.** El escritor [escribo | escribe] libros de aventuras.
+
+   _________________________________
