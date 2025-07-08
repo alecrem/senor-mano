@@ -8,17 +8,44 @@ This repository contains Spanish language exercises for children aged 7-16 who r
 
 ## Content Structure and Standards
 
-### File Organization
-Create separate files for each page using this nomenclature:
+### Multilingual File Organization
+The repository supports multiple languages (Japanese and English) while maintaining a single source of truth for Spanish content. Use this structure:
+
 ```
-unidad-[N]/
-├── pagina-1-dialogo.md
-├── pagina-2-conjugacion-completar.md
-├── pagina-3-eleccion.md
-├── pagina-4-transformacion.md
-├── pagina-5-ordenar.md
-└── pagina-6-bien-mal.md
+exercises/
+├── unidad-1-ar-verbs/
+│   ├── content/
+│   │   ├── dialogues.md
+│   │   ├── conjugations.md
+│   │   ├── choice-exercises.md
+│   │   ├── transformation-exercises.md
+│   │   ├── word-ordering.md
+│   │   └── correct-incorrect.md
+│   ├── japanese/
+│   │   ├── pagina-1-dialogo.md
+│   │   ├── pagina-2-conjugacion-completar.md
+│   │   ├── pagina-3-eleccion.md
+│   │   ├── pagina-4-transformacion.md
+│   │   ├── pagina-5-ordenar.md
+│   │   └── pagina-6-bien-mal.md
+│   └── english/
+│       ├── pagina-1-dialogo.md
+│       ├── pagina-2-conjugacion-completar.md
+│       ├── pagina-3-eleccion.md
+│       ├── pagina-4-transformacion.md
+│       ├── pagina-5-ordenar.md
+│       └── pagina-6-bien-mal.md
+├── unidad-2-er-verbs/
+│   └── (same structure)
+└── unidad-3-ir-verbs/
+    └── (same structure)
 ```
+
+### Content Management
+- **content/**: Contains core Spanish exercises without language-specific headers
+- **japanese/**: Contains complete pages with Japanese headers and instructions
+- **english/**: Contains complete pages with English headers and instructions
+- **Legacy structure**: The original `unidad-[N]/` directories remain for backward compatibility
 
 ### Page Specifications
 
@@ -50,7 +77,7 @@ unidad-[N]/
 **Page 5: Word ordering (pagina-5-ordenar.md)**
 - 6 word ordering exercises
 - Line 1: "[word1 / word2 / word3 / word4 / word5]"
-- Line 2: Japanese translation of the ordered sentence
+- Line 2: Translation of the ordered sentence (Japanese for Japanese version, English for English version)
 - Blank line for handwritten correct sentence
 
 **Page 6: Right/wrong (pagina-6-bien-mal.md)**
@@ -67,7 +94,7 @@ unidad-[N]/
 ## Content Guidelines
 
 1. **Format requirements**: DIN A5 print format, large text, max 12 lines per page, max 10 words per line
-2. **Language**: Headers and instructions in Japanese (difficult for students to understand Spanish instructions)
+2. **Language**: Headers and instructions in target language (Japanese for Japanese-educated students, English for English-educated students)
 3. **Vocabulary**: Age-appropriate for 7-16 years, avoid complex words
 4. **Contexts**: Home, school, family, daily activities
 5. **Irregular verbs**: Avoid irregular verbs similar to study verbs (e.g., avoid "juego", use "jugar"; but "soy" or "haces" are acceptable)
@@ -82,7 +109,15 @@ Reference materials are available in the `./samples/` directory:
 - `cuadernillos-espanol-2.md` (second conjugation -ER)
 - `cuadernillos-espanol-3.md` (third conjugation -IR)
 
-These samples are valid but need adaptation to current specifications (e.g., "bien/mal" instead of "verdadero/falso", Japanese headers, Japanese translations for word ordering exercises).
+These samples are valid but need adaptation to current specifications (e.g., "bien/mal" instead of "verdadero/falso", target language headers, target language translations for word ordering exercises).
+
+## Multilingual Implementation
+
+The new structure separates content concerns:
+- **Core Spanish content**: Maintained in `content/` subdirectories
+- **Language-specific presentation**: Japanese and English versions in respective subdirectories
+- **Consistency**: All Spanish exercises identical across languages, only headers/instructions translated
+- **Scalability**: Easy to add new languages by creating new language subdirectories
 
 ## Markdown Template
 

@@ -198,13 +198,22 @@ def markdown_to_html(markdown_content):
     return html_content
 
 
-def generate_unit_pdf(unit_number):
-    """Generate PDF for a specific unit."""
-    unit_dir = Path(f"unidad-{unit_number}")
+def generate_unit_pdf(unit_number, language="japanese"):
+    """Generate PDF for a specific unit and language."""
+    # Map unit numbers to verb types
+    verb_types = {1: "ar", 2: "er", 3: "ir"}
+    verb_type = verb_types.get(unit_number)
     
+    # Try new multilingual structure first
+    unit_dir = Path(f"exercises/unidad-{unit_number}-{verb_type}-verbs/{language}")
+    
+    # Fallback to legacy structure for backward compatibility
     if not unit_dir.exists():
-        print(f"Error: Unit directory {unit_dir} does not exist")
-        return False
+        print(f"Warning: New structure {unit_dir} not found, falling back to legacy structure")
+        unit_dir = Path(f"unidad-{unit_number}")
+        if not unit_dir.exists():
+            print(f"Error: Neither new nor legacy unit directory exists for unit {unit_number}")
+            return False
     
     # Collect all markdown files for the unit
     pages = []
@@ -227,20 +236,27 @@ def generate_unit_pdf(unit_number):
             print(f"Warning: {page_file} not found")
     
     if not pages:
-        print(f"Error: No pages found for unit {unit_number}")
+        print(f"Error: No pages found for unit {unit_number} in {language}")
         return False
     
-    # Read unit metadata for title insertion
+    # Read unit metadata for title insertion (try both locations)
     metadata_file = unit_dir / "unit.yaml"
+    legacy_metadata = Path(f"unidad-{unit_number}") / "unit.yaml"
+    
     unit_title_for_page = f"Unidad {unit_number}"  # Default fallback
     
-    if metadata_file.exists():
-        try:
-            with open(metadata_file, 'r', encoding='utf-8') as f:
-                metadata = yaml.safe_load(f)
-                unit_title_for_page = metadata.get('title', unit_title_for_page)
-        except Exception as e:
-            print(f"Warning: Could not read metadata for page title: {e}")
+    # Try new structure first, then legacy
+    for meta_path in [metadata_file, legacy_metadata]:
+        if meta_path.exists():
+            try:
+                with open(meta_path, 'r', encoding='utf-8') as f:
+                    metadata = yaml.safe_load(f)
+                    unit_title_for_page = metadata.get('title', unit_title_for_page)
+                    break
+            except Exception as e:
+                print(f"Warning: Could not read metadata from {meta_path}: {e}")
+    
+    # No need for language indicator in title - families use only one language
     
     # Combine all pages with page breaks
     combined_content = ""
@@ -272,8 +288,10 @@ def generate_unit_pdf(unit_number):
     </html>
     """
     
-    # Generate PDF
-    output_file = f"unidad-{unit_number}.pdf"
+    # Generate PDF with language-specific filename
+    lang_code = {"japanese": "ja", "english": "en"}
+    file_suffix = f"-{lang_code.get(language, 'ja')}"
+    output_file = f"unidad-{unit_number}{file_suffix}.pdf"
     
     # Use the same unit title we read earlier for the footer
     unit_title = unit_title_for_page
@@ -293,37 +311,63 @@ def generate_unit_pdf(unit_number):
         return True
         
     except Exception as e:
-        print(f"❌ Error generating PDF for unit {unit_number}: {e}")
+        print(f"❌ Error generating PDF for unit {unit_number} ({language}): {e}")
         return False
 
 
 def main():
     """Main function to generate PDFs."""
-    if len(sys.argv) > 1:
+    # Parse arguments
+    args = sys.argv[1:]
+    unit_number = None
+    language = "japanese"  # Default language
+    
+    # Parse command line arguments
+    i = 0
+    while i < len(args):
+        arg = args[i]
+        
+        if arg in ["japanese", "english"]:
+            language = arg
+        elif arg.isdigit() and int(arg) in [1, 2, 3]:
+            unit_number = int(arg)
+        else:
+            print(f"Error: Unknown argument '{arg}'")
+            print("Usage: python generate_pdf.py [UNIT] [LANGUAGE]")
+            print("  UNIT: 1, 2, or 3 (optional)")
+            print("  LANGUAGE: japanese or english (default: japanese)")
+            print("Examples:")
+            print("  python generate_pdf.py              # Generate all units in Japanese")
+            print("  python generate_pdf.py english      # Generate all units in English")
+            print("  python generate_pdf.py 1 japanese   # Generate unit 1 in Japanese")
+            print("  python generate_pdf.py 2 english    # Generate unit 2 in English")
+            sys.exit(1)
+        i += 1
+    
+    if unit_number is not None:
         # Generate specific unit
-        try:
-            unit_number = int(sys.argv[1])
-            if unit_number not in [1, 2, 3]:
-                print("Error: Unit number must be 1, 2, or 3")
-                sys.exit(1)
-            generate_unit_pdf(unit_number)
-        except ValueError:
-            print("Error: Please provide a valid unit number (1, 2, or 3)")
+        print(f"Generating unit {unit_number} in {language}...")
+        success = generate_unit_pdf(unit_number, language)
+        if success:
+            print(f"\n🎉 Successfully generated unit {unit_number} PDF in {language}")
+        else:
+            print(f"\n❌ Failed to generate unit {unit_number} PDF in {language}")
             sys.exit(1)
     else:
         # Generate all units
-        print("Generating PDFs for all units...")
+        print(f"Generating PDFs for all units in {language}...")
         success_count = 0
         for unit_num in [1, 2, 3]:
-            if generate_unit_pdf(unit_num):
+            if generate_unit_pdf(unit_num, language):
                 success_count += 1
         
-        print(f"\n🎉 Successfully generated {success_count}/3 unit PDFs")
+        print(f"\n🎉 Successfully generated {success_count}/3 unit PDFs in {language}")
         
         if success_count == 3:
-            print("\nAll PDFs are ready for printing in DIN A5 format!")
+            print(f"\nAll {language} PDFs are ready for printing in DIN A5 format!")
         else:
-            print("\nSome PDFs failed to generate. Check the error messages above.")
+            print(f"\nSome {language} PDFs failed to generate. Check the error messages above.")
+            sys.exit(1)
 
 
 if __name__ == "__main__":
