@@ -145,9 +145,9 @@ def create_css_style(unit_title=""):
     
     .answer-line-long {
         border-bottom: 1px solid #333;
-        display: block;
-        width: 100%;
-        margin: 2mm 0;
+        display: inline-block;
+        width: 80mm;
+        margin: 0 1mm;
         min-height: 3mm;
     }
     
@@ -179,15 +179,19 @@ def create_css_style(unit_title=""):
 
 def markdown_to_html(markdown_content):
     """Convert markdown content to HTML."""
-    # First, replace underscore patterns BEFORE markdown processing
-    # to avoid markdown treating them as emphasis
+    # Replace human-readable placeholders with HTML spans
+    # These are the new placeholders that are easy to read and type
+    
+    # Replace text placeholders with temporary tokens
+    markdown_content = markdown_content.replace('[SHORT_LINE]', '{{SHORT_LINE_PLACEHOLDER}}')
+    markdown_content = markdown_content.replace('[LONG_LINE]', '{{LONG_LINE_PLACEHOLDER}}')
+    
+    # Also handle legacy underscore patterns for backwards compatibility
     # IMPORTANT: Process longer patterns first to avoid partial matches
     
     # Long correction lines (page 6) - use 30+ underscores (FIRST!)
-    original_content = markdown_content
     markdown_content = markdown_content.replace('_' * 33, '{{CORRECTION_LINE}}')
     markdown_content = markdown_content.replace('_' * 30, '{{CORRECTION_LINE}}')
-    
     
     # Medium answer lines (pages 2, 4) - use 13-20 underscores  
     markdown_content = markdown_content.replace('_' * 20, '{{LONG_BLANK_LINE}}')
@@ -207,6 +211,10 @@ def markdown_to_html(markdown_content):
     html_content = md.convert(markdown_content)
     
     # Now replace the placeholders with actual HTML
+    html_content = html_content.replace('{{SHORT_LINE_PLACEHOLDER}}', '<span class="answer-line-short"></span>')
+    html_content = html_content.replace('{{LONG_LINE_PLACEHOLDER}}', '<span class="answer-line-long"></span>')
+    
+    # Legacy underscore replacements
     html_content = html_content.replace('{{CORRECTION_LINE}}', '<span class="_correction_line"></span>')
     html_content = html_content.replace('{{LONG_BLANK_LINE}}', '<span class="_long_blank_line"></span>')
     html_content = html_content.replace('{{BLANK_LINE}}', '<span class="_blank_line"></span>')

@@ -11,22 +11,22 @@
 
 ## Complete the sentences with the correct verb form:
 
-**1.** Yo <div class="answer-line-short"></div> (dibujar) un gato en mi cuaderno.
+**1.** Yo [SHORT_LINE] (dibujar) un gato en mi cuaderno.
 
-**2.** Tú <div class="answer-line-short"></div> (buscar) tu mochila en el aula.
+**2.** Tú [SHORT_LINE] (buscar) tu mochila en el aula.
 
-**3.** Ella <div class="answer-line-short"></div> (bailar) muy bien en las fiestas.
+**3.** Ella [SHORT_LINE] (bailar) muy bien en las fiestas.
 
-**4.** Nosotros <div class="answer-line-short"></div> (hablar) japonés en la escuela.
+**4.** Nosotros [SHORT_LINE] (hablar) japonés en la escuela.
 
-**5.** Ellos <div class="answer-line-short"></div> (dibujar) flores en el jardín.
+**5.** Ellos [SHORT_LINE] (dibujar) flores en el jardín.
 
-**6.** Vosotros <div class="answer-line-short"></div> (bailar) flamenco los viernes.
+**6.** Vosotros [SHORT_LINE] (bailar) flamenco los viernes.
 
-**7.** Usted <div class="answer-line-short"></div> (buscar) trabajo en la ciudad.
+**7.** Usted [SHORT_LINE] (buscar) trabajo en la ciudad.
 
-**8.** Mis hermanos <div class="answer-line-short"></div> (hablar) con sus amigos.
+**8.** Mis hermanos [SHORT_LINE] (hablar) con sus amigos.
 
-**9.** Tú <div class="answer-line-short"></div> (dibujar) muy bien los animales.
+**9.** Tú [SHORT_LINE] (dibujar) muy bien los animales.
 
-**10.** Nosotras <div class="answer-line-short"></div> (buscar) un regalo para mamá.
+**10.** Nosotras [SHORT_LINE] (buscar) un regalo para mamá.

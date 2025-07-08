@@ -4,32 +4,32 @@
 
 **1.** Mi hermana [baila | bailas] flamenco los martes.
 
-   <div class="answer-line-long"></div>
+   [LONG_LINE]
 
 **2.** Los estudiantes [buscan | buscáis] información en la biblioteca.
 
-   <div class="answer-line-long"></div>
+   [LONG_LINE]
 
 **3.** Tú [hablas | habla] muy rápido cuando estás nervioso.
 
-   <div class="answer-line-long"></div>
+   [LONG_LINE]
 
 **4.** El artista [dibujo | dibuja] retratos increíbles.
 
-   <div class="answer-line-long"></div>
+   [LONG_LINE]
 
 **5.** Nosotros [bailamos | bailan] salsa en la academia.
 
-   <div class="answer-line-long"></div>
+   [LONG_LINE]
 
 **6.** Las niñas [busca | buscan] conchas en la playa.
 
-   <div class="answer-line-long"></div>
+   [LONG_LINE]
 
 **7.** Vosotros [dibujáis | dibujan] mapas en geografía.
 
-   <div class="answer-line-long"></div>
+   [LONG_LINE]
 
 **8.** El profesor [habla | hablan] muy claro en clase.
 
-   <div class="answer-line-long"></div>
+   [LONG_LINE]

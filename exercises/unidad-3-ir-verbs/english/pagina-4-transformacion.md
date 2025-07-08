@@ -2,30 +2,30 @@
 
 ## Change the person of the verb as indicated:
 
-**1.** Yo vivo → Nosotros <div class="answer-line-short"></div>
+**1.** Yo vivo → Nosotros [SHORT_LINE]
 
-**2.** Tú subes → Él <div class="answer-line-short"></div>
+**2.** Tú subes → Él [SHORT_LINE]
 
-**3.** Ella abre → Ellas <div class="answer-line-short"></div>
+**3.** Ella abre → Ellas [SHORT_LINE]
 
-**4.** Nosotros escribimos → Yo <div class="answer-line-short"></div>
+**4.** Nosotros escribimos → Yo [SHORT_LINE]
 
-**5.** Vosotros vivís → Tú <div class="answer-line-short"></div>
+**5.** Vosotros vivís → Tú [SHORT_LINE]
 
-**6.** Él sube → Nosotros <div class="answer-line-short"></div>
+**6.** Él sube → Nosotros [SHORT_LINE]
 
-**7.** Ellas escriben → Ella <div class="answer-line-short"></div>
+**7.** Ellas escriben → Ella [SHORT_LINE]
 
-**8.** Yo abro → Vosotros <div class="answer-line-short"></div>
+**8.** Yo abro → Vosotros [SHORT_LINE]
 
 ## Answer the questions:
 
-**1.** ¿Tú escribes emails? → Sí, yo <div class="answer-line-short"></div> emails.
+**1.** ¿Tú escribes emails? → Sí, yo [SHORT_LINE] emails.
 
-**2.** ¿Ellos viven aquí? → Sí, ellos <div class="answer-line-short"></div> aquí.
+**2.** ¿Ellos viven aquí? → Sí, ellos [SHORT_LINE] aquí.
 
-**3.** ¿Vosotros subís montañas? → Sí, nosotros <div class="answer-line-short"></div> montañas.
+**3.** ¿Vosotros subís montañas? → Sí, nosotros [SHORT_LINE] montañas.
 
-**4.** ¿Ella abre ventanas? → Sí, ella <div class="answer-line-short"></div> ventanas.
+**4.** ¿Ella abre ventanas? → Sí, ella [SHORT_LINE] ventanas.
 
-**5.** ¿Ustedes escriben cartas? → Sí, nosotros <div class="answer-line-short"></div> cartas.
+**5.** ¿Ustedes escriben cartas? → Sí, nosotros [SHORT_LINE] cartas.

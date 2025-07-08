@@ -2,30 +2,30 @@
 
 ## Change the person of the verb as indicated:
 
-**1.** Yo como → Nosotros <div class="answer-line-short"></div>
+**1.** Yo como → Nosotros [SHORT_LINE]
 
-**2.** Tú lees → Él <div class="answer-line-short"></div>
+**2.** Tú lees → Él [SHORT_LINE]
 
-**3.** Ella aprende → Ellas <div class="answer-line-short"></div>
+**3.** Ella aprende → Ellas [SHORT_LINE]
 
-**4.** Nosotros bebemos → Yo <div class="answer-line-short"></div>
+**4.** Nosotros bebemos → Yo [SHORT_LINE]
 
-**5.** Vosotros coméis → Tú <div class="answer-line-short"></div>
+**5.** Vosotros coméis → Tú [SHORT_LINE]
 
-**6.** Él bebe → Nosotros <div class="answer-line-short"></div>
+**6.** Él bebe → Nosotros [SHORT_LINE]
 
-**7.** Ellas leen → Ella <div class="answer-line-short"></div>
+**7.** Ellas leen → Ella [SHORT_LINE]
 
-**8.** Yo aprendo → Vosotros <div class="answer-line-short"></div>
+**8.** Yo aprendo → Vosotros [SHORT_LINE]
 
 ## Answer the questions:
 
-**1.** ¿Tú lees novelas? → Sí, yo <div class="answer-line-short"></div> novelas.
+**1.** ¿Tú lees novelas? → Sí, yo [SHORT_LINE] novelas.
 
-**2.** ¿Ellos comen pescado? → Sí, ellos <div class="answer-line-short"></div> pescado.
+**2.** ¿Ellos comen pescado? → Sí, ellos [SHORT_LINE] pescado.
 
-**3.** ¿Vosotros bebéis café? → Sí, nosotros <div class="answer-line-short"></div> café.
+**3.** ¿Vosotros bebéis café? → Sí, nosotros [SHORT_LINE] café.
 
-**4.** ¿Ella aprende francés? → Sí, ella <div class="answer-line-short"></div> francés.
+**4.** ¿Ella aprende francés? → Sí, ella [SHORT_LINE] francés.
 
-**5.** ¿Ustedes comen verduras? → Sí, nosotros <div class="answer-line-short"></div> verduras.
+**5.** ¿Ustedes comen verduras? → Sí, nosotros [SHORT_LINE] verduras.

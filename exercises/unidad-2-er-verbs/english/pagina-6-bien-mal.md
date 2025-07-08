@@ -4,32 +4,32 @@
 
 **1.** Yo comes pan en el desayuno. 
 
-   Correction: <div class="answer-line-long"></div>
+   Correction: [LONG_LINE]
 
 **2.** Los gatos beben leche del plato. 
 
-   Correction: <div class="answer-line-long"></div>
+   Correction: [LONG_LINE]
 
 **3.** Tú lee libros en la biblioteca. 
 
-   Correction: <div class="answer-line-long"></div>
+   Correction: [LONG_LINE]
 
 **4.** Nosotros aprendemos español en casa. 
 
-   Correction: <div class="answer-line-long"></div>
+   Correction: [LONG_LINE]
 
 **5.** Mi hermano come verduras en la cena. 
 
-   Correction: <div class="answer-line-long"></div>
+   Correction: [LONG_LINE]
 
 **6.** Vosotros bebéis zumo de naranja. 
 
-   Correction: <div class="answer-line-long"></div>
+   Correction: [LONG_LINE]
 
 **7.** Ellas come pescado los viernes. 
 
-   Correction: <div class="answer-line-long"></div>
+   Correction: [LONG_LINE]
 
 **8.** Tú aprende matemáticas rápido. 
 
-   Correction: <div class="answer-line-long"></div>
+   Correction: [LONG_LINE]

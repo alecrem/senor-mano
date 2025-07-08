@@ -4,32 +4,32 @@
 
 **1.** Yo hablas con mi profesora. 
 
-   Corrección: <div class="answer-line-long"></div>
+   Corrección: [LONG_LINE]
 
 **2.** Los pájaros buscan comida en el parque. 
 
-   Corrección: <div class="answer-line-long"></div>
+   Corrección: [LONG_LINE]
 
 **3.** Tú dibujas mapas en geografía. 
 
-   Corrección: <div class="answer-line-long"></div>
+   Corrección: [LONG_LINE]
 
 **4.** Nosotros baila en el gimnasio. 
 
-   Corrección: <div class="answer-line-long"></div>
+   Corrección: [LONG_LINE]
 
 **5.** Mi gato busca ratones en la casa. 
 
-   Corrección: <div class="answer-line-long"></div>
+   Corrección: [LONG_LINE]
 
 **6.** Vosotros habláis muy alto en clase. 
 
-   Corrección: <div class="answer-line-long"></div>
+   Corrección: [LONG_LINE]
 
 **7.** Ellas baila en la discoteca. 
 
-   Corrección: <div class="answer-line-long"></div>
+   Corrección: [LONG_LINE]
 
 **8.** Tú busca tus llaves en el bolso. 
 
-   Corrección: <div class="answer-line-long"></div>
+   Corrección: [LONG_LINE]
