@@ -2,34 +2,34 @@
 
 ## Read the sentences. If correct, write R. If incorrect, write W and correct:
 
-**1.** Yo vives en una casa azul. ___
+**1.** Yo vives en una casa azul. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>
 
-**2.** Los pájaros suben a los árboles. ___
+**2.** Los pájaros suben a los árboles. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>
 
-**3.** Tú abres la puerta con cuidado. ___
+**3.** Tú abres la puerta con cuidado. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>
 
-**4.** Nosotros escriben cartas a Santa Claus. ___
+**4.** Nosotros escriben cartas a Santa Claus. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>
 
-**5.** Mi gato vive en el jardín. ___
+**5.** Mi gato vive en el jardín. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>
 
-**6.** Vosotros subís la montaña en verano. ___
+**6.** Vosotros subís la montaña en verano. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>
 
-**7.** Ellas abren las ventanas. ___
+**7.** Ellas abren las ventanas. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>
 
-**8.** Tú escribes emails importantes. ___
+**8.** Tú escribes emails importantes. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>

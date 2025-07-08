@@ -2,34 +2,34 @@
 
 ## 文を読んで、正しければB、間違っていればMを書き、間違いを訂正してください:
 
-**1.** Yo comes pan en el desayuno. ___
+**1.** Yo comes pan en el desayuno. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**2.** Los gatos beben leche del plato. ___
+**2.** Los gatos beben leche del plato. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**3.** Tú lee libros en la biblioteca. ___
+**3.** Tú lee libros en la biblioteca. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**4.** Nosotros aprendemos español en casa. ___
+**4.** Nosotros aprendemos español en casa. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**5.** Mi hermano come verduras en la cena. ___
+**5.** Mi hermano come verduras en la cena. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**6.** Vosotros bebéis zumo de naranja. ___
+**6.** Vosotros bebéis zumo de naranja. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**7.** Ellas come chocolate en el recreo. ___
+**7.** Ellas come chocolate en el recreo. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**8.** Tú aprender música en el conservatorio. ___
+**8.** Tú aprender música en el conservatorio. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>

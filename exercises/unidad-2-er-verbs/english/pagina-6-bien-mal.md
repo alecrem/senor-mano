@@ -2,34 +2,34 @@
 
 ## Read the sentences. If correct, write R. If incorrect, write W and correct:
 
-**1.** Yo comes pan en el desayuno. ___
+**1.** Yo comes pan en el desayuno. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>
 
-**2.** Los gatos beben leche del plato. ___
+**2.** Los gatos beben leche del plato. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>
 
-**3.** Tú lee libros en la biblioteca. ___
+**3.** Tú lee libros en la biblioteca. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>
 
-**4.** Nosotros aprendemos español en casa. ___
+**4.** Nosotros aprendemos español en casa. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>
 
-**5.** Mi hermano come verduras en la cena. ___
+**5.** Mi hermano come verduras en la cena. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>
 
-**6.** Vosotros bebéis zumo de naranja. ___
+**6.** Vosotros bebéis zumo de naranja. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>
 
-**7.** Ellas come pescado los viernes. ___
+**7.** Ellas come pescado los viernes. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>
 
-**8.** Tú aprende matemáticas rápido. ___
+**8.** Tú aprende matemáticas rápido. 
 
-   Correction: _________________________________
+   Correction: <div class="answer-line-long"></div>

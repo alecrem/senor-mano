@@ -6,34 +6,34 @@
 
    私の家族はマドリードに住んでいます。
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **2.** [las / abren / Los / niños / cajas]
 
    子供たちは箱を開けます。
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **3.** [cartas / escribe / El / abuelo]
 
    おじいさんは手紙を書きます。
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **4.** [escaleras / subimos / las / Nosotros / despacio]
 
    私たちはゆっくりと階段を上がります。
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **5.** [la / Tú / puerta / abres]
 
    君はドアを開けます。
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **6.** [apartamento / Ella / un / vive / pequeño / en]
 
    彼女は小さなアパートに住んでいます。
 
-   _________________________________
+   <div class="answer-line-long"></div>

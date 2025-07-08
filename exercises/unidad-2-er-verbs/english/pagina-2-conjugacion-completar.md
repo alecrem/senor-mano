@@ -11,22 +11,22 @@
 
 ## Complete the sentences with the correct verb form:
 
-**1.** Yo _______________ (leer) libros de aventuras.
+**1.** Yo <div class="answer-line-short"></div> (leer) libros de aventuras.
 
-**2.** Tú _______________ (aprender) español muy rápido.
+**2.** Tú <div class="answer-line-short"></div> (aprender) español muy rápido.
 
-**3.** Ella _______________ (beber) agua después del deporte.
+**3.** Ella <div class="answer-line-short"></div> (beber) agua después del deporte.
 
-**4.** Nosotros _______________ (comer) en el comedor de la escuela.
+**4.** Nosotros <div class="answer-line-short"></div> (comer) en el comedor de la escuela.
 
-**5.** Ellos _______________ (leer) el mismo libro para clase.
+**5.** Ellos <div class="answer-line-short"></div> (leer) el mismo libro para clase.
 
-**6.** Vosotros _______________ (beber) zumo de naranja.
+**6.** Vosotros <div class="answer-line-short"></div> (beber) zumo de naranja.
 
-**7.** Usted _______________ (aprender) inglés en la academia.
+**7.** Usted <div class="answer-line-short"></div> (aprender) inglés en la academia.
 
-**8.** Mis hermanas _______________ (comer) frutas cada día.
+**8.** Mis hermanas <div class="answer-line-short"></div> (comer) frutas cada día.
 
-**9.** Tú _______________ (leer) muy rápido los periódicos.
+**9.** Tú <div class="answer-line-short"></div> (leer) muy rápido los periódicos.
 
-**10.** Nosotras _______________ (aprender) canciones nuevas.
+**10.** Nosotras <div class="answer-line-short"></div> (aprender) canciones nuevas.

@@ -6,34 +6,34 @@
 
    My family lives in Madrid
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **2.** [las / abren / Los / niños / cajas]
 
    The children open the boxes
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **3.** [cartas / escribe / El / abuelo]
 
    Grandfather writes letters
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **4.** [escaleras / subimos / las / Nosotros / despacio]
 
    We go up the stairs slowly
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **5.** [la / Tú / puerta / abres]
 
    You open the door
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **6.** [apartamento / Ella / un / vive / pequeño / en]
 
    She lives in a small apartment
 
-   _________________________________
+   <div class="answer-line-long"></div>

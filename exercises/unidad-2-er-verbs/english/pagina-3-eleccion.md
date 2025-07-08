@@ -4,32 +4,32 @@
 
 **1.** Mi padre [lee | lees] el periódico cada mañana.
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **2.** Los niños [beben | bebéis] leche en el desayuno.
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **3.** Tú [aprendes | aprende] matemáticas con tu hermana.
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **4.** La profesora [como | come] en la sala de profesores.
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **5.** Nosotros [leemos | leen] cuentos antes de dormir.
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **6.** Las hermanas [aprenden | aprendéis] francés en la escuela.
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **7.** Vosotros [coméis | comen] tapas en el bar.
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **8.** El médico [bebe | beben] té verde después de comer.
 
-   _________________________________
+   <div class="answer-line-long"></div>

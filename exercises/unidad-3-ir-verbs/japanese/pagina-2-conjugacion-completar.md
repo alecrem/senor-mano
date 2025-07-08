@@ -11,22 +11,22 @@
 
 ## 正しい形で空欄を埋めてください:
 
-1. Yo _______________ (escribir) postales a mis amigos.
+1. Yo <div class="answer-line-short"></div> (escribir) postales a mis amigos.
 
-2. Tú _______________ (abrir) la ventana cuando hace calor.
+2. Tú <div class="answer-line-short"></div> (abrir) la ventana cuando hace calor.
 
-3. Ella _______________ (vivir) en el centro de la ciudad.
+3. Ella <div class="answer-line-short"></div> (vivir) en el centro de la ciudad.
 
-4. Nosotros _______________ (subir) las escaleras todos los días.
+4. Nosotros <div class="answer-line-short"></div> (subir) las escaleras todos los días.
 
-5. Ellos _______________ (escribir) sus nombres en la lista.
+5. Ellos <div class="answer-line-short"></div> (escribir) sus nombres en la lista.
 
-6. Vosotros _______________ (vivir) cerca del parque.
+6. Vosotros <div class="answer-line-short"></div> (vivir) cerca del parque.
 
-7. Usted _______________ (abrir) la tienda a las nueve.
+7. Usted <div class="answer-line-short"></div> (abrir) la tienda a las nueve.
 
-8. Mis abuelos _______________ (subir) despacio las escaleras.
+8. Mis abuelos <div class="answer-line-short"></div> (subir) despacio las escaleras.
 
-9. Tú _______________ (escribir) cartas a tus amigos.
+9. Tú <div class="answer-line-short"></div> (escribir) cartas a tus amigos.
 
-10. Nosotras _______________ (vivir) en el mismo barrio.
+10. Nosotras <div class="answer-line-short"></div> (vivir) en el mismo barrio.

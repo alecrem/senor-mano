@@ -6,34 +6,34 @@
 
    My brother dances very well
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **2.** [en / hablan / Los / español / niños / casa]
 
    The children speak Spanish at home
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **3.** [flores / El / dibuja / jardín / del]
 
    He draws flowers from the garden
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **4.** [sus / Nosotros / llaves / buscamos]
 
    We look for our keys
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **5.** [salsa / Tú / los / bailas / sábados]
 
    You dance salsa on Saturdays
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **6.** [francés / Ella / también / habla]
 
    She also speaks French
 
-   _________________________________
+   <div class="answer-line-long"></div>

@@ -2,34 +2,34 @@
 
 ## 文を読んで、正しければB、間違っていればMを書き、間違いを訂正してください:
 
-**1.** Yo vives en una casa azul. ___
+**1.** Yo vives en una casa azul. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**2.** Los pájaros suben a los árboles. ___
+**2.** Los pájaros suben a los árboles. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**3.** Tú abres la puerta con cuidado. ___
+**3.** Tú abres la puerta con cuidado. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**4.** Nosotros escriben cartas a Santa Claus. ___
+**4.** Nosotros escriben cartas a Santa Claus. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**5.** Mi gato vive en el jardín. ___
+**5.** Mi gato vive en el jardín. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**6.** Vosotros subís la montaña en verano. ___
+**6.** Vosotros subís la montaña en verano. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**7.** Ellas vive en apartamentos modernos. ___
+**7.** Ellas vive en apartamentos modernos. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**8.** Tú abrir la puerta con la llave. ___
+**8.** Tú abrir la puerta con la llave. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>

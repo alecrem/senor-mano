@@ -2,30 +2,30 @@
 
 ## 指示に従って動詞の人称を変えてください:
 
-1. Yo vivo → Nosotros _______________
+1. Yo vivo → Nosotros <div class="answer-line-short"></div>
 
-2. Tú subes → Él _______________
+2. Tú subes → Él <div class="answer-line-short"></div>
 
-3. Ella abre → Ellas _______________
+3. Ella abre → Ellas <div class="answer-line-short"></div>
 
-4. Nosotros escribimos → Yo _______________
+4. Nosotros escribimos → Yo <div class="answer-line-short"></div>
 
-5. Vosotros vivís → Tú _______________
+5. Vosotros vivís → Tú <div class="answer-line-short"></div>
 
-6. Él sube → Nosotros _______________
+6. Él sube → Nosotros <div class="answer-line-short"></div>
 
-7. Ellas abren → Ella _______________
+7. Ellas abren → Ella <div class="answer-line-short"></div>
 
-8. Yo escribo → Vosotros _______________
+8. Yo escribo → Vosotros <div class="answer-line-short"></div>
 
 ## 質問に答えてください:
 
-9. ¿Tú escribes emails? → Sí, yo _______________ emails.
+9. ¿Tú escribes emails? → Sí, yo <div class="answer-line-short"></div> emails.
 
-10. ¿Ellos viven aquí? → Sí, ellos _______________ aquí.
+10. ¿Ellos viven aquí? → Sí, ellos <div class="answer-line-short"></div> aquí.
 
-11. ¿Vosotros subís al segundo piso? → Sí, nosotros _______________ al segundo piso.
+11. ¿Vosotros subís al segundo piso? → Sí, nosotros <div class="answer-line-short"></div> al segundo piso.
 
-12. ¿Ella abre la ventana? → Sí, ella _______________ la ventana.
+12. ¿Ella abre la ventana? → Sí, ella <div class="answer-line-short"></div> la ventana.
 
-13. ¿Ustedes escriben cartas? → Sí, nosotros _______________ cartas.
+13. ¿Ustedes escriben cartas? → Sí, nosotros <div class="answer-line-short"></div> cartas.

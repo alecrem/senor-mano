@@ -6,34 +6,34 @@
 
    My sister drinks a lot of water
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **2.** [en / aprenden / Los / inglés / estudiantes / casa]
 
    The students learn English at home
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **3.** [chocolate / come / El / niño]
 
    The boy eats chocolate
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **4.** [periódicos / leemos / los / Nosotros / domingos]
 
    We read newspapers on Sundays
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **5.** [té / Tú / caliente / bebes]
 
    You drink hot tea
 
-   _________________________________
+   <div class="answer-line-long"></div>
 
 **6.** [cartas / Ella / largas / escribe]
 
    She writes long letters
 
-   _________________________________
+   <div class="answer-line-long"></div>

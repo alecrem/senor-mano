@@ -134,6 +134,23 @@ def create_css_style(unit_title=""):
         margin: 0 1mm;
     }
     
+    /* New HTML placeholder styles for answer lines */
+    .answer-line-short {
+        border-bottom: 1px solid #333;
+        display: inline-block;
+        width: 25mm;
+        margin: 0 1mm;
+        min-height: 3mm;
+    }
+    
+    .answer-line-long {
+        border-bottom: 1px solid #333;
+        display: block;
+        width: 100%;
+        margin: 2mm 0;
+        min-height: 3mm;
+    }
+    
     /* Page breaks between exercises */
     .page-break {
         page-break-before: always;

@@ -11,22 +11,22 @@
 
 ## 正しい形で空欄を埋めてください:
 
-1. Yo _______________ (leer) libros de aventuras.
+1. Yo <div class="answer-line-short"></div> (leer) libros de aventuras.
 
-2. Tú _______________ (aprender) español muy rápido.
+2. Tú <div class="answer-line-short"></div> (aprender) español muy rápido.
 
-3. Ella _______________ (beber) agua después del deporte.
+3. Ella <div class="answer-line-short"></div> (beber) agua después del deporte.
 
-4. Nosotros _______________ (comer) en el comedor de la escuela.
+4. Nosotros <div class="answer-line-short"></div> (comer) en el comedor de la escuela.
 
-5. Ellos _______________ (leer) el mismo libro para clase.
+5. Ellos <div class="answer-line-short"></div> (leer) el mismo libro para clase.
 
-6. Vosotros _______________ (comer) paella en el restaurante.
+6. Vosotros <div class="answer-line-short"></div> (comer) paella en el restaurante.
 
-7. Usted _______________ (beber) café todas las mañanas.
+7. Usted <div class="answer-line-short"></div> (beber) café todas las mañanas.
 
-8. Mis padres _______________ (aprender) inglés en la academia.
+8. Mis padres <div class="answer-line-short"></div> (aprender) inglés en la academia.
 
-9. Tú _______________ (comer) verduras en la cena.
+9. Tú <div class="answer-line-short"></div> (comer) verduras en la cena.
 
-10. Nosotras _______________ (leer) revistas en la biblioteca.
+10. Nosotras <div class="answer-line-short"></div> (leer) revistas en la biblioteca.

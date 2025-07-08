@@ -2,34 +2,34 @@
 
 ## 文を読んで、正しければB、間違っていればMを書き、間違いを訂正してください:
 
-**1.** Yo hablas con mi profesora. ___
+**1.** Yo hablas con mi profesora. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**2.** Los pájaros buscan comida en el parque. ___
+**2.** Los pájaros buscan comida en el parque. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**3.** Tú dibujas mapas en geografía. ___
+**3.** Tú dibujas mapas en geografía. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**4.** Nosotros baila en el gimnasio. ___
+**4.** Nosotros baila en el gimnasio. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**5.** Mi gato busca ratones en la casa. ___
+**5.** Mi gato busca ratones en la casa. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**6.** Vosotros habláis muy alto en clase. ___
+**6.** Vosotros habláis muy alto en clase. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**7.** Ellas baila en la discoteca. ___
+**7.** Ellas baila en la discoteca. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
 
-**8.** Tú busca tus llaves en el bolso. ___
+**8.** Tú busca tus llaves en el bolso. 
 
-   Corrección: _________________________________
+   Corrección: <div class="answer-line-long"></div>
