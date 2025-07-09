@@ -361,12 +361,19 @@ def generate_unit_pdf(unit_number, language="japanese"):
     </html>
     """
 
-    # Generate PDF with language-specific filename (output to pdf-output directory)
+    # Generate PDF with language-specific filename (output to multiple directories)
     lang_code = {"japanese": "ja", "english": "en"}
     file_suffix = f"-{lang_code.get(language, 'ja')}"
+    
+    # Output to main pdf-output directory
     output_dir = Path(f"../../pdf-output/{language}")
     output_dir.mkdir(parents=True, exist_ok=True)
     output_file = output_dir / f"unidad-{unit_number}{file_suffix}.pdf"
+    
+    # Also output to website public directory for web serving
+    website_output_dir = Path(f"../../website/public/pdfs/{language}")
+    website_output_dir.mkdir(parents=True, exist_ok=True)
+    website_output_file = website_output_dir / f"unidad-{unit_number}{file_suffix}.pdf"
 
     # Use the same unit title we read earlier for the footer
     unit_title = unit_title_for_page
@@ -376,11 +383,18 @@ def generate_unit_pdf(unit_number, language="japanese"):
         html_doc = HTML(string=full_html)
         css_style = create_css_style(unit_title)
 
+        # Generate PDF to main output directory
         html_doc.write_pdf(
             output_file, stylesheets=[css_style], font_config=font_config
         )
+        
+        # Copy PDF to website public directory
+        html_doc.write_pdf(
+            website_output_file, stylesheets=[css_style], font_config=font_config
+        )
 
         print(f"✅ Generated {output_file}")
+        print(f"✅ Generated {website_output_file}")
         return True
 
     except Exception as e:
