@@ -2,34 +2,34 @@
 
 ## 文を読んで、正しければB、間違っていればMを書き、間違いを訂正してください:
 
-**1.** Yo comes pan en el desayuno. ___
+**1.** Yo comes pan en el desayuno. [ONE_LETTER_LINE]
 
-   Corrección: _________________________________
+   訂正: [LONG_LINE]
 
-**2.** Los gatos beben leche del plato. ___
+**2.** Los gatos beben leche del plato. [ONE_LETTER_LINE]
 
-   Corrección: _________________________________
+   訂正: [LONG_LINE]
 
-**3.** Tú lee libros en la biblioteca. ___
+**3.** Tú lee libros en la biblioteca. [ONE_LETTER_LINE]
 
-   Corrección: _________________________________
+   訂正: [LONG_LINE]
 
-**4.** Nosotros aprendemos español en casa. ___
+**4.** Nosotros aprendemos español en casa. [ONE_LETTER_LINE]
 
-   Corrección: _________________________________
+   訂正: [LONG_LINE]
 
-**5.** Mi hermano come verduras en la cena. ___
+**5.** Mi hermano come verduras en la cena. [ONE_LETTER_LINE]
 
-   Corrección: _________________________________
+   訂正: [LONG_LINE]
 
-**6.** Vosotros bebéis zumo de naranja. ___
+**6.** Vosotros bebéis zumo de naranja. [ONE_LETTER_LINE]
 
-   Corrección: _________________________________
+   訂正: [LONG_LINE]
 
-**7.** Ellas come chocolate en el recreo. ___
+**7.** Ellas come chocolate en el recreo. [ONE_LETTER_LINE]
 
-   Corrección: _________________________________
+   訂正: [LONG_LINE]
 
-**8.** Tú aprender música en el conservatorio. ___
+**8.** Tú aprender música en el conservatorio. [ONE_LETTER_LINE]
 
-   Corrección: _________________________________
+   訂正: [LONG_LINE]

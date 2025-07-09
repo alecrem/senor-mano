@@ -2,30 +2,30 @@
 
 ## Change the person of the verb as indicated:
 
-**1.** Yo como → Nosotros _____________________
+**1.** Yo como → Nosotros [SHORT_LINE]
 
-**2.** Tú lees → Él _____________________
+**2.** Tú lees → Él [SHORT_LINE]
 
-**3.** Ella aprende → Ellas _____________________
+**3.** Ella aprende → Ellas [SHORT_LINE]
 
-**4.** Nosotros bebemos → Yo _____________________
+**4.** Nosotros bebemos → Yo [SHORT_LINE]
 
-**5.** Vosotros coméis → Tú _____________________
+**5.** Vosotros coméis → Tú [SHORT_LINE]
 
-**6.** Él bebe → Nosotros _____________________
+**6.** Él bebe → Nosotros [SHORT_LINE]
 
-**7.** Ellas leen → Ella _____________________
+**7.** Ellas leen → Ella [SHORT_LINE]
 
-**8.** Yo aprendo → Vosotros _____________________
+**8.** Yo aprendo → Vosotros [SHORT_LINE]
 
 ## Answer the questions:
 
-**1.** ¿Tú lees novelas? → Sí, yo _______________ novelas.
+**1.** ¿Tú lees novelas? → Sí, yo [SHORT_LINE] novelas.
 
-**2.** ¿Ellos comen pescado? → Sí, ellos _______________ pescado.
+**2.** ¿Ellos comen pescado? → Sí, ellos [SHORT_LINE] pescado.
 
-**3.** ¿Vosotros bebéis café? → Sí, nosotros _______________ café.
+**3.** ¿Vosotros bebéis café? → Sí, nosotros [SHORT_LINE] café.
 
-**4.** ¿Ella aprende francés? → Sí, ella _______________ francés.
+**4.** ¿Ella aprende francés? → Sí, ella [SHORT_LINE] francés.
 
-**5.** ¿Ustedes comen verduras? → Sí, nosotros _______________ verduras.
+**5.** ¿Ustedes comen verduras? → Sí, nosotros [SHORT_LINE] verduras.

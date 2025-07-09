@@ -4,32 +4,32 @@
 
 **1.** Mi hermano [vive | vives] en el segundo piso.
 
-   _________________________________
+   [LONG_LINE]
 
 **2.** Los estudiantes [suben | subís] al autobús escolar.
 
-   _________________________________
+   [LONG_LINE]
 
 **3.** Tú [abre | abres] los libros en clase.
 
-   _________________________________
+   [LONG_LINE]
 
 **4.** La escritora [escribo | escribe] novelas para niños.
 
-   _________________________________
+   [LONG_LINE]
 
 **5.** Nosotros [vivimos | viven] cerca del parque.
 
-   _________________________________
+   [LONG_LINE]
 
 **6.** Las niñas [abren | abrís] sus mochilas.
 
-   _________________________________
+   [LONG_LINE]
 
 **7.** Vosotros [vivís | viven] en el centro de la ciudad.
 
-   _________________________________
+   [LONG_LINE]
 
 **8.** El escritor [escribo | escribe] libros de aventuras.
 
-   _________________________________
+   [LONG_LINE]

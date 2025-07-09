@@ -2,34 +2,34 @@
 
 ## Read the sentences. If correct, write R. If incorrect, write W and correct it below:
 
-**1.** Yo hablas con mi profesora. ___
+**1.** Yo hablas con mi profesora. [ONE_LETTER_LINE]
 
-   Correction: _________________________________
+   Correction: [LONG_LINE]
 
-**2.** Los pájaros buscan comida en el parque. ___
+**2.** Los pájaros buscan comida en el parque. [ONE_LETTER_LINE]
 
-   Correction: _________________________________
+   Correction: [LONG_LINE]
 
-**3.** Tú dibujas mapas en geografía. ___
+**3.** Tú dibujas mapas en geografía. [ONE_LETTER_LINE]
 
-   Correction: _________________________________
+   Correction: [LONG_LINE]
 
-**4.** Nosotros baila en el gimnasio. ___
+**4.** Nosotros baila en el gimnasio. [ONE_LETTER_LINE]
 
-   Correction: _________________________________
+   Correction: [LONG_LINE]
 
-**5.** Mi gato busca ratones en la casa. ___
+**5.** Mi gato busca ratones en la casa. [ONE_LETTER_LINE]
 
-   Correction: _________________________________
+   Correction: [LONG_LINE]
 
-**6.** Vosotros habláis muy alto en clase. ___
+**6.** Vosotros habláis muy alto en clase. [ONE_LETTER_LINE]
 
-   Correction: _________________________________
+   Correction: [LONG_LINE]
 
-**7.** Ellas baila en la discoteca. ___
+**7.** Ellas baila en la discoteca. [ONE_LETTER_LINE]
 
-   Correction: _________________________________
+   Correction: [LONG_LINE]
 
-**8.** Tú busca tus llaves en el bolso. ___
+**8.** Tú busca tus llaves en el bolso. [ONE_LETTER_LINE]
 
-   Correction: _________________________________
+   Correction: [LONG_LINE]
