@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "build/client",
+  "framework": "remix",
+  "functions": {
+    "app/entry.server.ts": {
+      "runtime": "nodejs18.x"
+    }
+  }
+}

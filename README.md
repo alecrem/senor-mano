@@ -2,6 +2,16 @@
 
 Ejercicios de español para niños que reciben su educación principalmente en japonés o inglés. Niños que van a la escuela en japonés o inglés, pero saben bastante español porque lo escuchan en casa. Niños que saben leer y escribir en japonés o inglés pero en español todavía es un poco difícil para ellos.
 
+## 🌐 Sitio web
+
+**[Acceso directo a los cuadernillos](website/)** - Sitio web en español para facilitar la descarga de PDFs sin necesidad de conocimientos técnicos.
+
+El sitio web incluye:
+- Descripción completa del proyecto en español
+- Descarga directa de todos los PDFs organizados por idioma de instrucciones
+- Interfaz responsive optimizada para móviles y desktop
+- Información detallada sobre cómo usar cada cuadernillo
+
 ## Estructura del proyecto
 
 El proyecto contiene ejercicios de español organizados por unidades de conjugación:
@@ -40,6 +50,17 @@ pdf-output/
     ├── unidad-1-en.pdf
     ├── unidad-2-en.pdf
     └── unidad-3-en.pdf
+
+website/                   # Sitio web Remix.js para acceso fácil
+├── app/                   # Aplicación Remix
+│   ├── components/        # Componentes React
+│   ├── routes/            # Páginas del sitio
+│   └── styles/            # Estilos CSS
+├── public/
+│   └── pdfs/             # PDFs servidos por el sitio web
+│       ├── japanese/
+│       └── english/
+└── package.json
 ```
 
 **Nota**: Los ejercicios de español son idénticos en ambas versiones, solo cambian las instrucciones y encabezados.
