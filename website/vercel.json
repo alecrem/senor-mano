@@ -1,10 +1,10 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "pnpm build",
   "outputDirectory": "build/client",
   "framework": "remix",
   "functions": {
-    "app/entry.server.ts": {
-      "runtime": "nodejs18.x"
+    "app/entry.server.tsx": {
+      "runtime": "nodejs22.x"
     }
   }
 }
