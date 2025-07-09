@@ -35,14 +35,33 @@ const units = [
 export default function Index() {
   return (
     <Layout>
-      <section className="hero">
-        <h1 className="hero-title">
+      <section style={{
+        textAlign: 'center' as const,
+        padding: '4rem 0',
+        backgroundColor: '#fff',
+        borderRadius: '12px',
+        marginBottom: '3rem'
+      }}>
+        <h1 style={{
+          fontSize: '3rem',
+          fontWeight: '800',
+          marginBottom: '1rem',
+          color: '#1a1a1a'
+        }}>
           Cuadernillos de español para niños
         </h1>
-        <p className="hero-subtitle">
+        <p style={{
+          fontSize: '1.25rem',
+          color: '#6b7280',
+          marginBottom: '2rem'
+        }}>
           Ejercicios de conjugación verbal organizados por unidades
         </p>
-        <div className="hero-description">
+        <div style={{
+          maxWidth: '800px',
+          margin: '0 auto',
+          textAlign: 'left' as const
+        }}>
           <p>
             Estos cuadernillos están diseñados específicamente para niños de 7-16 años que reciben 
             su educación principalmente en japonés o inglés, pero que necesitan reforzar sus 
@@ -119,17 +138,49 @@ export default function Index() {
                 }}>
                   <a
                     href={`/pdfs/japanese/unidad-${unit.number}-ja.pdf`}
-                    className="download-btn download-btn-secondary"
                     download
-                    style={{ textAlign: "center" }}
+                    style={{ 
+                      textAlign: "center" as const,
+                      display: 'block',
+                      padding: '0.75rem 1.5rem',
+                      backgroundColor: '#3b82f6',
+                      color: '#fff',
+                      textDecoration: 'none',
+                      borderRadius: '8px',
+                      fontWeight: '600',
+                      fontSize: '0.875rem',
+                      transition: 'all 0.2s ease'
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.backgroundColor = '#2563eb';
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.backgroundColor = '#3b82f6';
+                    }}
                   >
                     📖 Versión en japonés (PDF)
                   </a>
                   <a
                     href={`/pdfs/english/unidad-${unit.number}-en.pdf`}
-                    className="download-btn download-btn-secondary"
                     download
-                    style={{ textAlign: "center" }}
+                    style={{ 
+                      textAlign: "center" as const,
+                      display: 'block',
+                      padding: '0.75rem 1.5rem',
+                      backgroundColor: '#3b82f6',
+                      color: '#fff',
+                      textDecoration: 'none',
+                      borderRadius: '8px',
+                      fontWeight: '600',
+                      fontSize: '0.875rem',
+                      transition: 'all 0.2s ease'
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.backgroundColor = '#2563eb';
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.backgroundColor = '#3b82f6';
+                    }}
                   >
                     📖 Versión en inglés (PDF)
                   </a>

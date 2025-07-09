@@ -3,11 +3,7 @@ import { defineConfig } from "vite";
 import path from "path";
 
 export default defineConfig({
-  plugins: [
-    remix({
-      ignoredRouteFiles: ["**/.*"],
-    })
-  ],
+  plugins: [remix()],
   resolve: {
     alias: {
       "~": path.resolve(__dirname, "./app"),

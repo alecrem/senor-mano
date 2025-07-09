@@ -8,10 +8,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import globalCss from "./styles/global.css?url";
-
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: globalCss },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
@@ -37,8 +34,19 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
-        <Outlet />
+      <body style={{
+        margin: 0,
+        padding: 0,
+        boxSizing: 'border-box',
+        lineHeight: 1.6,
+        WebkitFontSmoothing: 'antialiased',
+        fontFamily: "'Inter', system-ui, sans-serif",
+        backgroundColor: '#fafafa',
+        color: '#1a1a1a'
+      }}>
+        <div style={{ minHeight: '100vh' }}>
+          <Outlet />
+        </div>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
