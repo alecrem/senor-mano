@@ -1,6 +1,7 @@
 {
   "include": [
     "remix.env.d.ts",
+    "app/vite-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ],

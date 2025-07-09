@@ -8,9 +8,10 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import "./styles/global.css";
+import globalCss from "./styles/global.css?url";
 
 export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: globalCss },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
@@ -29,7 +30,10 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Cuadernillos de español para niños que reciben su educación principalmente en japonés o inglés. Ejercicios de conjugación verbal organizados por unidades." />
+        <meta
+          name="description"
+          content="Cuadernillos de español para niños que reciben su educación principalmente en japonés o inglés. Ejercicios de conjugación verbal organizados por unidades."
+        />
         <Meta />
         <Links />
       </head>
