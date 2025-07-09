@@ -273,15 +273,15 @@ def generate_unit_pdf(unit_number, language="japanese"):
     verb_types = {1: "ar", 2: "er", 3: "ir"}
     verb_type = verb_types.get(unit_number)
 
-    # Try new multilingual structure first
-    unit_dir = Path(f"exercises/unidad-{unit_number}-{verb_type}-verbs/{language}")
+    # Try new multilingual structure first (adjust for new directory structure)
+    unit_dir = Path(f"../markdown/unidad-{unit_number}-{verb_type}-verbs/{language}")
 
     # Fallback to legacy structure for backward compatibility
     if not unit_dir.exists():
         print(
             f"Warning: New structure {unit_dir} not found, falling back to legacy structure"
         )
-        unit_dir = Path(f"unidad-{unit_number}")
+        unit_dir = Path(f"../markdown/unidad-{unit_number}")
         if not unit_dir.exists():
             print(
                 f"Error: Neither new nor legacy unit directory exists for unit {unit_number}"
@@ -314,7 +314,7 @@ def generate_unit_pdf(unit_number, language="japanese"):
 
     # Read unit metadata for title insertion (try both locations)
     metadata_file = unit_dir / "unit.yaml"
-    legacy_metadata = Path(f"unidad-{unit_number}") / "unit.yaml"
+    legacy_metadata = Path(f"../markdown/unidad-{unit_number}") / "unit.yaml"
 
     unit_title_for_page = f"Unidad {unit_number}"  # Default fallback
 
@@ -361,10 +361,12 @@ def generate_unit_pdf(unit_number, language="japanese"):
     </html>
     """
 
-    # Generate PDF with language-specific filename
+    # Generate PDF with language-specific filename (output to pdf-output directory)
     lang_code = {"japanese": "ja", "english": "en"}
     file_suffix = f"-{lang_code.get(language, 'ja')}"
-    output_file = f"unidad-{unit_number}{file_suffix}.pdf"
+    output_dir = Path(f"../../pdf-output/{language}")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_file = output_dir / f"unidad-{unit_number}{file_suffix}.pdf"
 
     # Use the same unit title we read earlier for the footer
     unit_title = unit_title_for_page

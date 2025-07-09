@@ -16,15 +16,17 @@ fi
 
 echo "Using $PYTHON_VERSION"
 
-# Create virtual environment if it doesn't exist
-if [ ! -d "venv" ]; then
+# Create virtual environment if it doesn't exist (in project root)
+if [ ! -d "../../venv" ]; then
     echo "Creating virtual environment with $PYTHON_VERSION..."
+    cd ../..
     $PYTHON_VERSION -m venv venv
+    cd ejercicios-src/scripts
 fi
 
 # Activate virtual environment
 echo "Activating virtual environment..."
-source venv/bin/activate
+source ../../venv/bin/activate
 
 # Install Python dependencies
 echo "Installing Python dependencies..."
@@ -36,11 +38,13 @@ chmod +x generate_pdf.py
 echo "✅ Setup complete!"
 echo ""
 echo "Usage:"
-echo "  source venv/bin/activate          # Activate virtual environment"
+echo "  cd ejercicios-src/scripts         # Navigate to scripts directory"
+echo "  source ../../venv/bin/activate    # Activate virtual environment"
 echo "  python generate_pdf.py            # Generate all units"
 echo "  python generate_pdf.py 1          # Generate unit 1 only"
 echo "  python generate_pdf.py 2          # Generate unit 2 only"
 echo "  python generate_pdf.py 3          # Generate unit 3 only"
+echo "  ./generate_pdfs.sh                # Use the wrapper script"
 echo "  deactivate                        # Exit virtual environment"
 echo ""
 echo "To use a different Python version:"

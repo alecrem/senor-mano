@@ -10,20 +10,36 @@ El proyecto contiene ejercicios de español organizados por unidades de conjugac
 - **Unidad 2**: Verbos de segunda conjugación (-ER): comer, leer, aprender, beber
 - **Unidad 3**: Verbos de tercera conjugación (-IR): vivir, escribir, abrir, subir
 
-### Estructura multilingüe
+### Estructura del repositorio
 
-Los ejercicios están disponibles en dos idiomas para las instrucciones:
+El repositorio está organizado de la siguiente manera:
 
 ```
-exercises/
-├── unidad-1-ar-verbs/
-│   ├── content/           # Contenido base en español
-│   ├── japanese/          # Páginas con instrucciones en japonés
-│   └── english/           # Páginas con instrucciones en inglés
-├── unidad-2-er-verbs/
-│   └── (misma estructura)
-└── unidad-3-ir-verbs/
-    └── (misma estructura)
+ejercicios-src/
+├── markdown/              # Archivos fuente de los ejercicios
+│   ├── unidad-1-ar-verbs/
+│   │   ├── content/       # Contenido base en español
+│   │   ├── japanese/      # Páginas con instrucciones en japonés
+│   │   └── english/       # Páginas con instrucciones en inglés
+│   ├── unidad-2-er-verbs/
+│   │   └── (misma estructura)
+│   └── unidad-3-ir-verbs/
+│       └── (misma estructura)
+└── scripts/               # Herramientas de generación de PDF
+    ├── generate_pdf.py
+    ├── generate_pdfs.sh
+    ├── requirements.txt
+    └── setup.sh
+
+pdf-output/
+├── japanese/              # PDFs generados con instrucciones en japonés
+│   ├── unidad-1-ja.pdf
+│   ├── unidad-2-ja.pdf
+│   └── unidad-3-ja.pdf
+└── english/               # PDFs generados con instrucciones en inglés
+    ├── unidad-1-en.pdf
+    ├── unidad-2-en.pdf
+    └── unidad-3-en.pdf
 ```
 
 **Nota**: Los ejercicios de español son idénticos en ambas versiones, solo cambian las instrucciones y encabezados.
@@ -46,11 +62,12 @@ exercises/
 
 2. **Ejecutar el script de configuración**:
    ```bash
+   cd ejercicios-src/scripts
    ./setup.sh
    ```
    
    Este script:
-   - Crea un entorno virtual de Python
+   - Crea un entorno virtual de Python en el directorio raíz del proyecto
    - Instala las dependencias necesarias (weasyprint, markdown, pyyaml)
    - Configura los permisos necesarios
 
@@ -85,8 +102,11 @@ exercises/
 #### Opción 2: Uso manual
 
 ```bash
+# Navegar al directorio de scripts
+cd ejercicios-src/scripts
+
 # Activar el entorno virtual
-source venv/bin/activate
+source ../../venv/bin/activate
 
 # Generar todos los cuadernillos en japonés (por defecto)
 python generate_pdf.py
@@ -111,10 +131,10 @@ deactivate
 
 Los PDFs se generan en formato DIN A5 (148 × 210 mm) optimizado para niños:
 
-- **Ubicación**: Directorio raíz del proyecto
+- **Ubicación**: Directorio `pdf-output/`
 - **Nombres**: 
-  - Japonés: `unidad-1-ja.pdf`, `unidad-2-ja.pdf`, `unidad-3-ja.pdf`
-  - Inglés: `unidad-1-en.pdf`, `unidad-2-en.pdf`, `unidad-3-en.pdf`
+  - Japonés: `pdf-output/japanese/unidad-1-ja.pdf`, `unidad-2-ja.pdf`, `unidad-3-ja.pdf`
+  - Inglés: `pdf-output/english/unidad-1-en.pdf`, `unidad-2-en.pdf`, `unidad-3-en.pdf`
 - **Formato**: A5 con texto grande y espaciado amplio
 - **Contenido**: 6 páginas por unidad (diálogo, conjugación, elección, transformación, ordenar, corrección)
 - **Idiomas**: Los ejercicios en español son idénticos, solo cambian las instrucciones y encabezados
@@ -149,7 +169,7 @@ Los scripts ahora soportan automáticamente ambos idiomas. No es necesario edita
 
 #### Modificar el estilo del PDF
 
-El estilo se puede personalizar editando la función `create_css_style()` en `generate_pdf.py`:
+El estilo se puede personalizar editando la función `create_css_style()` en `ejercicios-src/scripts/generate_pdf.py`:
 
 - **Tamaño de página**: Cambiar `size: A5` por `size: A4` o `size: letter`
 - **Márgenes**: Modificar los valores en `margin: 10mm 8mm 15mm 8mm`
@@ -173,7 +193,8 @@ PYTHON_VERSION=python3.11 ./setup.sh
 
 Reactiva el entorno virtual y reinstala las dependencias:
 ```bash
-source venv/bin/activate
+cd ejercicios-src/scripts
+source ../../venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -189,8 +210,8 @@ brew install --cask font-noto-sans-cjk
 Verifica que los archivos markdown estén en la estructura correcta:
 ```bash
 # Verificar estructura
-ls -la unidad-1/
-ls -la exercises/unidad-1-ar-verbs/japanese/
+ls -la ejercicios-src/markdown/unidad-1-ar-verbs/japanese/
+ls -la ejercicios-src/markdown/unidad-1-ar-verbs/english/
 ```
 
 ### Desarrollo y contribución
