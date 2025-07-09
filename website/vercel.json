@@ -2,6 +2,14 @@
   "buildCommand": "pnpm build",
   "routes": [
     {
+      "src": "/assets/(.*)",
+      "dest": "/build/client/assets/$1"
+    },
+    {
+      "src": "/build/(.*)",
+      "dest": "/build/client/build/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/build/server/index.js"
     }
