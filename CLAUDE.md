@@ -129,3 +129,17 @@ Each file should begin with:
 
 [Page content]
 ```
+
+## PDF Testing Protocol
+
+When modifying markdown content in exercise files, **always test PDF generation for all units** to ensure:
+- All placeholders render correctly
+- Layout remains consistent
+- No formatting issues arise
+
+**Required testing command after markdown changes:**
+```bash
+./generate_pdfs.sh
+```
+
+This generates all units in both Japanese and English to verify the complete system works properly.
