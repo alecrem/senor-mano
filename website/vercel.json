@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "build/index.js": {
+      "runtime": "nodejs22.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/build/index.js"
+    }
+  ]
+}
