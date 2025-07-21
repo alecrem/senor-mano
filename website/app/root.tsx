@@ -29,22 +29,24 @@ export default function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Cuadernillos de español para niños que reciben su educación principalmente en japonés o inglés. Ejercicios de conjugación verbal organizados por unidades."
+          content="Señor Mano - para niños que reciben su educación principalmente en japonés o inglés. Ejercicios de conjugación verbal organizados por unidades."
         />
         <Meta />
         <Links />
       </head>
-      <body style={{
-        margin: 0,
-        padding: 0,
-        boxSizing: 'border-box',
-        lineHeight: 1.6,
-        WebkitFontSmoothing: 'antialiased',
-        fontFamily: "'Inter', system-ui, sans-serif",
-        backgroundColor: '#fafafa',
-        color: '#1a1a1a'
-      }}>
-        <div style={{ minHeight: '100vh' }}>
+      <body
+        style={{
+          margin: 0,
+          padding: 0,
+          boxSizing: "border-box",
+          lineHeight: 1.6,
+          WebkitFontSmoothing: "antialiased",
+          fontFamily: "'Inter', system-ui, sans-serif",
+          backgroundColor: "#aadfeb",
+          color: "#1a1a1a",
+        }}
+      >
+        <div style={{ minHeight: "100vh" }}>
           <Outlet />
         </div>
         <ScrollRestoration />
