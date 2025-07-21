@@ -56,7 +56,7 @@ export default function Index() {
             color: "#1a1a1a",
           }}
         >
-          El señor Mano te enseña castellano
+          El señor Mano
         </h1>
         <p
           style={{
@@ -65,7 +65,7 @@ export default function Index() {
             marginBottom: "2rem",
           }}
         >
-          Ejercicios de conjugación verbal organizados por unidades
+          Te enseña castellano
         </p>
         <div
           style={{

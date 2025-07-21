@@ -9,8 +9,7 @@ export default function Layout({ children }: LayoutProps) {
     <>
       <header
         style={{
-          backgroundColor: "#ffcc7b",
-          borderBottom: "1px solid #e5e5e5",
+          backgroundColor: "transparent",
           padding: "1rem 0",
         }}
       >
