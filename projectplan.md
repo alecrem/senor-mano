@@ -1,91 +1,89 @@
-# Project Plan: Website Branding (Issue #11)
+# Project Plan: Implement Dual Licensing System (Issue #13)
 
 ## Overview
-Update the website with proper branding to establish a cohesive visual identity for "Señor Mano".
+Implement a dual licensing approach for the ejercicios-espanol repository to properly distinguish between software components (MIT License) and educational content (CC BY-SA 4.0 License).
 
-## Completed Tasks
+## Problem Analysis
+Currently, the repository lacks proper licensing, making it unclear what permissions users and contributors have. The repository contains both technical software components and educational materials that serve different purposes and should have different licensing approaches.
 
-### ✅ Favicon and Logo Implementation
-- [x] Created favicon.ico from logo artwork (multi-size: 16x16, 32x32, 48x48)
-- [x] Generated logo-200.png (200x200px version)
-- [x] Added logo to header navigation (40x40px display size)
-- [x] Proper alt text and accessibility
+## Solution Design
 
-### ✅ Rebranding Implementation
-- [x] Updated header title: "Cuadernillos de español" → "Señor Mano"
-- [x] Updated page title and main heading: "Cuadernillos de español para niños" → "Señor Mano te enseña castellano"
-- [x] Updated footer text: "Cuadernillos de español para niños" → "Señor Mano te enseña castellano"
-- [x] Updated meta descriptions in root.tsx and _index.tsx
-- [x] All brand references consistently updated
+### Licensing Structure
+- **MIT License**: For all software components (allows free commercial and non-commercial use)
+- **CC BY-SA 4.0 License**: For educational content and illustrations (ensures content improvements are shared back)
 
-### ✅ Color Scheme Implementation
-- [x] Primary buttons: Custom green (#6AAD2F) with darker hover (#5A9426)
-- [x] Info box: Warm orange-yellow theme (#FDF2E0 background, #F5BF66 border, #B8842B text)
-- [x] Footer: Green background (#6AAD2F) with white text
-- [x] Body background: Light blue (#AADFEB) 
-- [x] Section backgrounds: Light blue (#F0F8FF)
-- [x] Section headers: Dark green (#5A9426)
+### File Classification
 
-### ✅ UX Improvements
-- [x] Added consistent padding to hero and instructions sections (2rem horizontal)
-- [x] Improved mobile responsiveness for card-like containers
+#### Software Components (MIT License):
+- PDF generation scripts (`ejercicios-src/scripts/`)
+- Website code (`website/` directory)
+- Build configuration files (`package.json`, `tsconfig.json`, `vite.config.ts`, etc.)
+- Setup and deployment scripts (`generate_pdfs.sh`, `setup.sh`)
+- Technical documentation (`PDF_GENERATION.md`)
 
-## Current Status
-All primary requirements completed. Branch `feature/issue-11/website-branding` ready for commit.
+#### Educational Content (CC BY-SA 4.0):
+- All exercise content in `ejercicios-src/markdown/`
+- Educational methodology in `CLAUDE.md`
+- Sample materials and illustrations
+- Generated PDF files (derivative works of educational content)
 
-## Header Background Color Options
+## Implementation Tasks
 
-### Current Implementation
-- Header background: Bright orange (#FFCC7B)
-- Original concern: Warning color background (info box) too close to white hero section created visual collision
-- Current solution: Bright orange header provides separation and looks good
-- Opportunity: Explore alternative header background options while maintaining visual separation
+### Phase 1: License Files and Documentation
+- [ ] Create MIT LICENSE file
+- [ ] Create LICENSE-CC-BY-SA-4.0 file  
+- [ ] Update README.md with dual licensing section
+- [ ] Add license headers to key software files
 
-### Alternative Options
+### Phase 2: Website Updates
+- [ ] Update website footer to include CC BY-SA 4.0 reference for educational materials
+- [ ] Add repository link to website footer
+- [ ] Ensure footer maintains clean, professional appearance
 
-#### Option 1: Transparent/Minimal Header
-```css
-backgroundColor: "transparent" // or match body background
-borderBottom: "2px solid #6AAD2F" // stronger green border instead
-```
+### Phase 3: Documentation and Clarity
+- [ ] Create clear guidelines about which license applies to which parts
+- [ ] Update contributing guidelines if they exist
+- [ ] Test all changes to ensure website functionality
 
-#### Option 2: Subtle Light Blue Header
-```css
-backgroundColor: "#E8F4F8" // lighter version of body blue
-```
+## Technical Considerations
 
-#### Option 3: Very Light Green
-```css
-backgroundColor: "#F0F9F4" // very light version of primary green
-```
+### Website Footer Updates
+The footer in `website/app/components/Layout.tsx` (lines 56-78) currently contains:
+- Branding: "Señor Mano"
+- Format info: "Formato DIN A5 optimizado para impresión"
+- Language availability note
 
-#### Option 4: Hero Section Adjustment
-Keep orange header but change hero:
-```css
-// Hero section
-backgroundColor: "#FAFCFF" // very light blue instead of white
-border: "1px solid #E8F4F8" // subtle border
-```
+New footer will add:
+- CC BY-SA 4.0 license reference for educational materials
+- Repository link for transparency
+- Maintain existing green styling (#6aad2f)
 
-#### Option 5: Increased Separation
-Keep both colors but add more visual breathing room:
-```css
-// Header
-padding: "1.5rem 0" // more padding
-borderBottom: "3px solid rgba(106, 173, 47, 0.2)" // subtle green accent
+### File Structure Impact
+No changes to existing file structure needed. License files will be added to repository root:
+- `LICENSE` (MIT License for software)
+- `LICENSE-CC-BY-SA-4.0` (Creative Commons for content)
 
-// Hero section  
-marginTop: "2rem" // more space from header
-```
+## Success Criteria
+1. Clear licensing for all repository components
+2. Proper legal attribution in footer
+3. Repository link accessible from website
+4. Documentation reflects dual licensing approach
+5. No breaking changes to existing functionality
 
-## Recommendations
-- **Primary recommendation:** Option 1 (transparent header with green border) or Option 3 (light green header)
-- Both maintain brand cohesion while eliminating orange-white visual clash
-- Preserve the warm, welcoming feel while improving visual hierarchy
+## Timeline
+Estimated completion: 2-3 hours
+- Phase 1: 1-1.5 hours
+- Phase 2: 30-45 minutes  
+- Phase 3: 30-45 minutes
 
-## Next Steps
-1. Choose header background approach
-2. Implement selected option if needed
-3. Commit changes to feature branch
-4. Create pull request
-5. Link PR to issue #11
+## Risk Assessment
+- **Low Risk**: Changes are primarily additive
+- **No Impact**: Existing functionality remains unchanged
+- **Legal Clarity**: Proper licensing reduces legal ambiguity
+
+## Post-Implementation
+After completion, users will have:
+- Clear understanding of what they can do with the software vs. content
+- Proper attribution requirements for educational materials
+- Access to repository source from the website
+- Professional, legally compliant project presentation

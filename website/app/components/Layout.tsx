@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2025 alecrem
+ * Licensed under the MIT License. See LICENSE file for details.
+ */
+
 import { Link } from "@remix-run/react";
 
 interface LayoutProps {
@@ -73,6 +78,26 @@ export default function Layout({ children }: LayoutProps) {
           <p style={{ marginTop: "0.5rem", fontSize: "0.875rem" }}>
             Los ejercicios están disponibles con instrucciones en japonés e
             inglés
+          </p>
+          <p style={{ marginTop: "1rem", fontSize: "0.75rem" }}>
+            Contenido educativo bajo licencia{" "}
+            <a
+              href="https://creativecommons.org/licenses/by-sa/4.0/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#ffffff", textDecoration: "underline" }}
+            >
+              CC BY-SA 4.0
+            </a>
+            {" · "}
+            <a
+              href="https://github.com/alecrem/ejercicios-espanol"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#ffffff", textDecoration: "underline" }}
+            >
+              Código fuente
+            </a>
           </p>
         </div>
       </footer>

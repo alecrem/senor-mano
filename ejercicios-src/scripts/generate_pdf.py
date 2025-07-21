@@ -2,6 +2,9 @@
 """
 Generate PDF files from Spanish exercise markdown files.
 Optimized for DIN A5 format with large text for children.
+
+Copyright (c) 2025 alecrem
+Licensed under the MIT License. See LICENSE file for details.
 """
 
 import os

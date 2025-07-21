@@ -250,3 +250,27 @@ Para reportar problemas o solicitar nuevas funcionalidades:
 - Crea un issue en el repositorio de GitHub
 - Incluye información sobre tu sistema operativo y versión de Python
 - Proporciona el mensaje de error completo si es aplicable
+
+## Licencias
+
+Este proyecto utiliza un sistema de doble licencia:
+
+### Software (MIT License)
+Los componentes de software (generador de PDFs, sitio web, scripts de construcción) están licenciados bajo la **MIT License**. Esto incluye:
+- Scripts de generación de PDF (`ejercicios-src/scripts/`)
+- Código del sitio web (`website/`)
+- Archivos de configuración (`package.json`, `tsconfig.json`, etc.)
+- Scripts de configuración y despliegue
+
+Ver [LICENSE](LICENSE) para más detalles.
+
+### Contenido educativo (CC BY-SA 4.0)
+Los materiales educativos están licenciados bajo **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**. Esto incluye:
+- Todos los ejercicios de español (`ejercicios-src/markdown/`)
+- Ilustraciones y materiales visuales
+- PDFs generados (obras derivadas del contenido educativo)
+- Documentación de metodología educativa
+
+Ver [LICENSE-CC-BY-SA-4.0](LICENSE-CC-BY-SA-4.0) para más detalles.
+
+Esta estructura permite el uso libre del software técnico mientras garantiza que las mejoras al contenido educativo se compartan con la comunidad.
