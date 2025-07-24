@@ -6,10 +6,11 @@
 import { Link } from "@remix-run/react";
 
 interface LayoutProps {
+  copyrightYear: string;
   children: React.ReactNode;
 }
 
-export default function Layout({ children }: LayoutProps) {
+export default function Layout({ copyrightYear, children }: LayoutProps) {
   return (
     <>
       <header
@@ -29,12 +30,12 @@ export default function Layout({ children }: LayoutProps) {
             <img
               src="/logo-200.png"
               alt="Señor Mano Logo"
-              style={{ width: "40px", height: "40px" }}
+              style={{ width: "80px", height: "80px" }}
             />
             <Link
               to="/"
               style={{
-                fontSize: "1.25rem",
+                fontSize: "2rem",
                 fontWeight: "700",
                 color: "#1a1a1a",
                 textDecoration: "none",
@@ -74,12 +75,9 @@ export default function Layout({ children }: LayoutProps) {
             padding: "0 1rem",
           }}
         >
-          <p>Señor Mano · Formato DIN A5 optimizado para impresión</p>
-          <p style={{ marginTop: "0.5rem", fontSize: "0.875rem" }}>
-            Los ejercicios están disponibles con instrucciones en japonés e
-            inglés
-          </p>
           <p style={{ marginTop: "1rem", fontSize: "0.75rem" }}>
+            © {copyrightYear} Señor Mano
+            {" · "}
             Contenido educativo bajo licencia{" "}
             <a
               href="https://creativecommons.org/licenses/by-sa/4.0/"

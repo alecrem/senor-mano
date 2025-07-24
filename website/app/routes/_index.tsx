@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { useLoaderData } from "@remix-run/react";
 import Layout from "~/components/Layout";
 
 export const meta: MetaFunction = () => {
@@ -36,9 +37,23 @@ const units = [
   },
 ];
 
+export async function loader() {
+  const startYear = 2025;
+  const currentYear = new Date().getFullYear();
+  const copyrightYear =
+    currentYear === startYear
+      ? `${startYear}`
+      : `${startYear} - ${currentYear}`;
+  return {
+    copyrightYear,
+  };
+}
+
 export default function Index() {
+  const { copyrightYear } = useLoaderData<typeof loader>();
+
   return (
-    <Layout>
+    <Layout copyrightYear={copyrightYear}>
       <section
         style={{
           textAlign: "center" as const,
