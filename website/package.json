@@ -13,6 +13,8 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@fontsource/delius": "^5.2.6",
+    "@fontsource/lato": "^5.2.6",
     "@remix-run/node": "^2.8.1",
     "@remix-run/react": "^2.8.1",
     "@remix-run/serve": "^2.8.1",

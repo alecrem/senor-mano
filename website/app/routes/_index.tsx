@@ -69,6 +69,7 @@ export default function Index() {
             fontWeight: "800",
             marginBottom: "1rem",
             color: "#1a1a1a",
+            fontFamily: "'Delius', system-ui, sans-serif",
           }}
         >
           Señor Mano te enseña castellano
@@ -129,6 +130,7 @@ export default function Index() {
             textAlign: "center",
             marginBottom: "2rem",
             color: "#1a1a1a",
+            fontFamily: "'Delius', system-ui, sans-serif",
           }}
         >
           Descargar cuadernillos
@@ -166,6 +168,7 @@ export default function Index() {
                       fontSize: "1.5rem",
                       fontWeight: "700",
                       marginBottom: "0.5rem",
+                      fontFamily: "'Delius', system-ui, sans-serif",
                     }}
                   >
                     Unidad {unit.number}: {unit.title}

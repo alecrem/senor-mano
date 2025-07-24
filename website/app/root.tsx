@@ -7,19 +7,10 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import "@fontsource/delius";
+import "@fontsource/lato";
 
-export const links: LinksFunction = () => [
-  { rel: "preconnect", href: "https://fonts.googleapis.com" },
-  {
-    rel: "preconnect",
-    href: "https://fonts.gstatic.com",
-    crossOrigin: "anonymous",
-  },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap",
-  },
-];
+export const links: LinksFunction = () => [];
 
 export default function App() {
   return (
@@ -41,7 +32,7 @@ export default function App() {
           boxSizing: "border-box",
           lineHeight: 1.6,
           WebkitFontSmoothing: "antialiased",
-          fontFamily: "'Inter', system-ui, sans-serif",
+          fontFamily: "'Lato', system-ui, -apple-system, sans-serif",
           backgroundColor: "#aadfeb",
           color: "#1a1a1a",
         }}
