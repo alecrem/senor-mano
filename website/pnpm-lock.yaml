@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource/delius':
+    specifier: ^5.2.6
+    version: 5.2.6
+  '@fontsource/lato':
+    specifier: ^5.2.6
+    version: 5.2.6
   '@remix-run/node':
     specifier: ^2.8.1
     version: 2.16.8(typescript@5.8.3)
@@ -841,6 +847,14 @@ packages:
     resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@fontsource/delius@5.2.6:
+    resolution: {integrity: sha512-EDiWqw+TsoT3PESH4aWEqu3FB72tsgyqAlULwNmSBZ72rnW/F2HU9RubLE4zoTClvfUOiduGDsjenV0T4iAQFA==}
+    dev: false
+
+  /@fontsource/lato@5.2.6:
+    resolution: {integrity: sha512-ykbyuHKHdFsV8QNWPgo2kkCV0veY8/w1HzPlTd7f08LRGGYijPoN7QHkVKPq5QLpgeNauPPe+0a6oRhd8b6MpQ==}
+    dev: false
 
   /@humanwhocodes/config-array@0.13.0:
     resolution: {integrity: sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==}

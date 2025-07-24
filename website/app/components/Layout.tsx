@@ -39,6 +39,7 @@ export default function Layout({ copyrightYear, children }: LayoutProps) {
                 fontWeight: "700",
                 color: "#1a1a1a",
                 textDecoration: "none",
+                fontFamily: "'Delius', system-ui, sans-serif",
               }}
             >
               Señor Mano
