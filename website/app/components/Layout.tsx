@@ -75,7 +75,7 @@ export default function Layout({ copyrightYear, children }: LayoutProps) {
             padding: "0 1rem",
           }}
         >
-          <p style={{ marginTop: "1rem", fontSize: "0.75rem" }}>
+          <p>
             © {copyrightYear} Señor Mano
             {" · "}
             Contenido educativo bajo licencia{" "}
