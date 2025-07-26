@@ -11,7 +11,7 @@ Sitio web en Remix.js para facilitar el acceso y descarga de los cuadernillos de
 
 ## Estructura
 
-- **Página principal** (`/`) - Información del proyecto y tarjetas de unidades con descarga directa
+- **Página principal** (`/`) - Información del proyecto y tarjetas de cuadernillos con descarga directa
 - **Página de descargas** (`/descargas`) - Vista completa de todos los PDFs disponibles
 
 ## Desarrollo
@@ -73,7 +73,7 @@ website/
 ├── app/
 │   ├── components/
 │   │   ├── Layout.tsx          # Layout principal con header/footer
-│   │   └── UnitCard.tsx        # Tarjeta de unidad con botones de descarga
+│   │   └── CuadernilloCard.tsx # Tarjeta de cuadernillo con botones de descarga
 │   ├── routes/
 │   │   ├── _index.tsx          # Página principal
 │   │   └── descargas.tsx       # Página de descargas

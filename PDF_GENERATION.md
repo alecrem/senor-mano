@@ -1,4 +1,4 @@
-# PDF Generation for Spanish Exercise Units
+# PDF Generation for Spanish Exercise Cuadernillos
 
 The PDF generation tools are located in `ejercicios-src/scripts/` and convert the markdown exercise files into PDF format optimized for DIN A5 printing.
 
@@ -6,18 +6,18 @@ The PDF generation tools are located in `ejercicios-src/scripts/` and convert th
 
 ### Option 1: Automated Setup and Generation (using root wrapper)
 ```bash
-# Generate all units for both languages (runs setup automatically)
+# Generate all cuadernillos for both languages (runs setup automatically)
 ./generate_pdfs.sh
 
-# Generate specific unit for both languages
-./generate_pdfs.sh 1    # Unit 1 only
-./generate_pdfs.sh 2    # Unit 2 only
-./generate_pdfs.sh 3    # Unit 3 only
+# Generate specific cuadernillo for both languages
+./generate_pdfs.sh 1    # Cuadernillo 1 only
+./generate_pdfs.sh 2    # Cuadernillo 2 only
+./generate_pdfs.sh 3    # Cuadernillo 3 only
 
 # Generate for specific language
-./generate_pdfs.sh -l japanese    # All units in Japanese
-./generate_pdfs.sh -l english     # All units in English
-./generate_pdfs.sh 1 -l english   # Unit 1 in English only
+./generate_pdfs.sh -l japanese    # All cuadernillos in Japanese
+./generate_pdfs.sh -l english     # All cuadernillos in English
+./generate_pdfs.sh 1 -l english   # Cuadernillo 1 in English only
 ```
 
 ### Option 2: Direct Script Usage
@@ -33,10 +33,10 @@ PYTHON_VERSION=python3.11 ./setup.sh
 
 # Then generate PDFs
 source ../../venv/bin/activate
-python generate_pdf.py        # All units in Japanese (default)
-python generate_pdf.py english # All units in English
-python generate_pdf.py 1      # Unit 1 in Japanese only
-python generate_pdf.py 1 english # Unit 1 in English only
+python generate_pdf.py        # All cuadernillos in Japanese (default)
+python generate_pdf.py english # All cuadernillos in English
+python generate_pdf.py 1      # Cuadernillo 1 in Japanese only
+python generate_pdf.py 1 english # Cuadernillo 1 in English only
 deactivate
 ```
 
@@ -56,14 +56,14 @@ deactivate
 The scripts will generate PDFs in organized directories:
 
 ### Japanese versions (default):
-- `pdf-output/japanese/unidad-1-ja.pdf` - First conjugation (-AR verbs)
-- `pdf-output/japanese/unidad-2-ja.pdf` - Second conjugation (-ER verbs)  
-- `pdf-output/japanese/unidad-3-ja.pdf` - Third conjugation (-IR verbs)
+- `website/public/pdfs/japanese/cuadernillo-1-ja.pdf` - First conjugation (-AR verbs)
+- `website/public/pdfs/japanese/cuadernillo-2-ja.pdf` - Second conjugation (-ER verbs)  
+- `website/public/pdfs/japanese/cuadernillo-3-ja.pdf` - Third conjugation (-IR verbs)
 
 ### English versions:
-- `pdf-output/english/unidad-1-en.pdf` - First conjugation (-AR verbs)
-- `pdf-output/english/unidad-2-en.pdf` - Second conjugation (-ER verbs)
-- `pdf-output/english/unidad-3-en.pdf` - Third conjugation (-IR verbs)
+- `website/public/pdfs/english/cuadernillo-1-en.pdf` - First conjugation (-AR verbs)
+- `website/public/pdfs/english/cuadernillo-2-en.pdf` - Second conjugation (-ER verbs)
+- `website/public/pdfs/english/cuadernillo-3-en.pdf` - Third conjugation (-IR verbs)
 
 ## Features
 
@@ -95,8 +95,8 @@ If you encounter issues:
 
 3. **PDF generation errors**: Check that all markdown files exist in the exercise directories:
    ```bash
-   ls -la ejercicios-src/markdown/unidad-1-ar-verbs/japanese/
-   ls -la ejercicios-src/markdown/unidad-1-ar-verbs/english/
+   ls -la ejercicios-src/markdown/cuadernillo-1-ar-verbs/japanese/
+   ls -la ejercicios-src/markdown/cuadernillo-1-ar-verbs/english/
    ```
 
 ## Customization

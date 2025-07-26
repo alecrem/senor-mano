@@ -13,7 +13,7 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-const units = [
+const cuadernillos = [
   {
     number: 1,
     title: "primera conjugación (-AR)",
@@ -142,7 +142,7 @@ export default function Index() {
             gap: "2rem",
           }}
         >
-          {units.map((unit) => (
+          {cuadernillos.map((unit) => (
             <div
               key={unit.number}
               style={{
@@ -171,7 +171,7 @@ export default function Index() {
                       fontFamily: "'Delius', system-ui, sans-serif",
                     }}
                   >
-                    Unidad {unit.number}: {unit.title}
+                    Cuadernillo {unit.number}: {unit.title}
                   </h3>
                   <p
                     style={{
@@ -201,7 +201,7 @@ export default function Index() {
                   }}
                 >
                   <a
-                    href={`/pdfs/japanese/unidad-${unit.number}-ja.pdf`}
+                    href={`/pdfs/japanese/cuadernillo-${unit.number}-ja.pdf`}
                     download
                     style={{
                       textAlign: "center" as const,
@@ -225,7 +225,7 @@ export default function Index() {
                     📖 Versión en japonés (PDF)
                   </a>
                   <a
-                    href={`/pdfs/english/unidad-${unit.number}-en.pdf`}
+                    href={`/pdfs/english/cuadernillo-${unit.number}-en.pdf`}
                     download
                     style={{
                       textAlign: "center" as const,

@@ -36,7 +36,7 @@ if [[ "$HELP" == true ]]; then
     echo "Generate PDF files from Spanish exercise markdown files."
     echo ""
     echo "Arguments:"
-    echo "  UNIT              Unit number (1, 2, or 3). If not specified, generates all units."
+    echo "  CUADERNILLO       Cuadernillo number (1, 2, or 3). If not specified, generates all cuadernillos."
     echo ""
     echo "Options:"
     echo "  -l, --language    Language for instructions (japanese, english, or both)"
@@ -44,15 +44,15 @@ if [[ "$HELP" == true ]]; then
     echo "  -h, --help        Show this help message"
     echo ""
     echo "Examples:"
-    echo "  $0                       # Generate all units for both languages"
-    echo "  $0 1                     # Generate unit 1 for both languages"
-    echo "  $0 2 -l japanese         # Generate unit 2 with Japanese instructions only"
-    echo "  $0 3 -l english          # Generate unit 3 with English instructions only"
-    echo "  $0 -l both               # Generate all units for both languages"
+    echo "  $0                       # Generate all cuadernillos for both languages"
+    echo "  $0 1                     # Generate cuadernillo 1 for both languages"
+    echo "  $0 2 -l japanese         # Generate cuadernillo 2 with Japanese instructions only"
+    echo "  $0 3 -l english          # Generate cuadernillo 3 with English instructions only"
+    echo "  $0 -l both               # Generate all cuadernillos for both languages"
     echo ""
     echo "Output files:"
-    echo "  Japanese: unidad-1-ja.pdf, unidad-2-ja.pdf, unidad-3-ja.pdf"
-    echo "  English:  unidad-1-en.pdf, unidad-2-en.pdf, unidad-3-en.pdf"
+    echo "  Japanese: cuadernillo-1-ja.pdf, cuadernillo-2-ja.pdf, cuadernillo-3-ja.pdf"
+    echo "  English:  cuadernillo-1-en.pdf, cuadernillo-2-en.pdf, cuadernillo-3-en.pdf"
     exit 0
 fi
 
@@ -82,9 +82,9 @@ echo "🚀 Starting PDF generation..."
 echo "Language(s): $LANGUAGE"
 
 if [[ -n "$UNIT" ]]; then
-    echo "Unit: $UNIT"
+    echo "Cuadernillo: $UNIT"
 else
-    echo "Units: All (1, 2, 3)"
+    echo "Cuadernillos: All (1, 2, 3)"
 fi
 
 echo ""

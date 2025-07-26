@@ -1,31 +1,31 @@
-interface UnitCardProps {
+interface CuadernilloCardProps {
   number: number;
   title: string;
   verbs: string[];
   description: string;
 }
 
-export default function UnitCard({ number, title, verbs, description }: UnitCardProps) {
+export default function CuadernilloCard({ number, title, verbs, description }: CuadernilloCardProps) {
   return (
-    <div className="unit-card">
-      <div className="unit-number">Unidad {number}</div>
-      <h3 className="unit-title">{title}</h3>
-      <div className="unit-verbs">
+    <div className="cuadernillo-card">
+      <div className="cuadernillo-number">Cuadernillo {number}</div>
+      <h3 className="cuadernillo-title">{title}</h3>
+      <div className="cuadernillo-verbs">
         Verbos: {verbs.join(", ")}
       </div>
-      <p className="unit-content">
+      <p className="cuadernillo-content">
         {description}
       </p>
       <div className="download-buttons">
         <a
-          href={`/pdfs/japanese/unidad-${number}-ja.pdf`}
+          href={`/pdfs/japanese/cuadernillo-${number}-ja.pdf`}
           className="download-btn download-btn-primary"
           download
         >
           📖 Descargar en Japonés
         </a>
         <a
-          href={`/pdfs/english/unidad-${number}-en.pdf`}
+          href={`/pdfs/english/cuadernillo-${number}-en.pdf`}
           className="download-btn download-btn-secondary"
           download
         >
