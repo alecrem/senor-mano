@@ -16,14 +16,14 @@ from weasyprint import HTML, CSS
 from weasyprint.text.fonts import FontConfiguration
 
 
-def create_css_style(unit_title=""):
+def create_css_style(cuadernillo_title=""):
     """Create CSS styling for DIN A5 format with compact layout."""
     css_template = """
     @page {
         size: A5;
         margin: 10mm 8mm 15mm 8mm;
         @bottom-left {
-            content: "UNIT_TITLE_PLACEHOLDER";
+            content: "CUADERNILLO_TITLE_PLACEHOLDER";
             font-size: 9pt;
             color: #666;
         }
@@ -193,8 +193,8 @@ def create_css_style(unit_title=""):
     }
     """
 
-    # Replace the placeholder with the actual unit title
-    css_content = css_template.replace("UNIT_TITLE_PLACEHOLDER", unit_title)
+    # Replace the placeholder with the actual cuadernillo title
+    css_content = css_template.replace("CUADERNILLO_TITLE_PLACEHOLDER", cuadernillo_title)
     return CSS(string=css_content)
 
 
@@ -270,28 +270,28 @@ def markdown_to_html(markdown_content):
     return html_content
 
 
-def generate_unit_pdf(unit_number, language="japanese"):
-    """Generate PDF for a specific unit and language."""
-    # Map unit numbers to verb types
+def generate_cuadernillo_pdf(cuadernillo_number, language="japanese"):
+    """Generate PDF for a specific cuadernillo and language."""
+    # Map cuadernillo numbers to verb types
     verb_types = {1: "ar", 2: "er", 3: "ir"}
-    verb_type = verb_types.get(unit_number)
+    verb_type = verb_types.get(cuadernillo_number)
 
     # Try new multilingual structure first (adjust for new directory structure)
-    unit_dir = Path(f"../markdown/unidad-{unit_number}-{verb_type}-verbs/{language}")
+    cuadernillo_dir = Path(f"../markdown/cuadernillo-{cuadernillo_number}-{verb_type}-verbs/{language}")
 
     # Fallback to legacy structure for backward compatibility
-    if not unit_dir.exists():
+    if not cuadernillo_dir.exists():
         print(
-            f"Warning: New structure {unit_dir} not found, falling back to legacy structure"
+            f"Warning: New structure {cuadernillo_dir} not found, falling back to legacy structure"
         )
-        unit_dir = Path(f"../markdown/unidad-{unit_number}")
-        if not unit_dir.exists():
+        cuadernillo_dir = Path(f"../markdown/cuadernillo-{cuadernillo_number}")
+        if not cuadernillo_dir.exists():
             print(
-                f"Error: Neither new nor legacy unit directory exists for unit {unit_number}"
+                f"Error: Neither new nor legacy cuadernillo directory exists for cuadernillo {cuadernillo_number}"
             )
             return False
 
-    # Collect all markdown files for the unit
+    # Collect all markdown files for the cuadernillo
     pages = []
     for i in range(1, 7):
         page_files = {
@@ -303,7 +303,7 @@ def generate_unit_pdf(unit_number, language="japanese"):
             6: "pagina-6-bien-mal.md",
         }
 
-        page_file = unit_dir / page_files[i]
+        page_file = cuadernillo_dir / page_files[i]
         if page_file.exists():
             with open(page_file, "r", encoding="utf-8") as f:
                 content = f.read()
@@ -312,14 +312,14 @@ def generate_unit_pdf(unit_number, language="japanese"):
             print(f"Warning: {page_file} not found")
 
     if not pages:
-        print(f"Error: No pages found for unit {unit_number} in {language}")
+        print(f"Error: No pages found for cuadernillo {cuadernillo_number} in {language}")
         return False
 
-    # Read unit metadata for title insertion (try both locations)
-    metadata_file = unit_dir / "unit.yaml"
-    legacy_metadata = Path(f"../markdown/unidad-{unit_number}") / "unit.yaml"
+    # Read cuadernillo metadata for title insertion (try both locations)
+    metadata_file = cuadernillo_dir / "cuadernillo.yaml"
+    legacy_metadata = Path(f"../markdown/cuadernillo-{cuadernillo_number}") / "cuadernillo.yaml"
 
-    unit_title_for_page = f"Unidad {unit_number}"  # Default fallback
+    cuadernillo_title_for_page = f"Cuadernillo {cuadernillo_number}"  # Default fallback
 
     # Try new structure first, then legacy
     for meta_path in [metadata_file, legacy_metadata]:
@@ -327,7 +327,7 @@ def generate_unit_pdf(unit_number, language="japanese"):
             try:
                 with open(meta_path, "r", encoding="utf-8") as f:
                     metadata = yaml.safe_load(f)
-                    unit_title_for_page = metadata.get("title", unit_title_for_page)
+                    cuadernillo_title_for_page = metadata.get("title", cuadernillo_title_for_page)
                     break
             except Exception as e:
                 print(f"Warning: Could not read metadata from {meta_path}: {e}")
@@ -340,9 +340,9 @@ def generate_unit_pdf(unit_number, language="japanese"):
         if i > 0:
             combined_content += "\n\n<div style='page-break-before: always;'></div>\n\n"
 
-        # Add unit title as H1 before the first page content
+        # Add cuadernillo title as H1 before the first page content
         if i == 0:
-            combined_content += f"# {unit_title_for_page}\n\n"
+            combined_content += f"# {cuadernillo_title_for_page}\n\n"
 
         combined_content += page_content
 
@@ -356,7 +356,7 @@ def generate_unit_pdf(unit_number, language="japanese"):
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cuadernillo de Español - Unidad {unit_number}</title>
+        <title>Cuadernillo de Español - Cuadernillo {cuadernillo_number}</title>
     </head>
     <body>
         {html_content}
@@ -364,44 +364,33 @@ def generate_unit_pdf(unit_number, language="japanese"):
     </html>
     """
 
-    # Generate PDF with language-specific filename (output to multiple directories)
+    # Generate PDF with language-specific filename (output to website directory only)
     lang_code = {"japanese": "ja", "english": "en"}
     file_suffix = f"-{lang_code.get(language, 'ja')}"
     
-    # Output to main pdf-output directory
-    output_dir = Path(f"../../pdf-output/{language}")
+    # Output to website public directory for web serving
+    output_dir = Path(f"../../website/public/pdfs/{language}")
     output_dir.mkdir(parents=True, exist_ok=True)
-    output_file = output_dir / f"unidad-{unit_number}{file_suffix}.pdf"
-    
-    # Also output to website public directory for web serving
-    website_output_dir = Path(f"../../website/public/pdfs/{language}")
-    website_output_dir.mkdir(parents=True, exist_ok=True)
-    website_output_file = website_output_dir / f"unidad-{unit_number}{file_suffix}.pdf"
+    output_file = output_dir / f"cuadernillo-{cuadernillo_number}{file_suffix}.pdf"
 
-    # Use the same unit title we read earlier for the footer
-    unit_title = unit_title_for_page
+    # Use the same cuadernillo title we read earlier for the footer
+    cuadernillo_title = cuadernillo_title_for_page
 
     try:
         font_config = FontConfiguration()
         html_doc = HTML(string=full_html)
-        css_style = create_css_style(unit_title)
+        css_style = create_css_style(cuadernillo_title)
 
-        # Generate PDF to main output directory
+        # Generate PDF to website public directory
         html_doc.write_pdf(
             output_file, stylesheets=[css_style], font_config=font_config
         )
-        
-        # Copy PDF to website public directory
-        html_doc.write_pdf(
-            website_output_file, stylesheets=[css_style], font_config=font_config
-        )
 
         print(f"✅ Generated {output_file}")
-        print(f"✅ Generated {website_output_file}")
         return True
 
     except Exception as e:
-        print(f"❌ Error generating PDF for unit {unit_number} ({language}): {e}")
+        print(f"❌ Error generating PDF for cuadernillo {cuadernillo_number} ({language}): {e}")
         return False
 
 
@@ -409,7 +398,7 @@ def main():
     """Main function to generate PDFs."""
     # Parse arguments
     args = sys.argv[1:]
-    unit_number = None
+    cuadernillo_number = None
     language = "japanese"  # Default language
 
     # Parse command line arguments
@@ -420,42 +409,42 @@ def main():
         if arg in ["japanese", "english"]:
             language = arg
         elif arg.isdigit() and int(arg) in [1, 2, 3]:
-            unit_number = int(arg)
+            cuadernillo_number = int(arg)
         else:
             print(f"Error: Unknown argument '{arg}'")
-            print("Usage: python generate_pdf.py [UNIT] [LANGUAGE]")
-            print("  UNIT: 1, 2, or 3 (optional)")
+            print("Usage: python generate_pdf.py [CUADERNILLO] [LANGUAGE]")
+            print("  CUADERNILLO: 1, 2, or 3 (optional)")
             print("  LANGUAGE: japanese or english (default: japanese)")
             print("Examples:")
             print(
-                "  python generate_pdf.py              # Generate all units in Japanese"
+                "  python generate_pdf.py              # Generate all cuadernillos in Japanese"
             )
             print(
-                "  python generate_pdf.py english      # Generate all units in English"
+                "  python generate_pdf.py english      # Generate all cuadernillos in English"
             )
-            print("  python generate_pdf.py 1 japanese   # Generate unit 1 in Japanese")
-            print("  python generate_pdf.py 2 english    # Generate unit 2 in English")
+            print("  python generate_pdf.py 1 japanese   # Generate cuadernillo 1 in Japanese")
+            print("  python generate_pdf.py 2 english    # Generate cuadernillo 2 in English")
             sys.exit(1)
         i += 1
 
-    if unit_number is not None:
-        # Generate specific unit
-        print(f"Generating unit {unit_number} in {language}...")
-        success = generate_unit_pdf(unit_number, language)
+    if cuadernillo_number is not None:
+        # Generate specific cuadernillo
+        print(f"Generating cuadernillo {cuadernillo_number} in {language}...")
+        success = generate_cuadernillo_pdf(cuadernillo_number, language)
         if success:
-            print(f"\n🎉 Successfully generated unit {unit_number} PDF in {language}")
+            print(f"\n🎉 Successfully generated cuadernillo {cuadernillo_number} PDF in {language}")
         else:
-            print(f"\n❌ Failed to generate unit {unit_number} PDF in {language}")
+            print(f"\n❌ Failed to generate cuadernillo {cuadernillo_number} PDF in {language}")
             sys.exit(1)
     else:
-        # Generate all units
-        print(f"Generating PDFs for all units in {language}...")
+        # Generate all cuadernillos
+        print(f"Generating PDFs for all cuadernillos in {language}...")
         success_count = 0
-        for unit_num in [1, 2, 3]:
-            if generate_unit_pdf(unit_num, language):
+        for cuadernillo_num in [1, 2, 3]:
+            if generate_cuadernillo_pdf(cuadernillo_num, language):
                 success_count += 1
 
-        print(f"\n🎉 Successfully generated {success_count}/3 unit PDFs in {language}")
+        print(f"\n🎉 Successfully generated {success_count}/3 cuadernillo PDFs in {language}")
 
         if success_count == 3:
             print(f"\nAll {language} PDFs are ready for printing in DIN A5 format!")

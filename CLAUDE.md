@@ -13,7 +13,7 @@ The repository supports multiple languages (Japanese and English) while maintain
 
 ```
 exercises/
-├── unidad-1-ar-verbs/
+├── cuadernillo-1-ar-verbs/
 │   ├── content/
 │   │   ├── dialogues.md
 │   │   ├── conjugations.md
@@ -35,9 +35,9 @@ exercises/
 │       ├── pagina-4-transformacion.md
 │       ├── pagina-5-ordenar.md
 │       └── pagina-6-bien-mal.md
-├── unidad-2-er-verbs/
+├── cuadernillo-2-er-verbs/
 │   └── (same structure)
-└── unidad-3-ir-verbs/
+└── cuadernillo-3-ir-verbs/
     └── (same structure)
 ```
 
@@ -45,7 +45,7 @@ exercises/
 - **content/**: Contains core Spanish exercises without language-specific headers
 - **japanese/**: Contains complete pages with Japanese headers and instructions
 - **english/**: Contains complete pages with English headers and instructions
-- **Legacy structure**: The original `unidad-[N]/` directories remain for backward compatibility
+- **Legacy structure**: The original `cuadernillo-[N]/` directories remain for backward compatibility
 
 ### Page Specifications
 
@@ -53,7 +53,7 @@ exercises/
 - Contextualized dialogue between 2 characters
 - 8-10 lines of dialogue
 - Simple, everyday vocabulary
-- Use at least 2 of the 4 unit verbs
+- Use at least 2 of the 4 cuadernillo verbs
 - Clear narrative with familiar situations
 - Format: **Name:** for each intervention
 
@@ -61,7 +61,7 @@ exercises/
 - Representative verb conjugation table
 - Complete sentence example using the verb
 - 5 completion exercises with personal pronouns
-- Balanced distribution of the 4 unit verbs
+- Balanced distribution of the 4 cuadernillo verbs
 
 **Page 3: Choice exercises (pagina-3-eleccion.md)**
 - 6 multiple choice sentences
@@ -85,11 +85,11 @@ exercises/
 - Format: "sentence. ___" (space for B/M)
 - "Corrección: **___**" below each sentence
 
-## Verb Units
+## Verb Cuadernillos
 
-- **Unit 1**: First conjugation (-AR): dibujar, buscar, hablar, bailar
-- **Unit 2**: Second conjugation (-ER): comer, leer, aprender, beber  
-- **Unit 3**: Third conjugation (-IR): vivir, escribir, abrir, subir
+- **Cuadernillo 1**: First conjugation (-AR): dibujar, buscar, hablar, bailar
+- **Cuadernillo 2**: Second conjugation (-ER): comer, leer, aprender, beber  
+- **Cuadernillo 3**: Third conjugation (-IR): vivir, escribir, abrir, subir
 
 ## Content Guidelines
 
@@ -132,14 +132,24 @@ Each file should begin with:
 
 ## PDF Testing Protocol
 
-When modifying markdown content in exercise files, **always test PDF generation for all units** to ensure:
+**Always test PDF generation for all cuadernillos** after making any changes that could affect PDF output, including:
+- Modifying markdown content in exercise files
+- Updating the PDF generation scripts (`generate_pdf.py`, `generate_pdfs.sh`)
+- Changing directory structures or file paths
+- Modifying CSS styles or PDF formatting
+- Any other changes to the build system
+
+This ensures:
 - All placeholders render correctly
 - Layout remains consistent
 - No formatting issues arise
+- All cuadernillos work in both languages
 
-**Required testing command after markdown changes:**
+**Required testing command:**
 ```bash
 ./generate_pdfs.sh
 ```
 
-This generates all units in both Japanese and English to verify the complete system works properly.
+This generates all cuadernillos in both Japanese and English to verify the complete system works properly.
+
+**Exception:** When actively developing/debugging the generation scripts themselves, you may test with a single cuadernillo (e.g., `./generate_pdfs.sh 1 -l japanese`) for faster iteration, but always run the full test before completing your work.

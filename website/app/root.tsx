@@ -20,7 +20,7 @@ export default function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Señor Mano - para niños que reciben su educación principalmente en japonés o inglés. Ejercicios de conjugación verbal organizados por unidades."
+          content="Señor Mano - para niños que reciben su educación principalmente en japonés o inglés. Ejercicios de conjugación verbal organizados por cuadernillos."
         />
         <Meta />
         <Links />
