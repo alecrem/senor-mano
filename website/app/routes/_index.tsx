@@ -142,9 +142,9 @@ export default function Index() {
             gap: "2rem",
           }}
         >
-          {cuadernillos.map((unit) => (
+          {cuadernillos.map((cuadernillo) => (
             <div
-              key={unit.number}
+              key={cuadernillo.number}
               style={{
                 background: "#fff",
                 borderRadius: "12px",
@@ -171,7 +171,7 @@ export default function Index() {
                       fontFamily: "'Delius', system-ui, sans-serif",
                     }}
                   >
-                    Cuadernillo {unit.number}: {unit.title}
+                    Cuadernillo {cuadernillo.number}: {cuadernillo.title}
                   </h3>
                   <p
                     style={{
@@ -179,7 +179,7 @@ export default function Index() {
                       marginBottom: "1rem",
                     }}
                   >
-                    Verbos: {unit.verbs.join(", ")}
+                    Verbos: {cuadernillo.verbs.join(", ")}
                   </p>
                   <p
                     style={{
@@ -188,7 +188,7 @@ export default function Index() {
                       lineHeight: "1.6",
                     }}
                   >
-                    {unit.description}
+                    {cuadernillo.description}
                   </p>
                 </div>
 
@@ -201,7 +201,7 @@ export default function Index() {
                   }}
                 >
                   <a
-                    href={`/pdfs/japanese/cuadernillo-${unit.number}-ja.pdf`}
+                    href={`/pdfs/japanese/cuadernillo-${cuadernillo.number}-ja.pdf`}
                     download
                     style={{
                       textAlign: "center" as const,
@@ -225,7 +225,7 @@ export default function Index() {
                     📖 Versión en japonés (PDF)
                   </a>
                   <a
-                    href={`/pdfs/english/cuadernillo-${unit.number}-en.pdf`}
+                    href={`/pdfs/english/cuadernillo-${cuadernillo.number}-en.pdf`}
                     download
                     style={{
                       textAlign: "center" as const,

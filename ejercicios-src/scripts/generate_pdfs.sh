@@ -5,7 +5,7 @@
 set -e
 
 # Parse command line arguments
-UNIT=""
+CUADERNILLO=""
 LANGUAGE=""
 HELP=false
 
@@ -20,7 +20,7 @@ while [[ $# -gt 0 ]]; do
             shift
             ;;
         [1-3])
-            UNIT="$1"
+            CUADERNILLO="$1"
             shift
             ;;
         *)
@@ -31,7 +31,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 if [[ "$HELP" == true ]]; then
-    echo "Usage: $0 [UNIT] [OPTIONS]"
+    echo "Usage: $0 [CUADERNILLO] [OPTIONS]"
     echo ""
     echo "Generate PDF files from Spanish exercise markdown files."
     echo ""
@@ -81,8 +81,8 @@ source ../../venv/bin/activate
 echo "🚀 Starting PDF generation..."
 echo "Language(s): $LANGUAGE"
 
-if [[ -n "$UNIT" ]]; then
-    echo "Cuadernillo: $UNIT"
+if [[ -n "$CUADERNILLO" ]]; then
+    echo "Cuadernillo: $CUADERNILLO"
 else
     echo "Cuadernillos: All (1, 2, 3)"
 fi
@@ -92,8 +92,8 @@ echo ""
 # Generate PDFs based on language selection
 if [[ "$LANGUAGE" == "japanese" || "$LANGUAGE" == "both" ]]; then
     echo "📚 Generating Japanese versions..."
-    if [[ -n "$UNIT" ]]; then
-        python generate_pdf.py "$UNIT" japanese
+    if [[ -n "$CUADERNILLO" ]]; then
+        python generate_pdf.py "$CUADERNILLO" japanese
     else
         python generate_pdf.py japanese
     fi
@@ -102,8 +102,8 @@ fi
 
 if [[ "$LANGUAGE" == "english" || "$LANGUAGE" == "both" ]]; then
     echo "📚 Generating English versions..."
-    if [[ -n "$UNIT" ]]; then
-        python generate_pdf.py "$UNIT" english
+    if [[ -n "$CUADERNILLO" ]]; then
+        python generate_pdf.py "$CUADERNILLO" english
     else
         python generate_pdf.py english
     fi
