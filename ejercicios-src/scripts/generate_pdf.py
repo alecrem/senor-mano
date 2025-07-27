@@ -273,7 +273,7 @@ def markdown_to_html(markdown_content):
 def generate_cuadernillo_pdf(cuadernillo_number, language="japanese"):
     """Generate PDF for a specific cuadernillo and language."""
     # Map cuadernillo numbers to verb types
-    verb_types = {1: "ar", 2: "er", 3: "ir"}
+    verb_types = {1: "ar", 2: "er", 3: "ir", 4: "mixed"}
     verb_type = verb_types.get(cuadernillo_number)
 
     # Try new multilingual structure first (adjust for new directory structure)
@@ -408,12 +408,12 @@ def main():
 
         if arg in ["japanese", "english"]:
             language = arg
-        elif arg.isdigit() and int(arg) in [1, 2, 3]:
+        elif arg.isdigit() and int(arg) in [1, 2, 3, 4]:
             cuadernillo_number = int(arg)
         else:
             print(f"Error: Unknown argument '{arg}'")
             print("Usage: python generate_pdf.py [CUADERNILLO] [LANGUAGE]")
-            print("  CUADERNILLO: 1, 2, or 3 (optional)")
+            print("  CUADERNILLO: 1, 2, 3, or 4 (optional)")
             print("  LANGUAGE: japanese or english (default: japanese)")
             print("Examples:")
             print(
@@ -440,13 +440,13 @@ def main():
         # Generate all cuadernillos
         print(f"Generating PDFs for all cuadernillos in {language}...")
         success_count = 0
-        for cuadernillo_num in [1, 2, 3]:
+        for cuadernillo_num in [1, 2, 3, 4]:
             if generate_cuadernillo_pdf(cuadernillo_num, language):
                 success_count += 1
 
-        print(f"\n🎉 Successfully generated {success_count}/3 cuadernillo PDFs in {language}")
+        print(f"\n🎉 Successfully generated {success_count}/4 cuadernillo PDFs in {language}")
 
-        if success_count == 3:
+        if success_count == 4:
             print(f"\nAll {language} PDFs are ready for printing in DIN A5 format!")
         else:
             print(
