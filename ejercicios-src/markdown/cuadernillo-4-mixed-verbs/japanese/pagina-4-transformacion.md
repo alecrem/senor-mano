@@ -1,19 +1,31 @@
 # 変換練習
 
-## 人称を変えてください
+## 指示に従って動詞の人称を変えてください:
 
-1. Yo hablo español → Nosotros [SHORT_LINE]
+**1.** Yo hablo → Nosotros [SHORT_LINE]
 
-2. Tú comes pizza → Vosotros [SHORT_LINE]
+**2.** Tú comes → Él [SHORT_LINE]
 
-3. Él vive en Tokyo → Ellos [SHORT_LINE]
+**3.** Ella vive → Ellas [SHORT_LINE]
 
-4. Ella busca su libro → Ellas [SHORT_LINE]
+**4.** Nosotros buscamos → Yo [SHORT_LINE]
 
-## 質問と答えを作ってください
+**5.** Vosotros leéis → Tú [SHORT_LINE]
 
-5. **Pregunta:** ¿Tú dibujas animales?
-   **Respuesta:** Sí, yo [SHORT_LINE] animales.
+**6.** Él aprende → Nosotros [SHORT_LINE]
 
-6. **Pregunta:** ¿Ellos abren la puerta?
-   **Respuesta:** No, ellos no [SHORT_LINE] la puerta.
+**7.** Ellas escriben → Ella [SHORT_LINE]
+
+**8.** Yo bebo → Vosotros [SHORT_LINE]
+
+## 質問に答えてください:
+
+**1.** ¿Tú dibujas animales? → Sí, yo [SHORT_LINE] animales.
+
+**2.** ¿Ellos abren la puerta? → No, ellos no [SHORT_LINE] la puerta.
+
+**3.** ¿Vosotros bailáis salsa? → Sí, nosotros [SHORT_LINE] salsa.
+
+**4.** ¿Ella sube escaleras? → Sí, ella [SHORT_LINE] escaleras.
+
+**5.** ¿Ustedes viven cerca? → Sí, nosotros [SHORT_LINE] cerca.

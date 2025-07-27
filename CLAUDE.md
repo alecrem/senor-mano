@@ -60,18 +60,18 @@ exercises/
 **Page 2: Conjugation and completion (pagina-2-conjugacion-completar.md)**
 - Representative verb conjugation table
 - Complete sentence example using the verb
-- 5 completion exercises with personal pronouns
+- 10 completion exercises with personal pronouns
 - Balanced distribution of the 4 cuadernillo verbs
 
 **Page 3: Choice exercises (pagina-3-eleccion.md)**
-- 6 multiple choice sentences
+- 8 multiple choice sentences
 - Format: "subject [option1 | option2] rest of sentence"
 - Blank line for writing complete sentence
 - Use clear names/nouns (no omitted pronouns)
 
 **Page 4: Transformation (pagina-4-transformacion.md)**
-- 4 person-change exercises
-- 2 question-answer dialogue exercises
+- 8 person-change exercises
+- 5 question-answer dialogue exercises
 - Format: "Yo verb → Nosotros **___**"
 
 **Page 5: Word ordering (pagina-5-ordenar.md)**
@@ -81,7 +81,7 @@ exercises/
 - Blank line for handwritten correct sentence
 
 **Page 6: Right/wrong (pagina-6-bien-mal.md)**
-- 6 sentences to evaluate
+- 8 sentences to evaluate
 - Format: "sentence. ___" (space for B/M)
 - "Corrección: **___**" below each sentence
 
