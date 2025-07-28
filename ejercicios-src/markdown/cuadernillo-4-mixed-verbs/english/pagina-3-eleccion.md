@@ -2,7 +2,7 @@
 
 ## Choose the correct form and write the complete sentence:
 
-**1.** Los estudiantes [aprenden | aprende] matemáticas en la escuela.
+**1.** Los estudiantes [aprenden | aprende] inglés en la escuela.
 
    [LONG_LINE]
 
@@ -30,6 +30,6 @@
 
    [LONG_LINE]
 
-**8.** Vosotros [comemos | coméis] frutas en el recreo.
+**8.** Vosotros [comemos | coméis] fruta en el recreo.
 
    [LONG_LINE]

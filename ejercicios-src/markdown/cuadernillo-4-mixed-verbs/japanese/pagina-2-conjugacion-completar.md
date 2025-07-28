@@ -4,7 +4,7 @@
 
 **例:** Ella **habla** con su mamá → 原形: **hablar**
 
-**1.** Los niños **comen** frutas en el recreo → 原形: [SHORT_LINE]
+**1.** Los niños **comen** fruta en el recreo → 原形: [SHORT_LINE]
 
 **2.** María **dibuja** flores en su cuaderno → 原形: [SHORT_LINE]
 
@@ -18,7 +18,7 @@
 
 **1.** Yo [SHORT_LINE] (hablar) español con mis abuelos.
 
-**2.** Tú [SHORT_LINE] (comer) frutas en el desayuno.
+**2.** Tú [SHORT_LINE] (comer) fruta en el desayuno.
 
 **3.** Ella [SHORT_LINE] (vivir) cerca de la estación.
 
@@ -28,10 +28,10 @@
 
 **6.** Vosotros [SHORT_LINE] (escribir) cartas a vuestros amigos.
 
-**7.** Usted [SHORT_LINE] (beber) té verde todas las mañanas.
+**7.** Usted [SHORT_LINE] (beber) té todas las mañanas.
 
-**8.** Mis hermanas [SHORT_LINE] (aprender) a tocar piano.
+**8.** Mis hermanas [SHORT_LINE] (aprender) a tocar el piano.
 
 **9.** Tú [SHORT_LINE] (subir) las escaleras muy rápido.
 
-**10.** Nosotras [SHORT_LINE] (abrir) las ventanas del aula.
+**10.** Nosotras [SHORT_LINE] (abrir) las ventanas de la clase.

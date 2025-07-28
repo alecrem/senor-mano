@@ -10,7 +10,7 @@
 
 **2.** [leemos / Nosotros / cuentos / interesantes / casa / en]
 
-私たちは家で面白い物語を読みます。
+私たちは家で面白い絵本を読みます。
 
 [LONG_LINE]
 
