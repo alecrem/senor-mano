@@ -4,15 +4,15 @@ Look at the conjugated verb and write its base form.
 
 **Example:** Ella **habla** con su mamá → Base form: **hablar**
 
-**1.** Los niños **comen** fruta en el recreo → Base form: [SHORT_LINE]
+**1.** Los niños **comen** fruta en el recreo → [SHORT_LINE]
 
-**2.** María **dibuja** flores en su cuaderno → Base form: [SHORT_LINE]
+**2.** María **dibuja** flores en su cuaderno → [SHORT_LINE]
 
-**3.** Nosotros **vivimos** en una casa grande → Base form: [SHORT_LINE]
+**3.** Nosotros **vivimos** en una casa grande → [SHORT_LINE]
 
-**4.** Tú **buscas** tu pelota en el jardín → Base form: [SHORT_LINE]
+**4.** Tú **buscas** tu pelota en el jardín → [SHORT_LINE]
 
-**5.** Ellos **abren** las ventanas por la mañana → Base form: [SHORT_LINE]
+**5.** Ellos **abren** las ventanas por la mañana → [SHORT_LINE]
 
 ## Fill in the blanks with the correct form:
 
