@@ -35,6 +35,13 @@ const cuadernillos = [
     description:
       "Domina los verbos de tercera conjugación con ejercicios estructurados que consolidan el conocimiento de estas importantes formas verbales.",
   },
+  {
+    number: 4,
+    title: "verbos mixtos",
+    verbs: ["dibujar", "buscar", "hablar", "bailar", "comer", "leer", "aprender", "beber", "vivir", "escribir", "abrir", "subir"],
+    description:
+      "Practica todos los verbos de las tres conjugaciones juntos. Incluye un nuevo ejercicio para identificar la forma infinitiva de verbos conjugados.",
+  },
 ];
 
 export async function loader() {
