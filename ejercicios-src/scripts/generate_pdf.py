@@ -270,26 +270,59 @@ def markdown_to_html(markdown_content):
     return html_content
 
 
-def generate_cuadernillo_pdf(cuadernillo_number, language="japanese"):
+def get_available_cuadernillos(unit="present-tense", language="japanese"):
+    """Get list of available cuadernillos for a given unit and language."""
+    available = []
+    verb_types = {1: "ar", 2: "er", 3: "ir", 4: "mixed"}
+    
+    for cuadernillo_num, verb_type in verb_types.items():
+        # Check if cuadernillo directory exists for this unit
+        cuadernillo_dir = Path(f"../markdown/{unit}/cuadernillo-{cuadernillo_num}-{verb_type}-verbs/{language}")
+        
+        # Fallback to legacy multilingual structure
+        if not cuadernillo_dir.exists():
+            cuadernillo_dir = Path(f"../markdown/cuadernillo-{cuadernillo_num}-{verb_type}-verbs/{language}")
+            
+            # Fallback to legacy structure
+            if not cuadernillo_dir.exists():
+                cuadernillo_dir = Path(f"../markdown/cuadernillo-{cuadernillo_num}")
+        
+        # Check if any required page files exist
+        if cuadernillo_dir.exists():
+            page_files = ["pagina-1-dialogo.md", "pagina-2-conjugacion-completar.md"]
+            if any((cuadernillo_dir / page_file).exists() for page_file in page_files):
+                available.append(cuadernillo_num)
+    
+    return available
+
+
+def generate_cuadernillo_pdf(cuadernillo_number, language="japanese", unit="present-tense"):
     """Generate PDF for a specific cuadernillo and language."""
     # Map cuadernillo numbers to verb types
     verb_types = {1: "ar", 2: "er", 3: "ir", 4: "mixed"}
     verb_type = verb_types.get(cuadernillo_number)
 
-    # Try new multilingual structure first (adjust for new directory structure)
-    cuadernillo_dir = Path(f"../markdown/cuadernillo-{cuadernillo_number}-{verb_type}-verbs/{language}")
+    # Try new units structure first
+    cuadernillo_dir = Path(f"../markdown/{unit}/cuadernillo-{cuadernillo_number}-{verb_type}-verbs/{language}")
 
-    # Fallback to legacy structure for backward compatibility
+    # Fallback to legacy multilingual structure for backward compatibility
     if not cuadernillo_dir.exists():
         print(
-            f"Warning: New structure {cuadernillo_dir} not found, falling back to legacy structure"
+            f"Warning: Units structure {cuadernillo_dir} not found, trying legacy multilingual structure"
         )
-        cuadernillo_dir = Path(f"../markdown/cuadernillo-{cuadernillo_number}")
+        cuadernillo_dir = Path(f"../markdown/cuadernillo-{cuadernillo_number}-{verb_type}-verbs/{language}")
+        
+        # Fallback to legacy structure for backward compatibility
         if not cuadernillo_dir.exists():
             print(
-                f"Error: Neither new nor legacy cuadernillo directory exists for cuadernillo {cuadernillo_number}"
+                f"Warning: New structure {cuadernillo_dir} not found, falling back to legacy structure"
             )
-            return False
+            cuadernillo_dir = Path(f"../markdown/cuadernillo-{cuadernillo_number}")
+            if not cuadernillo_dir.exists():
+                print(
+                    f"Error: None of the cuadernillo directory structures exist for cuadernillo {cuadernillo_number}"
+                )
+                return False
 
     # Collect all markdown files for the cuadernillo
     pages = []
@@ -368,10 +401,13 @@ def generate_cuadernillo_pdf(cuadernillo_number, language="japanese"):
     lang_code = {"japanese": "ja", "english": "en"}
     file_suffix = f"-{lang_code.get(language, 'ja')}"
     
+    # Always include unit in filename for consistency
+    unit_suffix = f"-{unit}"
+    
     # Output to website public directory for web serving
     output_dir = Path(f"../../website/public/pdfs/{language}")
     output_dir.mkdir(parents=True, exist_ok=True)
-    output_file = output_dir / f"cuadernillo-{cuadernillo_number}{file_suffix}.pdf"
+    output_file = output_dir / f"cuadernillo-{cuadernillo_number}{unit_suffix}{file_suffix}.pdf"
 
     # Use the same cuadernillo title we read earlier for the footer
     cuadernillo_title = cuadernillo_title_for_page
@@ -400,6 +436,7 @@ def main():
     args = sys.argv[1:]
     cuadernillo_number = None
     language = "japanese"  # Default language
+    unit = "all"  # Default to all units
 
     # Parse command line arguments
     i = 0
@@ -408,51 +445,90 @@ def main():
 
         if arg in ["japanese", "english"]:
             language = arg
+        elif arg in ["present-tense", "past-tense", "all"]:
+            unit = arg
         elif arg.isdigit() and int(arg) in [1, 2, 3, 4]:
             cuadernillo_number = int(arg)
         else:
             print(f"Error: Unknown argument '{arg}'")
-            print("Usage: python generate_pdf.py [CUADERNILLO] [LANGUAGE]")
+            print("Usage: python generate_pdf.py [CUADERNILLO] [LANGUAGE] [UNIT]")
             print("  CUADERNILLO: 1, 2, 3, or 4 (optional)")
             print("  LANGUAGE: japanese or english (default: japanese)")
+            print("  UNIT: present-tense, past-tense, or all (default: all)")
             print("Examples:")
             print(
-                "  python generate_pdf.py              # Generate all cuadernillos in Japanese"
+                "  python generate_pdf.py                    # Generate all available cuadernillos for all units in Japanese"
             )
             print(
-                "  python generate_pdf.py english      # Generate all cuadernillos in English"
+                "  python generate_pdf.py english            # Generate all available cuadernillos for all units in English"
             )
-            print("  python generate_pdf.py 1 japanese   # Generate cuadernillo 1 in Japanese")
-            print("  python generate_pdf.py 2 english    # Generate cuadernillo 2 in English")
+            print("  python generate_pdf.py 1 japanese         # Generate cuadernillo 1 for all units in Japanese")
+            print("  python generate_pdf.py 1 english past-tense # Generate cuadernillo 1 past-tense in English")
             sys.exit(1)
         i += 1
 
     if cuadernillo_number is not None:
         # Generate specific cuadernillo
-        print(f"Generating cuadernillo {cuadernillo_number} in {language}...")
-        success = generate_cuadernillo_pdf(cuadernillo_number, language)
-        if success:
-            print(f"\n🎉 Successfully generated cuadernillo {cuadernillo_number} PDF in {language}")
+        if unit == "all":
+            # Generate for all available units
+            units_to_generate = ["present-tense", "past-tense"]
+            total_success = 0
+            total_attempted = 0
+            
+            for unit_name in units_to_generate:
+                available = get_available_cuadernillos(unit_name, language)
+                if cuadernillo_number in available:
+                    print(f"Generating cuadernillo {cuadernillo_number} ({unit_name}) in {language}...")
+                    total_attempted += 1
+                    if generate_cuadernillo_pdf(cuadernillo_number, language, unit_name):
+                        total_success += 1
+                        
+            if total_attempted == 0:
+                print(f"❌ Cuadernillo {cuadernillo_number} not found in any unit for {language}")
+                sys.exit(1)
+            elif total_success == total_attempted:
+                print(f"\n🎉 Successfully generated cuadernillo {cuadernillo_number} PDFs for all available units in {language}")
+            else:
+                print(f"\n⚠️  Generated {total_success}/{total_attempted} cuadernillo {cuadernillo_number} PDFs in {language}")
         else:
-            print(f"\n❌ Failed to generate cuadernillo {cuadernillo_number} PDF in {language}")
-            sys.exit(1)
+            # Generate for specific unit
+            print(f"Generating cuadernillo {cuadernillo_number} ({unit}) in {language}...")
+            success = generate_cuadernillo_pdf(cuadernillo_number, language, unit)
+            if success:
+                print(f"\n🎉 Successfully generated cuadernillo {cuadernillo_number} ({unit}) PDF in {language}")
+            else:
+                print(f"\n❌ Failed to generate cuadernillo {cuadernillo_number} ({unit}) PDF in {language}")
+                sys.exit(1)
     else:
-        # Generate all cuadernillos
-        print(f"Generating PDFs for all cuadernillos in {language}...")
-        success_count = 0
-        for cuadernillo_num in [1, 2, 3, 4]:
-            if generate_cuadernillo_pdf(cuadernillo_num, language):
-                success_count += 1
-
-        print(f"\n🎉 Successfully generated {success_count}/4 cuadernillo PDFs in {language}")
-
-        if success_count == 4:
-            print(f"\nAll {language} PDFs are ready for printing in DIN A5 format!")
+        # Generate all available cuadernillos
+        if unit == "all":
+            units_to_generate = ["present-tense", "past-tense"]
         else:
-            print(
-                f"\nSome {language} PDFs failed to generate. Check the error messages above."
-            )
+            units_to_generate = [unit]
+            
+        total_success = 0
+        total_attempted = 0
+        
+        for unit_name in units_to_generate:
+            available = get_available_cuadernillos(unit_name, language)
+            if available:
+                print(f"Generating {unit_name} cuadernillos {available} in {language}...")
+                for cuadernillo_num in available:
+                    total_attempted += 1
+                    if generate_cuadernillo_pdf(cuadernillo_num, language, unit_name):
+                        total_success += 1
+            else:
+                print(f"No {unit_name} cuadernillos found for {language}")
+
+        if total_attempted == 0:
+            print(f"❌ No cuadernillos found for {language}")
             sys.exit(1)
+        else:
+            print(f"\n🎉 Successfully generated {total_success}/{total_attempted} cuadernillo PDFs in {language}")
+            if total_success == total_attempted:
+                print(f"\nAll available {language} PDFs are ready for printing in DIN A5 format!")
+            else:
+                print(f"\nSome {language} PDFs failed to generate. Check the error messages above.")
 
 
 if __name__ == "__main__":

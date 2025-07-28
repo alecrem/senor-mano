@@ -13,27 +13,40 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-const unidad = {
-  title: "El presente de indicativo",
-  cuadernillos: [
-    {
-      number: 1,
-      title: "primera conjugación (-AR)",
-    },
-    {
-      number: 2,
-      title: "segunda conjugación (-ER)",
-    },
-    {
-      number: 3,
-      title: "tercera conjugación (-IR)",
-    },
-    {
-      number: 4,
-      title: "todos los verbos regulares",
-    },
-  ],
-};
+const unidades = [
+  {
+    id: "present-tense",
+    title: "El presente de indicativo",
+    cuadernillos: [
+      {
+        number: 1,
+        title: "primera conjugación (-AR)",
+      },
+      {
+        number: 2,
+        title: "segunda conjugación (-ER)",
+      },
+      {
+        number: 3,
+        title: "tercera conjugación (-IR)",
+      },
+      {
+        number: 4,
+        title: "todos los verbos regulares",
+      },
+    ],
+  },
+  {
+    id: "past-tense",
+    title: "El pasado de indicativo",
+    cuadernillos: [
+      {
+        number: 1,
+        title: "primera conjugación (-AR)",
+      },
+    ],
+  },
+];
 
 export async function loader() {
   const startYear = 2025;
@@ -134,131 +147,135 @@ export default function Index() {
           Descargar cuadernillos
         </h2>
 
-        <div
-          style={{
-            background: "#fff",
-            borderRadius: "12px",
-            padding: "2rem",
-            boxShadow: "0 1px 3px rgba(0, 0, 0, 0.1)",
-            border: "1px solid #e5e5e5",
-          }}
-        >
-          <h3
-            style={{
-              fontSize: "1.75rem",
-              fontWeight: "700",
-              marginBottom: "1.5rem",
-              textAlign: "center" as const,
-              color: "#1a1a1a",
-              fontFamily: "'Delius', system-ui, sans-serif",
-            }}
-          >
-            {unidad.title}
-          </h3>
-
+        {unidades.map((unidad) => (
           <div
+            key={unidad.id}
             style={{
-              display: "grid",
-              gap: "1rem",
+              background: "#fff",
+              borderRadius: "12px",
+              padding: "2rem",
+              boxShadow: "0 1px 3px rgba(0, 0, 0, 0.1)",
+              border: "1px solid #e5e5e5",
+              marginBottom: "2rem",
             }}
           >
-            {unidad.cuadernillos.map((cuadernillo) => (
-              <div
-                key={cuadernillo.number}
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  flexWrap: "wrap",
-                  gap: "1rem",
-                  padding: "1rem",
-                  borderRadius: "8px",
-                  border: "1px solid #f0f0f0",
-                  backgroundColor: "#f0f8f0",
-                }}
-              >
-                <div style={{ flex: "1", minWidth: "200px" }}>
-                  <h4
-                    style={{
-                      fontSize: "1.25rem",
-                      fontWeight: "600",
-                      margin: "0",
-                      fontFamily: "'Delius', system-ui, sans-serif",
-                    }}
-                  >
-                    Cuadernillo {cuadernillo.number}: {cuadernillo.title}
-                  </h4>
-                </div>
+            <h3
+              style={{
+                fontSize: "1.75rem",
+                fontWeight: "700",
+                marginBottom: "1.5rem",
+                textAlign: "center" as const,
+                color: "#1a1a1a",
+                fontFamily: "'Delius', system-ui, sans-serif",
+              }}
+            >
+              {unidad.title}
+            </h3>
 
+            <div
+              style={{
+                display: "grid",
+                gap: "1rem",
+              }}
+            >
+              {unidad.cuadernillos.map((cuadernillo) => (
                 <div
+                  key={`${unidad.id}-${cuadernillo.number}`}
                   style={{
                     display: "flex",
-                    gap: "0.5rem",
-                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    alignItems: "center",
                     flexWrap: "wrap",
-                    justifyContent: "flex-end",
-                    minWidth: "180px",
+                    gap: "1rem",
+                    padding: "1rem",
+                    borderRadius: "8px",
+                    border: "1px solid #f0f0f0",
+                    backgroundColor: "#f0f8f0",
                   }}
                 >
-                  <a
-                    href={`/pdfs/japanese/cuadernillo-${cuadernillo.number}-ja.pdf`}
-                    download
+                  <div style={{ flex: "1", minWidth: "200px" }}>
+                    <h4
+                      style={{
+                        fontSize: "1.25rem",
+                        fontWeight: "600",
+                        margin: "0",
+                        fontFamily: "'Delius', system-ui, sans-serif",
+                      }}
+                    >
+                      Cuadernillo {cuadernillo.number}: {cuadernillo.title}
+                    </h4>
+                  </div>
+
+                  <div
                     style={{
-                      textAlign: "center" as const,
-                      display: "block",
-                      padding: "0.6rem 1rem",
-                      backgroundColor: "#6AAD2F",
-                      color: "#fff",
-                      textDecoration: "none",
-                      borderRadius: "6px",
-                      fontWeight: "600",
-                      fontSize: "0.8rem",
-                      transition: "all 0.2s ease",
-                      whiteSpace: "nowrap" as const,
-                      flex: "1",
-                      minWidth: "120px",
-                    }}
-                    onMouseOver={(e) => {
-                      e.currentTarget.style.backgroundColor = "#5A9426";
-                    }}
-                    onMouseOut={(e) => {
-                      e.currentTarget.style.backgroundColor = "#6AAD2F";
+                      display: "flex",
+                      gap: "0.5rem",
+                      flexDirection: "row",
+                      flexWrap: "wrap",
+                      justifyContent: "flex-end",
+                      minWidth: "180px",
                     }}
                   >
-                    📖 Japonés (PDF)
-                  </a>
-                  <a
-                    href={`/pdfs/english/cuadernillo-${cuadernillo.number}-en.pdf`}
-                    download
-                    style={{
-                      textAlign: "center" as const,
-                      display: "block",
-                      padding: "0.6rem 1rem",
-                      backgroundColor: "#6AAD2F",
-                      color: "#fff",
-                      textDecoration: "none",
-                      borderRadius: "6px",
-                      fontWeight: "600",
-                      fontSize: "0.8rem",
-                      transition: "all 0.2s ease",
-                      whiteSpace: "nowrap" as const,
-                      flex: "1",
-                      minWidth: "120px",
-                    }}
-                    onMouseOver={(e) => {
-                      e.currentTarget.style.backgroundColor = "#5A9426";
-                    }}
-                    onMouseOut={(e) => {
-                      e.currentTarget.style.backgroundColor = "#6AAD2F";
-                    }}
-                  >
-                    📖 Inglés (PDF)
-                  </a>
+                    <a
+                      href={`/pdfs/japanese/cuadernillo-${cuadernillo.number}-${unidad.id}-ja.pdf`}
+                      download
+                      style={{
+                        textAlign: "center" as const,
+                        display: "block",
+                        padding: "0.6rem 1rem",
+                        backgroundColor: "#6AAD2F",
+                        color: "#fff",
+                        textDecoration: "none",
+                        borderRadius: "6px",
+                        fontWeight: "600",
+                        fontSize: "0.8rem",
+                        transition: "all 0.2s ease",
+                        whiteSpace: "nowrap" as const,
+                        flex: "1",
+                        minWidth: "120px",
+                      }}
+                      onMouseOver={(e) => {
+                        e.currentTarget.style.backgroundColor = "#5A9426";
+                      }}
+                      onMouseOut={(e) => {
+                        e.currentTarget.style.backgroundColor = "#6AAD2F";
+                      }}
+                    >
+                      📖 Japonés (PDF)
+                    </a>
+                    <a
+                      href={`/pdfs/english/cuadernillo-${cuadernillo.number}-${unidad.id}-en.pdf`}
+                      download
+                      style={{
+                        textAlign: "center" as const,
+                        display: "block",
+                        padding: "0.6rem 1rem",
+                        backgroundColor: "#6AAD2F",
+                        color: "#fff",
+                        textDecoration: "none",
+                        borderRadius: "6px",
+                        fontWeight: "600",
+                        fontSize: "0.8rem",
+                        transition: "all 0.2s ease",
+                        whiteSpace: "nowrap" as const,
+                        flex: "1",
+                        minWidth: "120px",
+                      }}
+                      onMouseOver={(e) => {
+                        e.currentTarget.style.backgroundColor = "#5A9426";
+                      }}
+                      onMouseOut={(e) => {
+                        e.currentTarget.style.backgroundColor = "#6AAD2F";
+                      }}
+                    >
+                      📖 Inglés (PDF)
+                    </a>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        ))}
 
         <div
           style={{
