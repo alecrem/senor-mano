@@ -4,15 +4,15 @@
 
 **例:** Ella **habla** con su mamá → 原形: **hablar**
 
-**1.** Los niños **comen** fruta en el recreo → 原形: [SHORT_LINE]
+**1.** Los niños **comen** fruta en el recreo → [SHORT_LINE]
 
-**2.** María **dibuja** flores en su cuaderno → 原形: [SHORT_LINE]
+**2.** María **dibuja** flores en su cuaderno → [SHORT_LINE]
 
-**3.** Nosotros **vivimos** en una casa grande → 原形: [SHORT_LINE]
+**3.** Nosotros **vivimos** en una casa grande → [SHORT_LINE]
 
-**4.** Tú **buscas** tu pelota en el jardín → 原形: [SHORT_LINE]
+**4.** Tú **buscas** tu pelota en el jardín → [SHORT_LINE]
 
-**5.** Ellos **abren** las ventanas por la mañana → 原形: [SHORT_LINE]
+**5.** Ellos **abren** las ventanas por la mañana → [SHORT_LINE]
 
 ## 正しい形で空欄を埋めてください:
 
