@@ -13,36 +13,27 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-const cuadernillos = [
-  {
-    number: 1,
-    title: "primera conjugación (-AR)",
-    verbs: ["dibujar", "buscar", "hablar", "bailar"],
-    description:
-      "Aprende los verbos de primera conjugación con ejercicios de diálogo, conjugación, elección múltiple, transformaciones, ordenamiento de palabras y corrección de errores.",
-  },
-  {
-    number: 2,
-    title: "segunda conjugación (-ER)",
-    verbs: ["comer", "leer", "aprender", "beber"],
-    description:
-      "Practica los verbos de segunda conjugación a través de actividades variadas que refuerzan el aprendizaje de estas formas verbales esenciales.",
-  },
-  {
-    number: 3,
-    title: "tercera conjugación (-IR)",
-    verbs: ["vivir", "escribir", "abrir", "subir"],
-    description:
-      "Domina los verbos de tercera conjugación con ejercicios estructurados que consolidan el conocimiento de estas importantes formas verbales.",
-  },
-  {
-    number: 4,
-    title: "verbos mixtos",
-    verbs: ["dibujar", "buscar", "hablar", "bailar", "comer", "leer", "aprender", "beber", "vivir", "escribir", "abrir", "subir"],
-    description:
-      "Practica todos los verbos de las tres conjugaciones juntos. Incluye un nuevo ejercicio para identificar la forma infinitiva de verbos conjugados.",
-  },
-];
+const unidad = {
+  title: "El presente de indicativo",
+  cuadernillos: [
+    {
+      number: 1,
+      title: "primera conjugación (-AR)",
+    },
+    {
+      number: 2,
+      title: "segunda conjugación (-ER)",
+    },
+    {
+      number: 3,
+      title: "tercera conjugación (-IR)",
+    },
+    {
+      number: 4,
+      title: "todos los verbos regulares",
+    },
+  ],
+};
 
 export async function loader() {
   const startYear = 2025;
@@ -145,66 +136,68 @@ export default function Index() {
 
         <div
           style={{
-            display: "grid",
-            gap: "2rem",
+            background: "#fff",
+            borderRadius: "12px",
+            padding: "2rem",
+            boxShadow: "0 1px 3px rgba(0, 0, 0, 0.1)",
+            border: "1px solid #e5e5e5",
           }}
         >
-          {cuadernillos.map((cuadernillo) => (
-            <div
-              key={cuadernillo.number}
-              style={{
-                background: "#fff",
-                borderRadius: "12px",
-                padding: "2rem",
-                boxShadow: "0 1px 3px rgba(0, 0, 0, 0.1)",
-                border: "1px solid #e5e5e5",
-              }}
-            >
+          <h3
+            style={{
+              fontSize: "1.75rem",
+              fontWeight: "700",
+              marginBottom: "1.5rem",
+              textAlign: "center" as const,
+              color: "#1a1a1a",
+              fontFamily: "'Delius', system-ui, sans-serif",
+            }}
+          >
+            {unidad.title}
+          </h3>
+
+          <div
+            style={{
+              display: "grid",
+              gap: "1rem",
+            }}
+          >
+            {unidad.cuadernillos.map((cuadernillo) => (
               <div
+                key={cuadernillo.number}
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  alignItems: "flex-start",
+                  alignItems: "center",
                   flexWrap: "wrap",
                   gap: "1rem",
+                  padding: "1rem",
+                  borderRadius: "8px",
+                  border: "1px solid #f0f0f0",
+                  backgroundColor: "#f0f8f0",
                 }}
               >
-                <div style={{ flex: "1", minWidth: "250px" }}>
-                  <h3
+                <div style={{ flex: "1", minWidth: "200px" }}>
+                  <h4
                     style={{
-                      fontSize: "1.5rem",
-                      fontWeight: "700",
-                      marginBottom: "0.5rem",
+                      fontSize: "1.25rem",
+                      fontWeight: "600",
+                      margin: "0",
                       fontFamily: "'Delius', system-ui, sans-serif",
                     }}
                   >
                     Cuadernillo {cuadernillo.number}: {cuadernillo.title}
-                  </h3>
-                  <p
-                    style={{
-                      color: "#6b7280",
-                      marginBottom: "1rem",
-                    }}
-                  >
-                    Verbos: {cuadernillo.verbs.join(", ")}
-                  </p>
-                  <p
-                    style={{
-                      color: "#4b5563",
-                      fontSize: "0.95rem",
-                      lineHeight: "1.6",
-                    }}
-                  >
-                    {cuadernillo.description}
-                  </p>
+                  </h4>
                 </div>
 
                 <div
                   style={{
                     display: "flex",
-                    flexDirection: "column",
-                    gap: "0.75rem",
-                    minWidth: "200px",
+                    gap: "0.5rem",
+                    flexDirection: "row",
+                    flexWrap: "wrap",
+                    justifyContent: "flex-end",
+                    minWidth: "180px",
                   }}
                 >
                   <a
@@ -213,14 +206,17 @@ export default function Index() {
                     style={{
                       textAlign: "center" as const,
                       display: "block",
-                      padding: "0.75rem 1.5rem",
+                      padding: "0.6rem 1rem",
                       backgroundColor: "#6AAD2F",
                       color: "#fff",
                       textDecoration: "none",
-                      borderRadius: "8px",
+                      borderRadius: "6px",
                       fontWeight: "600",
-                      fontSize: "0.875rem",
+                      fontSize: "0.8rem",
                       transition: "all 0.2s ease",
+                      whiteSpace: "nowrap" as const,
+                      flex: "1",
+                      minWidth: "120px",
                     }}
                     onMouseOver={(e) => {
                       e.currentTarget.style.backgroundColor = "#5A9426";
@@ -229,7 +225,7 @@ export default function Index() {
                       e.currentTarget.style.backgroundColor = "#6AAD2F";
                     }}
                   >
-                    📖 Versión en japonés (PDF)
+                    📖 Japonés (PDF)
                   </a>
                   <a
                     href={`/pdfs/english/cuadernillo-${cuadernillo.number}-en.pdf`}
@@ -237,14 +233,17 @@ export default function Index() {
                     style={{
                       textAlign: "center" as const,
                       display: "block",
-                      padding: "0.75rem 1.5rem",
+                      padding: "0.6rem 1rem",
                       backgroundColor: "#6AAD2F",
                       color: "#fff",
                       textDecoration: "none",
-                      borderRadius: "8px",
+                      borderRadius: "6px",
                       fontWeight: "600",
-                      fontSize: "0.875rem",
+                      fontSize: "0.8rem",
                       transition: "all 0.2s ease",
+                      whiteSpace: "nowrap" as const,
+                      flex: "1",
+                      minWidth: "120px",
                     }}
                     onMouseOver={(e) => {
                       e.currentTarget.style.backgroundColor = "#5A9426";
@@ -253,12 +252,12 @@ export default function Index() {
                       e.currentTarget.style.backgroundColor = "#6AAD2F";
                     }}
                   >
-                    📖 Versión en inglés (PDF)
+                    📖 Inglés (PDF)
                   </a>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div
