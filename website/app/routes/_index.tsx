@@ -44,6 +44,18 @@ const unidades = [
         number: 1,
         title: "primera conjugación (-AR)",
       },
+      {
+        number: 2,
+        title: "segunda conjugación (-ER)",
+      },
+      {
+        number: 3,
+        title: "tercera conjugación (-IR)",
+      },
+      {
+        number: 4,
+        title: "todos los verbos regulares",
+      },
     ],
   },
 ];
