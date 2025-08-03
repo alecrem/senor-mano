@@ -9,7 +9,7 @@
 
 **Example:** Yo viví en Barcelona cuando era pequeño.
 
-## Fill in the blanks with the correct form:
+## Fill in the blanks with the correct past tense form:
 
 **1.** Yo [SHORT_LINE] (escribir) un cuento sobre dragones ayer.
 
@@ -27,6 +27,6 @@
 
 **8.** Mis primas [SHORT_LINE] (vivir) una aventura increíble en el bosque.
 
-**9.** Tú [SHORT_LINE] (escribir) tu nombre en la pizarra del aula.
+**9.** Tú [SHORT_LINE] (escribir) tu nombre en la pizarra de la clase.
 
 **10.** Nosotras [SHORT_LINE] (abrir) todas las ventanas para que entrara aire fresco.

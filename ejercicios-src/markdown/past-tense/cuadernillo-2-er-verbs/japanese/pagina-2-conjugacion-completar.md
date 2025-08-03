@@ -9,7 +9,7 @@
 
 **例文:** Yo comí fruta fresca en el almuerzo ayer.
 
-## 正しい形で空欄を埋めてください:
+## 正しい形で空欄を過去形で埋めてください:
 
 **1.** Yo [SHORT_LINE] (leer) una revista interesante anoche.
 

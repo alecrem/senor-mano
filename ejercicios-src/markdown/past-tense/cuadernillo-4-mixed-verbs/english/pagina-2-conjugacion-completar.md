@@ -16,7 +16,7 @@ Look at the conjugated verbs and write their infinitive form.
 
 **5.** Ellos **abrieron** las ventanas por la mañana → [SHORT_LINE]
 
-## Fill in the blanks with the correct form:
+## Fill in the blanks with the correct past tense form:
 
 **1.** Yo [SHORT_LINE] (hablar) español con mis abuelos ayer.
 

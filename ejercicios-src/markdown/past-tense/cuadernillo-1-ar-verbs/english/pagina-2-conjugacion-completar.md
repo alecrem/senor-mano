@@ -9,11 +9,11 @@
 
 **Example:** Yo hablé español ayer con mi abuela.
 
-## Fill in the blanks with the correct form:
+## Fill in the blanks with the correct past tense form:
 
 **1.** Yo [SHORT_LINE] (dibujar) un gato en mi cuaderno ayer.
 
-**2.** Tú [SHORT_LINE] (buscar) tu mochila en el aula por la mañana.
+**2.** Tú [SHORT_LINE] (buscar) tu mochila en la clase por la mañana.
 
 **3.** Ella [SHORT_LINE] (bailar) muy bien en la fiesta del sábado.
 

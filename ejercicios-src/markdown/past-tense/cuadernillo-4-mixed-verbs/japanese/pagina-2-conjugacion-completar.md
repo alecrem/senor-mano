@@ -16,7 +16,7 @@
 
 **5.** Ellos **abrieron** las ventanas por la mañana → [SHORT_LINE]
 
-## 正しい形で空欄を埋めてください:
+## 正しい形で空欄を過去形で埋めてください:
 
 **1.** Yo [SHORT_LINE] (hablar) español con mis abuelos ayer.
 

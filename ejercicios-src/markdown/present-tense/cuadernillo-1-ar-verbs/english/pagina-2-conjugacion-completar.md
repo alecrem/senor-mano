@@ -13,7 +13,7 @@
 
 **1.** Yo [SHORT_LINE] (dibujar) un gato en mi cuaderno.
 
-**2.** Tú [SHORT_LINE] (buscar) tu mochila en el aula.
+**2.** Tú [SHORT_LINE] (buscar) tu mochila en la clase.
 
 **3.** Ella [SHORT_LINE] (bailar) muy bien en las fiestas.
 

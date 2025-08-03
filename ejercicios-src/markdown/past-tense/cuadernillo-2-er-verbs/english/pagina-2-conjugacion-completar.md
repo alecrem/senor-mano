@@ -9,7 +9,7 @@
 
 **Example:** Yo comí fruta fresca en el almuerzo ayer.
 
-## Fill in the blanks with the correct form:
+## Fill in the blanks with the correct past tense form:
 
 **1.** Yo [SHORT_LINE] (leer) una revista interesante anoche.
 
