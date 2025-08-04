@@ -1,36 +1,31 @@
-# 変換問題
+# 変換練習
 
-## 人称変換:
+## 指示に従って動詞の人称を変えてください:
 
-**1.** Yo dibujé → Nosotros **___**
+**1.** Yo dibujé → Nosotros [SHORT_LINE]
 
-**2.** Ella buscó → Ellas **___**
+**2.** Tú hablaste → Él [SHORT_LINE]
 
-**3.** Tú hablaste → Vosotros **___**
+**3.** Ella bailó → Ellas [SHORT_LINE]
 
-**4.** Nosotros bailamos → Yo **___**
+**4.** Nosotros buscamos → Yo [SHORT_LINE]
 
-**5.** Ellos dibujaron → Él **___**
+**5.** Vosotros bailasteis → Tú [SHORT_LINE]
 
-**6.** Vosotras buscasteis → Tú **___**
+**6.** Él habló → Nosotros [SHORT_LINE]
 
-**7.** Usted habló → Ustedes **___**
+**7.** Ellas dibujaron → Ella [SHORT_LINE]
 
-**8.** Yo bailé → Nosotras **___**
+**8.** Yo busqué → Vosotros [SHORT_LINE]
 
-## 問答:
+## 質問に答えてください:
 
-**1.** ¿Qué dibujaste ayer? (un caballo)
-**回答:** Ayer **___** un caballo.
+**1.** ¿Tú dibujaste animales? → Sí, yo [SHORT_LINE] animales.
 
-**2.** ¿Dónde buscaron el libro? (en la biblioteca)
-**回答:** **___** el libro en la biblioteca.
+**2.** ¿Ellos buscaron trabajo? → Sí, ellos [SHORT_LINE] trabajo.
 
-**3.** ¿Cuándo bailó tu hermana? (anoche)
-**回答:** Mi hermana **___** anoche.
+**3.** ¿Vosotros bailasteis salsa? → Sí, nosotros [SHORT_LINE] salsa.
 
-**4.** ¿Con quién hablaste? (con mi amigo)
-**回答:** **___** con mi amigo.
+**4.** ¿Ella habló japonés? → Sí, ella [SHORT_LINE] japonés.
 
-**5.** ¿Qué dibujaron los niños? (flores)
-**回答:** Los niños **___** flores.
+**5.** ¿Ustedes dibujaron bien? → Sí, nosotros [SHORT_LINE] bien.

@@ -1,36 +1,31 @@
 # Transformation exercises
 
-## Change the person:
+## Change the person as instructed:
 
-**1.** Yo viví → Nosotros [SHORT_LINE]
+**1.** Yo escribí → Nosotros [SHORT_LINE]
 
-**2.** Ella escribió → Ellos [SHORT_LINE]
+**2.** Tú abriste → Él [SHORT_LINE]
 
-**3.** Tú abriste → Vosotros [SHORT_LINE]
+**3.** Ella vivió → Ellas [SHORT_LINE]
 
 **4.** Nosotros subimos → Yo [SHORT_LINE]
 
-**5.** Ellos vivieron → Él [SHORT_LINE]
+**5.** Vosotros escribisteis → Tú [SHORT_LINE]
 
-**6.** Vosotras escribisteis → Tú [SHORT_LINE]
+**6.** Él abrió → Nosotros [SHORT_LINE]
 
-**7.** Usted abrió → Ustedes [SHORT_LINE]
+**7.** Ellas vivieron → Ella [SHORT_LINE]
 
-**8.** Yo subí → Nosotras [SHORT_LINE]
+**8.** Yo subí → Vosotros [SHORT_LINE]
 
 ## Answer the questions:
 
-**¿Dónde viviste cuando eras pequeño?**
-[SHORT_LINE]
+**1.** ¿Tú escribiste una carta? → Sí, yo [SHORT_LINE] una carta.
 
-**¿Qué escribieron los niños en sus cuadernos?**
-[SHORT_LINE]
+**2.** ¿Ellos abrieron la puerta? → Sí, ellos [SHORT_LINE] la puerta.
 
-**¿Cuándo abrió Laura la ventana?**
-[SHORT_LINE]
+**3.** ¿Vosotros vivisteis en Madrid? → Sí, nosotros [SHORT_LINE] en Madrid.
 
-**¿Por qué subisteis tan rápido las escaleras?**
-[SHORT_LINE]
+**4.** ¿Ella subió las escaleras? → Sí, ella [SHORT_LINE] las escaleras.
 
-**¿Quién vivió en esa casa antes que nosotros?**
-[SHORT_LINE]
+**5.** ¿Ustedes escribieron los ejercicios? → Sí, nosotros [SHORT_LINE] los ejercicios.

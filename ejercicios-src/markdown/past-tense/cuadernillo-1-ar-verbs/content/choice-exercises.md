@@ -8,7 +8,7 @@
 
 **5.** Pedro [dibujé | dibujó] un árbol grande en su papel.
 
-**6.** Vosotros [buscaron | buscasteis] el gato perdido toda la tarde.
+**6.** Vosotros [buscaron | buscasteis] el gato toda la tarde.
 
 **7.** Las chicas [bailaron | bailaste] salsa en la escuela ayer.
 

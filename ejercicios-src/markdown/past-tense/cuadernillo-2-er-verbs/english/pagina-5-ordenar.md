@@ -5,29 +5,29 @@
 **1.** [ayer / comió / Ana / verduras / frescas]
 Yesterday Ana ate fresh vegetables
 
-[SHORT_LINE]
+[LONG_TALL_LINE]
 
-**2.** [libro / leímos / interesante / nosotros / un]
+**2.** [libro / leímos / interesante / Nosotros / un]
 We read an interesting book
 
-[SHORT_LINE]
+[LONG_TALL_LINE]
 
-**3.** [mis / aprendieron / padres / italiano / el / año / pasado]
+**3.** [Mis / aprendieron / padres / italiano / el / año / pasado]
 My parents learned Italian last year
 
-[SHORT_LINE]
+[LONG_TALL_LINE]
 
-**4.** [café / bebiste / caliente / tú / esta / mañana]
+**4.** [café / bebiste / caliente / Tú / esta / mañana]
 You drank hot coffee this morning
 
-[SHORT_LINE]
+[LONG_TALL_LINE]
 
-**5.** [en / comieron / los / niños / el / recreo / bocadillos]
+**5.** [en / comieron / Los / niños / el / recreo / bocadillos]
 The children ate sandwiches at recess
 
-[SHORT_LINE]
+[LONG_TALL_LINE]
 
-**6.** [revista / una / leyó / médica / el / doctor]
+**6.** [revista / una / leyó / médica / El / doctor]
 The doctor read a medical magazine
 
-[SHORT_LINE]
+[LONG_TALL_LINE]

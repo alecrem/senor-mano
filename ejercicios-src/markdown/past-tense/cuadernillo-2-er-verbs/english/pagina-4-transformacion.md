@@ -1,36 +1,31 @@
 # Transformation exercises
 
-## Change the person:
+## Change the person as instructed:
 
 **1.** Yo comí → Nosotros [SHORT_LINE]
 
-**2.** Ella leyó → Ellos [SHORT_LINE]
+**2.** Tú leíste → Él [SHORT_LINE]
 
-**3.** Tú aprendiste → Vosotros [SHORT_LINE]
+**3.** Ella aprendió → Ellas [SHORT_LINE]
 
 **4.** Nosotros bebimos → Yo [SHORT_LINE]
 
-**5.** Ellos comieron → Él [SHORT_LINE]
+**5.** Vosotros comisteis → Tú [SHORT_LINE]
 
-**6.** Vosotras leísteis → Tú [SHORT_LINE]
+**6.** Él leyó → Nosotros [SHORT_LINE]
 
-**7.** Usted aprendió → Ustedes [SHORT_LINE]
+**7.** Ellas aprendieron → Ella [SHORT_LINE]
 
-**8.** Yo bebí → Nosotras [SHORT_LINE]
+**8.** Yo bebí → Vosotros [SHORT_LINE]
 
 ## Answer the questions:
 
-**¿Qué comiste ayer en el almuerzo?**
-[SHORT_LINE]
+**1.** ¿Tú comiste pizza? → Sí, yo [SHORT_LINE] pizza.
 
-**¿Dónde leyeron los niños sus libros?**
-[SHORT_LINE]
+**2.** ¿Ellos leyeron el libro? → Sí, ellos [SHORT_LINE] el libro.
 
-**¿Cuándo aprendió Elena a cocinar?**
-[SHORT_LINE]
+**3.** ¿Vosotros aprendisteis español? → Sí, nosotros [SHORT_LINE] español.
 
-**¿Qué bebisteis en la fiesta?**
-[SHORT_LINE]
+**4.** ¿Ella bebió agua? → Sí, ella [SHORT_LINE] agua.
 
-**¿Quién comió toda la tarta?**
-[SHORT_LINE]
+**5.** ¿Ustedes comieron temprano? → Sí, nosotros [SHORT_LINE] temprano.

@@ -2,22 +2,22 @@
 
 ## 正しい順序に並べ替えてください:
 
-**1.** [ayer / dibujé / un / perro / yo]
+**1.** [ayer / dibujé / un / perro / Yo]
 昨日私は犬を描いた。
 
 [LONG_TALL_LINE]
 
-**2.** [buscaron / en / sus / llaves / ellos / la / cocina]
+**2.** [buscaron / en / sus / llaves / Ellos / la / cocina]
 彼らは台所で鍵を探した。
 
 [LONG_TALL_LINE]
 
-**3.** [bailaste / muy / en / bien / la / tú / fiesta]
+**3.** [bailaste / muy / en / bien / la / Tú / fiesta]
 あなたはパーティーでとても上手に踊った。
 
 [LONG_TALL_LINE]
 
-**4.** [con / hablamos / nuestros / nosotros / padres]
+**4.** [con / hablamos / nuestros / Nosotros / padres]
 私たちは両親と話した。
 
 [LONG_TALL_LINE]

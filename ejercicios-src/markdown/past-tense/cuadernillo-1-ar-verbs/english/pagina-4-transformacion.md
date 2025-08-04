@@ -1,36 +1,31 @@
 # Transformation exercises
 
-## Person changes:
+## Change the person of the verb as indicated:
 
-**1.** Yo dibujé → Nosotros **___**
+**1.** Yo dibujé → Nosotros [SHORT_LINE]
 
-**2.** Ella buscó → Ellas **___**
+**2.** Tú hablaste → Él [SHORT_LINE]
 
-**3.** Tú hablaste → Vosotros **___**
+**3.** Ella bailó → Ellas [SHORT_LINE]
 
-**4.** Nosotros bailamos → Yo **___**
+**4.** Nosotros buscamos → Yo [SHORT_LINE]
 
-**5.** Ellos dibujaron → Él **___**
+**5.** Vosotros bailasteis → Tú [SHORT_LINE]
 
-**6.** Vosotras buscasteis → Tú **___**
+**6.** Él habló → Nosotros [SHORT_LINE]
 
-**7.** Usted habló → Ustedes **___**
+**7.** Ellas dibujaron → Ella [SHORT_LINE]
 
-**8.** Yo bailé → Nosotras **___**
+**8.** Yo busqué → Vosotros [SHORT_LINE]
 
-## Question and answer:
+## Answer the questions:
 
-**1.** ¿Qué dibujaste ayer? (un caballo)
-**Answer:** Ayer **___** un caballo.
+**1.** ¿Tú dibujaste animales? → Sí, yo [SHORT_LINE] animales.
 
-**2.** ¿Dónde buscaron el libro? (en la biblioteca)
-**Answer:** **___** el libro en la biblioteca.
+**2.** ¿Ellos buscaron trabajo? → Sí, ellos [SHORT_LINE] trabajo.
 
-**3.** ¿Cuándo bailó tu hermana? (anoche)
-**Answer:** Mi hermana **___** anoche.
+**3.** ¿Vosotros bailasteis salsa? → Sí, nosotros [SHORT_LINE] salsa.
 
-**4.** ¿Con quién hablaste? (con mi amigo)
-**Answer:** **___** con mi amigo.
+**4.** ¿Ella habló japonés? → Sí, ella [SHORT_LINE] japonés.
 
-**5.** ¿Qué dibujaron los niños? (flores)
-**Answer:** Los niños **___** flores.
+**5.** ¿Ustedes dibujaron bien? → Sí, nosotros [SHORT_LINE] bien.

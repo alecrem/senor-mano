@@ -1,34 +1,25 @@
-## Cambio de persona:
+**1.** Yo dibujé → Nosotros [SHORT_LINE]
 
-**1.** Yo dibujé → Nosotros **___**
+**2.** Tú hablaste → Él [SHORT_LINE]
 
-**2.** Ella buscó → Ellas **___**
+**3.** Ella bailó → Ellas [SHORT_LINE]
 
-**3.** Tú hablaste → Vosotros **___**
+**4.** Nosotros buscamos → Yo [SHORT_LINE]
 
-**4.** Nosotros bailamos → Yo **___**
+**5.** Vosotros bailasteis → Tú [SHORT_LINE]
 
-**5.** Ellos dibujaron → Él **___**
+**6.** Él habló → Nosotros [SHORT_LINE]
 
-**6.** Vosotras buscasteis → Tú **___**
+**7.** Ellas dibujaron → Ella [SHORT_LINE]
 
-**7.** Usted habló → Ustedes **___**
+**8.** Yo busqué → Vosotros [SHORT_LINE]
 
-**8.** Yo bailé → Nosotras **___**
+**1.** ¿Tú dibujaste animales? → Sí, yo [SHORT_LINE] animales.
 
-## Pregunta y respuesta:
+**2.** ¿Ellos buscaron trabajo? → Sí, ellos [SHORT_LINE] trabajo.
 
-**1.** ¿Qué dibujaste ayer? (un caballo)
-**Respuesta:** Ayer **___** un caballo.
+**3.** ¿Vosotros bailasteis salsa? → Sí, nosotros [SHORT_LINE] salsa.
 
-**2.** ¿Dónde buscaron el libro? (en la biblioteca)
-**Respuesta:** **___** el libro en la biblioteca.
+**4.** ¿Ella habló japonés? → Sí, ella [SHORT_LINE] japonés.
 
-**3.** ¿Cuándo bailó tu hermana? (anoche)
-**Respuesta:** Mi hermana **___** anoche.
-
-**4.** ¿Con quién hablaste? (con mi amigo)
-**Respuesta:** **___** con mi amigo.
-
-**5.** ¿Qué dibujaron los niños? (flores)
-**Respuesta:** Los niños **___** flores.
+**5.** ¿Ustedes dibujaron bien? → Sí, nosotros [SHORT_LINE] bien.

@@ -4,7 +4,7 @@
 
 **María:** ¡Hola, Luis! ¿Qué hiciste ayer?
 
-**Luis:** Hola, María. Yo **dibujé** un perro en mi cuaderno. ¿Te gustó?
+**Luis:** Hola, María. Yo **dibujé** un perro en mi cuaderno. ¿Te **gustó**?
 
 **María:** ¡Sí! **Dibujaste** muy bien. Yo **busqué** mi libro de historia toda la tarde.
 

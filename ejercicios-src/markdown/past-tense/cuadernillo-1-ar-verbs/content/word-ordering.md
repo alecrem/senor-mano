@@ -1,10 +1,10 @@
-**1.** [ayer / dibujé / un / perro / yo]
+**1.** [ayer / dibujé / un / perro / Yo]
 
-**2.** [buscaron / en / sus / llaves / ellos / la / cocina]
+**2.** [buscaron / en / sus / llaves / Ellos / la / cocina]
 
-**3.** [bailaste / muy / en / bien / la / tú / fiesta]
+**3.** [bailaste / muy / en / bien / la / Tú / fiesta]
 
-**4.** [con / hablamos / nuestros / nosotros / padres]
+**4.** [con / hablamos / nuestros / Nosotros / padres]
 
 **5.** [dibujó / Ana / flores / bonitas / muchas]
 
