@@ -15,13 +15,13 @@
 
 **2.** Tú [SHORT_LINE] (abrir) la puerta del jardín esta mañana.
 
-**3.** Ella [SHORT_LINE] (subir) las escaleras corriendo al oír el timbre.
+**3.** Ella [SHORT_LINE] (subir) las escaleras corriendo.
 
 **4.** Nosotros [SHORT_LINE] (vivir) momentos muy felices en las vacaciones.
 
-**5.** Ellos [SHORT_LINE] (escribir) cartas a sus familias desde el campamento.
+**5.** Ellos [SHORT_LINE] (escribir) cartas a sus familias.
 
-**6.** Vosotros [SHORT_LINE] (abrir) los regalos en la fiesta de cumpleaños.
+**6.** Vosotros [SHORT_LINE] (abrir) los regalos en la fiesta.
 
 **7.** Usted [SHORT_LINE] (subir) al autobús en la parada de la esquina.
 
@@ -29,4 +29,4 @@
 
 **9.** Tú [SHORT_LINE] (escribir) tu nombre en la pizarra de la clase.
 
-**10.** Nosotras [SHORT_LINE] (abrir) todas las ventanas para que entrara aire fresco.
+**10.** Nosotras [SHORT_LINE] (abrir) todas las ventanas.
