@@ -6,7 +6,7 @@
 
 [LONG_LINE]
 
-**3.** Mi familia [vivió | vivieron] momentos muy felices en las vacaciones.
+**3.** Mi familia [vivió | vivieron] momentos felices en las vacaciones.
 
 [LONG_LINE]
 

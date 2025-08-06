@@ -6,7 +6,7 @@
 
    Corrección: [LONG_LINE]
 
-**3.** Nosotros vivimos experiencias increíbles en el campamento. [ONE_LETTER_LINE]
+**3.** Nosotros vivimos experiencias increíbles. [ONE_LETTER_LINE]
 
    Corrección: [LONG_LINE]
 

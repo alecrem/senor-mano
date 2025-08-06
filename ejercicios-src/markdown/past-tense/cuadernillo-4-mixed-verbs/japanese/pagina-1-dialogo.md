@@ -2,7 +2,7 @@
 
 ## 昨日したこと (Lo que hicimos ayer)
 
-**Ana:** ¡Hola Carlos! ¿Qué **hiciste** ayer?
+**Ana:** ¡Hola Carlos! ¿Qué hiciste ayer?
 
 **Carlos:** **Busqué** mi libro de matemáticas. ¿Tú **comiste** en el comedor de la escuela?
 

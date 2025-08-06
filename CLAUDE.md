@@ -153,3 +153,12 @@ This ensures:
 This generates all cuadernillos in both Japanese and English to verify the complete system works properly.
 
 **Exception:** When actively developing/debugging the generation scripts themselves, you may test with a single cuadernillo (e.g., `./generate_pdfs.sh 1 -l japanese`) for faster iteration, but always run the full test before completing your work.
+
+**PDF Page Verification:**
+After generating PDFs, always verify that each PDF has exactly 6 pages (one per exercise type). Use this command to check page counts:
+
+```bash
+find website/public/pdfs -name "*.pdf" -exec sh -c 'echo "=== $1 ===" && pdfinfo "$1" 2>/dev/null | grep Pages || echo "Could not read PDF info"' _ {} \;
+```
+
+Each cuadernillo should have exactly 6 pages. If any PDF has more or fewer pages, investigate and fix the content causing page overflow or underflow before finalizing the work.
