@@ -6,7 +6,7 @@
 
    Correction: [LONG_LINE]
 
-**2.** Los estudiantes leyó libros en la biblioteca. [ONE_LETTER_LINE]
+**2.** Nosotros leí libros en la biblioteca. [ONE_LETTER_LINE]
 
    Correction: [LONG_LINE]
 

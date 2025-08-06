@@ -13,7 +13,7 @@
 
 **4.** Nosotros [SHORT_LINE] (comer) pizza en la fiesta del sábado.
 
-**5.** Ellos [SHORT_LINE] (leer) cuentos antes de dormir.
+**5.** Ella [SHORT_LINE] (beber) agua después del ejercicio.
 
 **6.** Vosotros [SHORT_LINE] (aprender) a cocinar el mes pasado.
 

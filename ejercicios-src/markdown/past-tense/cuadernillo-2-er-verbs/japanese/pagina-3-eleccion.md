@@ -10,7 +10,7 @@
 
 [LONG_LINE]
 
-**3.** María [aprendió | aprendieron] a tocar guitarra el verano pasado.
+**3.** María [aprendió | aprendieron] a tocar la guitarra el verano pasado.
 
 [LONG_LINE]
 
