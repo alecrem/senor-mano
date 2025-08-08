@@ -59,7 +59,7 @@ export async function loader({ params }: LoaderFunctionArgs) {
     throw new Response("Invalid language", { status: 400 });
   }
 
-  const basePath = join(process.cwd(), "..", "ejercicios-src", "markdown", tense);
+  const basePath = join(process.cwd(), "app", "data", "markdown", tense);
   const cuadernilloMap: Record<string, string> = {
     "1": "cuadernillo-1-ar-verbs",
     "2": "cuadernillo-2-er-verbs", 
