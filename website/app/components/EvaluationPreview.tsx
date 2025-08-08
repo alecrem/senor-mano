@@ -72,14 +72,16 @@ function parseEvaluationExercises(content: string) {
       const number = exerciseMatch[1];
       let sentence = exerciseMatch[2];
       
-      // Remove evaluation blank (___) from sentence
-      sentence = sentence.replace(/\s*___$/, '');
+      // Remove evaluation blanks from sentence
+      sentence = sentence
+        .replace(/\s*___$/, '')
+        .replace(/\s*\[ONE_LETTER_LINE\]$/, '');
       
       // Check if next line has correction
       let hasCorrection = false;
       if (i + 1 < lines.length) {
         const nextLine = lines[i + 1];
-        hasCorrection = nextLine.includes('Corrección:') || nextLine.includes('Correction:') || nextLine.includes('修正:');
+        hasCorrection = nextLine.includes('Corrección:') || nextLine.includes('Correction:') || nextLine.includes('修正:') || nextLine.includes('訂正:');
       }
       
       exercises.push({ number, sentence, hasCorrection });
@@ -116,21 +118,22 @@ export default function EvaluationPreview({ content }: EvaluationPreviewProps) {
       
       {exercises.map((exercise, index) => (
         <div key={index} style={styles.exercise}>
-          <div>
+          <div style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem" }}>
             <span style={styles.exerciseNumber}>{exercise.number}.</span>
-          </div>
-          
-          <div style={styles.sentence}>
-            {exercise.sentence}
-            <span style={styles.evaluationBox}></span>
-          </div>
-          
-          {exercise.hasCorrection && (
-            <div style={styles.correction}>
-              Corrección:
-              <div style={styles.correctionLine}></div>
+            <div style={{ flex: "1" }}>
+              <div style={styles.sentence}>
+                {exercise.sentence}
+                <span style={styles.evaluationBox}></span>
+              </div>
+              
+              {exercise.hasCorrection && (
+                <div style={styles.correction}>
+                  Corrección:
+                  <div style={styles.correctionLine}></div>
+                </div>
+              )}
             </div>
-          )}
+          </div>
         </div>
       ))}
     </div>

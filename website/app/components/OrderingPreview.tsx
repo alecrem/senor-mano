@@ -133,29 +133,30 @@ export default function OrderingPreview({ content }: OrderingPreviewProps) {
       
       {exercises.map((exercise, index) => (
         <div key={index} style={styles.exercise}>
-          <div>
+          <div style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem" }}>
             <span style={styles.exerciseNumber}>{exercise.number}.</span>
-          </div>
-          
-          <div style={styles.wordBox}>
-            <div style={styles.words}>
-              {exercise.words.map((word, wordIndex) => (
-                <span key={wordIndex} style={styles.word}>
-                  {word}
-                </span>
-              ))}
+            <div style={{ flex: "1" }}>
+              <div style={styles.wordBox}>
+                <div style={styles.words}>
+                  {exercise.words.map((word, wordIndex) => (
+                    <span key={wordIndex} style={styles.word}>
+                      {word}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              
+              {exercise.translation && (
+                <div style={styles.translation}>
+                  {exercise.translation}
+                </div>
+              )}
+              
+              {exercise.hasWriteLine && (
+                <div style={styles.writeLine}></div>
+              )}
             </div>
           </div>
-          
-          {exercise.translation && (
-            <div style={styles.translation}>
-              {exercise.translation}
-            </div>
-          )}
-          
-          {exercise.hasWriteLine && (
-            <div style={styles.writeLine}></div>
-          )}
         </div>
       ))}
     </div>

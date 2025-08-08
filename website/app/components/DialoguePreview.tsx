@@ -45,6 +45,17 @@ function parseDialogue(content: string) {
   return { title, subtitle, dialogueLines };
 }
 
+function renderTextWithBold(text: string) {
+  const parts = text.split(/(\*\*[^*]+\*\*)/);
+  return parts.map((part, index) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      const boldText = part.slice(2, -2);
+      return <strong key={index}>{boldText}</strong>;
+    }
+    return part;
+  });
+}
+
 export default function DialoguePreview({ content }: DialoguePreviewProps) {
   const { title, subtitle, dialogueLines } = parseDialogue(content);
   
@@ -74,7 +85,7 @@ export default function DialoguePreview({ content }: DialoguePreviewProps) {
         {dialogueLines.map((line, index) => (
           <div key={index} style={styles.line}>
             <span style={styles.speaker}>{line.speaker}:</span>{' '}
-            <span>{line.text}</span>
+            <span>{renderTextWithBold(line.text)}</span>
           </div>
         ))}
       </div>

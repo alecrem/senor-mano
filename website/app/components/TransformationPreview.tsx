@@ -16,7 +16,7 @@ const styles = {
     backgroundColor: "#f0f8f0",
     padding: "1rem",
     borderRadius: "8px",
-    marginTop: "0.5rem",
+    flex: "1",
   },
   arrow: {
     fontWeight: "bold",
@@ -97,9 +97,13 @@ function renderTransformation(text: string) {
   }
   
   // Handle other transformations with blanks
-  return text
-    .replace(/\*\*([^*]+)\*\*/g, '$1')
-    .replace(/\[SHORT_LINE\]/g, '______');
+  return (
+    <span style={{...styles.transformation}}>
+      {text
+        .replace(/\*\*([^*]+)\*\*/g, '$1')
+        .replace(/\[SHORT_LINE\]/g, '______')}
+    </span>
+  );
 }
 
 export default function TransformationPreview({ content }: TransformationPreviewProps) {
@@ -121,8 +125,10 @@ export default function TransformationPreview({ content }: TransformationPreview
           <h3 style={styles.sectionTitle}>Transformaciones</h3>
           {transformationExercises.map((exercise, index) => (
             <div key={index} style={styles.exercise}>
-              <span style={styles.exerciseNumber}>{exercise.number}.</span>{' '}
-              {renderTransformation(exercise.text)}
+              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                <span style={styles.exerciseNumber}>{exercise.number}.</span>
+                {renderTransformation(exercise.text)}
+              </div>
             </div>
           ))}
         </div>
