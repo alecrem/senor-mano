@@ -23,7 +23,7 @@
 
 [LONG_TALL_LINE]
 
-**6.** [revista / una / leyó / médica / El / doctor]
-医者は医学雑誌を読みました
+**6.** [libro / un / leyó / difícil / El / estudiante]
+学生は難しい本を読みました
 
 [LONG_TALL_LINE]

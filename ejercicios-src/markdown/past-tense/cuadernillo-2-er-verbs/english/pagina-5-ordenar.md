@@ -27,7 +27,7 @@ The children ate sandwiches at recess
 
 [LONG_TALL_LINE]
 
-**6.** [revista / una / leyó / médica / El / doctor]
-The doctor read a medical magazine
+**6.** [libro / un / leyó / difícil / El / estudiante]
+The student read a difficult book
 
 [LONG_TALL_LINE]
