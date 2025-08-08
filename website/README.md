@@ -5,14 +5,15 @@ Sitio web en Remix.js para facilitar el acceso y descarga de los cuadernillos de
 ## Características
 
 - **Interfaz en español** - Diseñado para padres y tutores que manejan español
+- **Vista previa web** - Permite ver el contenido completo de los cuadernillos antes de descargar
 - **Descarga directa** - Acceso inmediato a PDFs organizados por idioma de instrucciones
 - **Responsive** - Funciona perfectamente en móviles y desktop
 - **Optimizado** - Carga rápida y experiencia de usuario fluida
 
 ## Estructura
 
-- **Página principal** (`/`) - Información del proyecto y tarjetas de cuadernillos con descarga directa
-- **Página de descargas** (`/descargas`) - Vista completa de todos los PDFs disponibles
+- **Página principal** (`/`) - Información del proyecto, vista previa y descarga de cuadernillos
+- **Páginas de vista previa** (`/preview/[tense]/[cuadernillo]/[language]`) - Vista completa del contenido de ejercicios
 
 ## Desarrollo
 
@@ -36,16 +37,18 @@ pnpm dev
 
 El sitio estará disponible en `http://localhost:3000`
 
-### Generar PDFs
+### Generar PDFs y datos de vista previa
 
-Los PDFs se generan automáticamente desde el directorio raíz del proyecto:
+Los PDFs y los datos de vista previa se generan automáticamente desde el directorio raíz del proyecto:
 
 ```bash
 # Desde la raíz del proyecto
-./generate_pdfs.sh -l both
+./generate_pdfs.sh
 ```
 
-Esto creará los PDFs tanto en `pdf-output/` como en `website/public/pdfs/` para que estén disponibles en el sitio web.
+Esto creará:
+- PDFs en `website/public/pdfs/` para descarga
+- Archivos markdown en `website/app/data/markdown/` para vistas previas web
 
 ### Build de producción
 
@@ -72,27 +75,38 @@ No se requieren variables de entorno para el funcionamiento básico.
 website/
 ├── app/
 │   ├── components/
-│   │   ├── Layout.tsx          # Layout principal con header/footer
-│   │   └── CuadernilloCard.tsx # Tarjeta de cuadernillo con botones de descarga
+│   │   ├── Layout.tsx              # Layout principal con header/footer
+│   │   ├── CuadernilloCard.tsx     # Tarjeta de cuadernillo con botones
+│   │   ├── DialoguePreview.tsx     # Componente de vista previa de diálogos
+│   │   ├── ConjugationPreview.tsx  # Componente de vista previa de conjugaciones
+│   │   ├── ChoicePreview.tsx       # Componente de vista previa de elección múltiple
+│   │   ├── TransformationPreview.tsx # Componente de vista previa de transformaciones
+│   │   ├── OrderingPreview.tsx     # Componente de vista previa de ordenamiento
+│   │   └── EvaluationPreview.tsx   # Componente de vista previa de evaluación
+│   ├── data/
+│   │   └── markdown/               # Archivos markdown para vistas previas
+│   │       ├── present-tense/
+│   │       └── past-tense/
 │   ├── routes/
-│   │   ├── _index.tsx          # Página principal
-│   │   └── descargas.tsx       # Página de descargas
+│   │   ├── _index.tsx              # Página principal
+│   │   └── preview.$tense.$cuadernillo.$language.tsx # Rutas dinámicas de vista previa
 │   ├── styles/
-│   │   └── global.css          # Estilos CSS globales
-│   └── root.tsx                # Componente raíz de la app
+│   └── root.tsx                    # Componente raíz de la app
 ├── public/
-│   └── pdfs/                   # PDFs servidos estáticamente
+│   └── pdfs/                       # PDFs servidos estáticamente
 │       ├── japanese/
 │       └── english/
+├── copy-markdown.js                # Script para copiar archivos markdown
 ├── package.json
-├── remix.config.js
-├── vercel.json                 # Configuración de deployment
 └── README.md
 ```
 
 ## Notas técnicas
 
 - Los PDFs se sirven estáticamente desde `public/pdfs/`
-- La generación de PDFs actualiza automáticamente los archivos del sitio web
+- Los datos de vista previa se cargan desde `app/data/markdown/`
+- La generación de PDFs actualiza automáticamente tanto PDFs como datos de vista previa
+- El sistema de vista previa convierte placeholders markdown a elementos web interactivos
 - El CSS está optimizado para accesibilidad y responsive design
 - Las meta tags están configuradas para SEO básico
+- Las rutas de vista previa son dinámicas y soportan todos los cuadernillos, tiempos e idiomas

@@ -162,3 +162,7 @@ find website/public/pdfs -name "*.pdf" -exec sh -c 'echo "=== $1 ===" && pdfinfo
 ```
 
 Each cuadernillo should have exactly 6 pages. If any PDF has more or fewer pages, investigate and fix the content causing page overflow or underflow before finalizing the work.
+
+## Git Workflow Memories
+
+- Delete @projectplan.md and @markdown.md before making a PR
