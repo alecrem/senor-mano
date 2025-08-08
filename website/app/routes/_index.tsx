@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
+import { useLoaderData, Link } from "@remix-run/react";
 import Layout from "~/components/Layout";
 
 export const meta: MetaFunction = () => {
@@ -222,66 +222,119 @@ export default function Index() {
                     style={{
                       display: "flex",
                       gap: "0.5rem",
-                      flexDirection: "row",
-                      flexWrap: "wrap",
-                      justifyContent: "flex-end",
-                      minWidth: "180px",
+                      flexDirection: "column",
+                      minWidth: "300px",
                     }}
                   >
-                    <a
-                      href={`/pdfs/japanese/cuadernillo-${cuadernillo.number}-${unidad.id}-ja.pdf`}
-                      download
-                      style={{
-                        textAlign: "center" as const,
-                        display: "block",
-                        padding: "0.6rem 1rem",
-                        backgroundColor: "#6AAD2F",
-                        color: "#fff",
-                        textDecoration: "none",
-                        borderRadius: "6px",
-                        fontWeight: "600",
-                        fontSize: "0.8rem",
-                        transition: "all 0.2s ease",
-                        whiteSpace: "nowrap" as const,
-                        flex: "1",
-                        minWidth: "120px",
-                      }}
-                      onMouseOver={(e) => {
-                        e.currentTarget.style.backgroundColor = "#5A9426";
-                      }}
-                      onMouseOut={(e) => {
-                        e.currentTarget.style.backgroundColor = "#6AAD2F";
-                      }}
-                    >
-                      📖 Japonés (PDF)
-                    </a>
-                    <a
-                      href={`/pdfs/english/cuadernillo-${cuadernillo.number}-${unidad.id}-en.pdf`}
-                      download
-                      style={{
-                        textAlign: "center" as const,
-                        display: "block",
-                        padding: "0.6rem 1rem",
-                        backgroundColor: "#6AAD2F",
-                        color: "#fff",
-                        textDecoration: "none",
-                        borderRadius: "6px",
-                        fontWeight: "600",
-                        fontSize: "0.8rem",
-                        transition: "all 0.2s ease",
-                        whiteSpace: "nowrap" as const,
-                        flex: "1",
-                        minWidth: "120px",
-                      }}
-                      onMouseOver={(e) => {
-                        e.currentTarget.style.backgroundColor = "#5A9426";
-                      }}
-                      onMouseOut={(e) => {
-                        e.currentTarget.style.backgroundColor = "#6AAD2F";
-                      }}
-                    >
-                      📖 Inglés (PDF)
-                    </a>
+                    <div style={{ display: "flex", gap: "0.5rem" }}>
+                      <Link
+                        to={`/preview/${unidad.id}/${cuadernillo.number}/japanese`}
+                        style={{
+                          textAlign: "center" as const,
+                          display: "block",
+                          padding: "0.6rem 1rem",
+                          backgroundColor: "#f3f4f6",
+                          color: "#374151",
+                          textDecoration: "none",
+                          borderRadius: "6px",
+                          fontWeight: "600",
+                          fontSize: "0.8rem",
+                          transition: "all 0.2s ease",
+                          whiteSpace: "nowrap" as const,
+                          flex: "1",
+                          border: "1px solid #d1d5db",
+                        }}
+                        onMouseOver={(e) => {
+                          e.currentTarget.style.backgroundColor = "#e5e7eb";
+                        }}
+                        onMouseOut={(e) => {
+                          e.currentTarget.style.backgroundColor = "#f3f4f6";
+                        }}
+                      >
+                        👁️ Vista previa (JA)
+                      </Link>
+                      <Link
+                        to={`/preview/${unidad.id}/${cuadernillo.number}/english`}
+                        style={{
+                          textAlign: "center" as const,
+                          display: "block",
+                          padding: "0.6rem 1rem",
+                          backgroundColor: "#f3f4f6",
+                          color: "#374151",
+                          textDecoration: "none",
+                          borderRadius: "6px",
+                          fontWeight: "600",
+                          fontSize: "0.8rem",
+                          transition: "all 0.2s ease",
+                          whiteSpace: "nowrap" as const,
+                          flex: "1",
+                          border: "1px solid #d1d5db",
+                        }}
+                        onMouseOver={(e) => {
+                          e.currentTarget.style.backgroundColor = "#e5e7eb";
+                        }}
+                        onMouseOut={(e) => {
+                          e.currentTarget.style.backgroundColor = "#f3f4f6";
+                        }}
+                      >
+                        👁️ Vista previa (EN)
+                      </Link>
+                    </div>
+                    
+                    <div style={{ display: "flex", gap: "0.5rem" }}>
+                      <a
+                        href={`/pdfs/japanese/cuadernillo-${cuadernillo.number}-${unidad.id}-ja.pdf`}
+                        download
+                        style={{
+                          textAlign: "center" as const,
+                          display: "block",
+                          padding: "0.6rem 1rem",
+                          backgroundColor: "#6AAD2F",
+                          color: "#fff",
+                          textDecoration: "none",
+                          borderRadius: "6px",
+                          fontWeight: "600",
+                          fontSize: "0.8rem",
+                          transition: "all 0.2s ease",
+                          whiteSpace: "nowrap" as const,
+                          flex: "1",
+                        }}
+                        onMouseOver={(e) => {
+                          e.currentTarget.style.backgroundColor = "#5A9426";
+                        }}
+                        onMouseOut={(e) => {
+                          e.currentTarget.style.backgroundColor = "#6AAD2F";
+                        }}
+                      >
+                        📖 Descargar (JA)
+                      </a>
+                      <a
+                        href={`/pdfs/english/cuadernillo-${cuadernillo.number}-${unidad.id}-en.pdf`}
+                        download
+                        style={{
+                          textAlign: "center" as const,
+                          display: "block",
+                          padding: "0.6rem 1rem",
+                          backgroundColor: "#6AAD2F",
+                          color: "#fff",
+                          textDecoration: "none",
+                          borderRadius: "6px",
+                          fontWeight: "600",
+                          fontSize: "0.8rem",
+                          transition: "all 0.2s ease",
+                          whiteSpace: "nowrap" as const,
+                          flex: "1",
+                        }}
+                        onMouseOver={(e) => {
+                          e.currentTarget.style.backgroundColor = "#5A9426";
+                        }}
+                        onMouseOut={(e) => {
+                          e.currentTarget.style.backgroundColor = "#6AAD2F";
+                        }}
+                      >
+                        📖 Descargar (EN)
+                      </a>
+                    </div>
                   </div>
                 </div>
               ))}
