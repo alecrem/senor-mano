@@ -170,3 +170,38 @@ fi
 deactivate
 
 echo "✅ Done! PDFs are ready for printing in DIN A5 format."
+echo ""
+
+# Check PDF page counts
+echo "📄 Verifying PDF page counts..."
+FAILED_PDFS=()
+TOTAL_PDFS=0
+CORRECT_PDFS=0
+
+# Find all generated PDFs and check their page counts
+while IFS= read -r -d '' pdf_file; do
+    if [[ -f "$pdf_file" ]]; then
+        TOTAL_PDFS=$((TOTAL_PDFS + 1))
+        PAGE_COUNT=$(pdfinfo "$pdf_file" 2>/dev/null | grep "Pages:" | awk '{print $2}')
+        if [[ "$PAGE_COUNT" != "6" ]]; then
+            FAILED_PDFS+=("$pdf_file (${PAGE_COUNT:-unknown} pages)")
+            echo "❌ $pdf_file has ${PAGE_COUNT:-unknown} pages (expected: 6)"
+        else
+            CORRECT_PDFS=$((CORRECT_PDFS + 1))
+        fi
+    fi
+done < <(find ../../website/public/pdfs -name "*.pdf" -print0 2>/dev/null)
+
+if [[ ${#FAILED_PDFS[@]} -gt 0 ]]; then
+    echo ""
+    echo "⚠️  WARNING: The following PDFs do not have exactly 6 pages:"
+    for failed_pdf in "${FAILED_PDFS[@]}"; do
+        echo "   - $failed_pdf"
+    done
+    echo ""
+    echo "Each cuadernillo should have exactly 6 pages (one per exercise type)."
+    echo "Please check the content for page overflow or underflow issues."
+    exit 1
+else
+    echo "✅ All $TOTAL_PDFS PDFs have exactly 6 pages as expected!"
+fi
