@@ -16,14 +16,14 @@ from weasyprint import HTML, CSS
 from weasyprint.text.fonts import FontConfiguration
 
 
-def create_css_style(cuadernillo_title=""):
+def create_css_style(unit_title=""):
     """Create CSS styling for DIN A5 format with compact layout."""
     css_template = """
     @page {
         size: A5;
         margin: 10mm 8mm 15mm 8mm;
         @bottom-left {
-            content: "CUADERNILLO_TITLE_PLACEHOLDER";
+            content: "UNIT_TITLE_PLACEHOLDER";
             font-size: 9pt;
             color: #666666;
         }
@@ -195,9 +195,9 @@ def create_css_style(cuadernillo_title=""):
     }
     """
 
-    # Replace the placeholder with the actual cuadernillo title
+    # Replace the placeholder with the actual unit title
     css_content = css_template.replace(
-        "CUADERNILLO_TITLE_PLACEHOLDER", cuadernillo_title
+        "UNIT_TITLE_PLACEHOLDER", f"Unidad: {unit_title}" if unit_title else ""
     )
     return CSS(string=css_content)
 
@@ -367,12 +367,13 @@ def generate_cuadernillo_pdf(
         return False
 
     # Read cuadernillo metadata for title insertion (try both locations)
-    metadata_file = cuadernillo_dir / "cuadernillo.yaml"
+    metadata_file = cuadernillo_dir.parent / "cuadernillo.yaml"  # Go up one level from language dir
     legacy_metadata = (
         Path(f"../markdown/cuadernillo-{cuadernillo_number}") / "cuadernillo.yaml"
     )
 
     cuadernillo_title_for_page = f"Cuadernillo {cuadernillo_number}"  # Default fallback
+    unit_title_for_footer = ""  # Default fallback
 
     # Try new structure first, then legacy
     for meta_path in [metadata_file, legacy_metadata]:
@@ -383,6 +384,7 @@ def generate_cuadernillo_pdf(
                     cuadernillo_title_for_page = metadata.get(
                         "title", cuadernillo_title_for_page
                     )
+                    unit_title_for_footer = metadata.get("unit_title", "")
                     break
             except Exception as e:
                 print(f"Warning: Could not read metadata from {meta_path}: {e}")
@@ -434,13 +436,10 @@ def generate_cuadernillo_pdf(
         output_dir / f"cuadernillo-{cuadernillo_number}{unit_suffix}{file_suffix}.pdf"
     )
 
-    # Use the same cuadernillo title we read earlier for the footer
-    cuadernillo_title = cuadernillo_title_for_page
-
     try:
         font_config = FontConfiguration()
         html_doc = HTML(string=full_html)
-        css_style = create_css_style(cuadernillo_title)
+        css_style = create_css_style(unit_title_for_footer)
 
         # Generate PDF to website public directory
         html_doc.write_pdf(
