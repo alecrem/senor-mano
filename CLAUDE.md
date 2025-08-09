@@ -150,9 +150,9 @@ This ensures:
 ./generate_pdfs.sh
 ```
 
-This generates all cuadernillos in both Japanese and English to verify the complete system works properly.
+This generates all cuadernillos in both Japanese and English, all units (present-tense, past-tense), and updates website preview data to verify the complete system works properly.
 
-**Exception:** When actively developing/debugging the generation scripts themselves, you may test with a single cuadernillo (e.g., `./generate_pdfs.sh 1 -l japanese`) for faster iteration, but always run the full test before completing your work.
+**Note:** The script always generates everything - there are no more command-line options for specific cuadernillos or languages. This ensures consistency and that all content stays in sync.
 
 **PDF Page Verification:**
 After generating PDFs, always verify that each PDF has exactly 6 pages (one per exercise type). Use this command to check page counts:
