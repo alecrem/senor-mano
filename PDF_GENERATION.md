@@ -4,23 +4,23 @@ The PDF generation tools are located in `ejercicios-src/scripts/` and convert th
 
 ## Quick Start
 
-### Option 1: Automated Setup and Generation (using root wrapper)
+### Option 1: Simple Generation (Recommended)
 ```bash
-# Generate all cuadernillos for both languages (runs setup automatically)
+# Generate all cuadernillos for all units in both languages
+# Also updates website preview data
 ./generate_pdfs.sh
-
-# Generate specific cuadernillo for both languages
-./generate_pdfs.sh 1    # Cuadernillo 1 only
-./generate_pdfs.sh 2    # Cuadernillo 2 only
-./generate_pdfs.sh 3    # Cuadernillo 3 only
-
-# Generate for specific language
-./generate_pdfs.sh -l japanese    # All cuadernillos in Japanese
-./generate_pdfs.sh -l english     # All cuadernillos in English
-./generate_pdfs.sh 1 -l english   # Cuadernillo 1 in English only
 ```
 
-### Option 2: Direct Script Usage
+This single command will:
+- Generate all cuadernillos (1-4) 
+- Generate all units (present-tense, past-tense)
+- Generate both languages (Japanese and English)
+- Update website preview data
+- Verify all PDFs have exactly 6 pages
+
+### Option 2: Advanced Usage (For Development)
+If you need to generate specific combinations for testing:
+
 ```bash
 # Navigate to scripts directory
 cd ejercicios-src/scripts
@@ -28,26 +28,12 @@ cd ejercicios-src/scripts
 # Run setup once (uses Python 3.12 by default)
 ./setup.sh
 
-# Or specify a different Python version
-PYTHON_VERSION=python3.11 ./setup.sh
-
-# Then generate PDFs
+# Generate specific combinations
 source ../../venv/bin/activate
-python generate_pdf.py        # All cuadernillos in Japanese (default)
-python generate_pdf.py english # All cuadernillos in English
-python generate_pdf.py 1      # Cuadernillo 1 in Japanese only
-python generate_pdf.py 1 english # Cuadernillo 1 in English only
-deactivate
-```
-
-### Option 3: Use specific Python version directly
-```bash
-# Navigate to scripts directory and create venv with specific Python version
-cd ejercicios-src/scripts
-/opt/homebrew/bin/python3.11 -m venv ../../venv
-source ../../venv/bin/activate
-pip install -r requirements.txt
-python generate_pdf.py
+python generate_pdf.py japanese all           # All Japanese cuadernillos
+python generate_pdf.py english all            # All English cuadernillos  
+python generate_pdf.py japanese present-tense # Japanese present tense only
+python generate_pdf.py english past-tense     # English past tense only
 deactivate
 ```
 
@@ -55,15 +41,28 @@ deactivate
 
 The scripts will generate PDFs in organized directories:
 
-### Japanese versions (default):
-- `website/public/pdfs/japanese/cuadernillo-1-ja.pdf` - First conjugation (-AR verbs)
-- `website/public/pdfs/japanese/cuadernillo-2-ja.pdf` - Second conjugation (-ER verbs)  
-- `website/public/pdfs/japanese/cuadernillo-3-ja.pdf` - Third conjugation (-IR verbs)
+### Japanese versions:
+- `website/public/pdfs/japanese/cuadernillo-1-present-tense-ja.pdf` - First conjugation (-AR verbs), present tense
+- `website/public/pdfs/japanese/cuadernillo-1-past-tense-ja.pdf` - First conjugation (-AR verbs), past tense
+- `website/public/pdfs/japanese/cuadernillo-2-present-tense-ja.pdf` - Second conjugation (-ER verbs), present tense
+- `website/public/pdfs/japanese/cuadernillo-2-past-tense-ja.pdf` - Second conjugation (-ER verbs), past tense
+- `website/public/pdfs/japanese/cuadernillo-3-present-tense-ja.pdf` - Third conjugation (-IR verbs), present tense
+- `website/public/pdfs/japanese/cuadernillo-3-past-tense-ja.pdf` - Third conjugation (-IR verbs), past tense
+- `website/public/pdfs/japanese/cuadernillo-4-present-tense-ja.pdf` - Mixed verbs, present tense
+- `website/public/pdfs/japanese/cuadernillo-4-past-tense-ja.pdf` - Mixed verbs, past tense
 
 ### English versions:
-- `website/public/pdfs/english/cuadernillo-1-en.pdf` - First conjugation (-AR verbs)
-- `website/public/pdfs/english/cuadernillo-2-en.pdf` - Second conjugation (-ER verbs)
-- `website/public/pdfs/english/cuadernillo-3-en.pdf` - Third conjugation (-IR verbs)
+- `website/public/pdfs/english/cuadernillo-1-present-tense-en.pdf` - First conjugation (-AR verbs), present tense
+- `website/public/pdfs/english/cuadernillo-1-past-tense-en.pdf` - First conjugation (-AR verbs), past tense
+- `website/public/pdfs/english/cuadernillo-2-present-tense-en.pdf` - Second conjugation (-ER verbs), present tense
+- `website/public/pdfs/english/cuadernillo-2-past-tense-en.pdf` - Second conjugation (-ER verbs), past tense
+- `website/public/pdfs/english/cuadernillo-3-present-tense-en.pdf` - Third conjugation (-IR verbs), present tense
+- `website/public/pdfs/english/cuadernillo-3-past-tense-en.pdf` - Third conjugation (-IR verbs), past tense
+- `website/public/pdfs/english/cuadernillo-4-present-tense-en.pdf` - Mixed verbs, present tense
+- `website/public/pdfs/english/cuadernillo-4-past-tense-en.pdf` - Mixed verbs, past tense
+
+### Website Preview Data:
+The script also updates `website/app/data/markdown/` with all exercise content for the web preview system.
 
 ## Features
 
