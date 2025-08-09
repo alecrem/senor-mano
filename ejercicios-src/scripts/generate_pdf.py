@@ -395,9 +395,10 @@ def generate_cuadernillo_pdf(
         if i > 0:
             combined_content += "\n\n<div style='page-break-before: always;'></div>\n\n"
 
-        # Add cuadernillo title as H1 before the first page content
+        # Add cuadernillo title as H1 with logo before the first page content
         if i == 0:
-            combined_content += f"# {cuadernillo_title_for_page}\n\n"
+            logo_path = os.path.abspath("../assets/senormano-logo-bw-small.png")
+            combined_content += f'<div style="display: flex; align-items: center; margin-bottom: 6mm;"><img src="file://{logo_path}" alt="Logo" style="height: 2.4em; margin-right: 2mm;"><h1 style="margin: 0; text-align: left; font-size: 14pt;">{cuadernillo_title_for_page}</h1></div>\n\n'
 
         combined_content += page_content
 
