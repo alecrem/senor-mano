@@ -1,6 +1,4 @@
-# Right or wrong
-
-## Write B (bien) if the sentence is correct, M (mal) if it's wrong:
+# Write B (bien) if the sentence is correct, M (mal) if it's wrong:
 
 **1.** Mi hermana comió pasta ayer. [ONE_LETTER_LINE]
 

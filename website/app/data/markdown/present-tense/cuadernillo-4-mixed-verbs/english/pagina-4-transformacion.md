@@ -1,6 +1,4 @@
-# Transformation
-
-## Follow the instructions and change the person of the verb:
+# Follow the instructions and change the person of the verb:
 
 **1.** Yo hablo → Nosotros [SHORT_LINE]
 

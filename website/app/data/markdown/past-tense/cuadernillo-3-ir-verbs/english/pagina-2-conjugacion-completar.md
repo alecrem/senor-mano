@@ -1,6 +1,4 @@
-# Verb conjugation and completion
-
-## Past tense - Verb VIVIR (to live)
+# Past tense - Verb VIVIR (to live)
 
 | yo            | viví  | nosotros/nosotras   | vivimos |
 | ------------- | ----- | ------------------- | ------- |

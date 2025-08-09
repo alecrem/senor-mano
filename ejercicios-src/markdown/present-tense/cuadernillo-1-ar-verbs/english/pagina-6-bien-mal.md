@@ -1,6 +1,4 @@
-# Right or wrong (Bien / Mal)
-
-## Read the sentences. If correct, write R. If incorrect, write W and correct it below:
+# Read the sentences. If correct, write R. If incorrect, write W and correct it below:
 
 **1.** Yo hablas con mi profesora. [ONE_LETTER_LINE]
 

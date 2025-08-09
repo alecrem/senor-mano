@@ -1,6 +1,4 @@
-# Choice exercises
-
-## Choose the correct form and write the complete sentence:
+# Choose the correct form and write the complete sentence:
 
 **1.** Los estudiantes [aprenden | aprende] inglés en la escuela.
 

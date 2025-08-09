@@ -1,6 +1,4 @@
-# Transformation exercises
-
-## Change the person of the verb as indicated:
+# Change the person of the verb as indicated:
 
 **1.** Yo como → Nosotros [SHORT_LINE]
 

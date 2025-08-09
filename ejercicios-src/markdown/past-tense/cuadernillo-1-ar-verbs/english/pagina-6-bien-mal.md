@@ -1,6 +1,4 @@
-# Right or wrong
-
-## Decide if the sentences are correct or incorrect (B = bien/right / M = mal/wrong):
+# Decide if the sentences are correct or incorrect (B = bien/right / M = mal/wrong):
 
 **1.** Yo dibujé una casa ayer. [ONE_LETTER_LINE]
 

@@ -1,6 +1,4 @@
-# Word ordering exercises
-
-## Put the words in the correct order to form sentences:
+# Put the words in the correct order to form sentences:
 
 **1.** [muy / Mi / baila / bien / hermano]
 

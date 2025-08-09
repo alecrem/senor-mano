@@ -1,6 +1,4 @@
-# Conjugation and completion
-
-## Present tense - Verb HABLAR (to speak / to talk)
+# Present tense - Verb HABLAR (to speak / to talk)
 
 | yo            | hablo  | nosotros/nosotras   | hablamos |
 | ------------- | ------ | ------------------- | -------- |

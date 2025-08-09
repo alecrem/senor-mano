@@ -1,6 +1,4 @@
-# Word ordering
-
-## Put the words in the correct order to complete the sentence:
+# Put the words in the correct order to complete the sentence:
 
 **1.** [ayer / habló / María / con / su / hermana / por / teléfono]
 Yesterday María talked to her sister on the phone

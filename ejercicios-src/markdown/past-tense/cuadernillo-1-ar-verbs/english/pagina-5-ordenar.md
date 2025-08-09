@@ -1,6 +1,4 @@
-# Word ordering
-
-## Put the words in the correct order:
+# Put the words in the correct order:
 
 **1.** [ayer / dibujé / un / perro / Yo]
 Yesterday I drew a dog.

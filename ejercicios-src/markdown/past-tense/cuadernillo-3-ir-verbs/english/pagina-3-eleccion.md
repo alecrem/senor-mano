@@ -1,6 +1,4 @@
-# Choice exercises
-
-## Choose the correct option and write the complete sentence:
+# Choose the correct option and write the complete sentence:
 
 **1.** Elena [vivió | vivieron] en París durante dos años.
 

@@ -1,6 +1,4 @@
-# Verb conjugation and completion
-
-## Find the infinitive form of the verbs
+# Find the infinitive form of the verbs
 
 Look at the conjugated verbs and write their infinitive form.
 

@@ -1,6 +1,4 @@
-# Choice exercises
-
-## Choose the correct form and write the complete sentence:
+# Choose the correct form and write the complete sentence:
 
 **1.** Mi hermano [vive | vives] en el segundo piso.
 

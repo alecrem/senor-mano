@@ -1,6 +1,4 @@
-# 単語を並べ替えてください
-
-## 正しい順番に並べましょう
+# 正しい順番に並べましょう
 
 **1.** [aprende / Mi / hermano / japonés / en / la / escuela]
 

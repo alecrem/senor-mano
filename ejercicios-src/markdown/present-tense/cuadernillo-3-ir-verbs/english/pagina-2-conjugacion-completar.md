@@ -1,6 +1,4 @@
-# Conjugation and completion
-
-## Present tense - Verb VIVIR (to live)
+# Present tense - Verb VIVIR (to live)
 
 | yo            | vivo  | nosotros/nosotras   | vivimos |
 | ------------- | ----- | ------------------- | ------- |

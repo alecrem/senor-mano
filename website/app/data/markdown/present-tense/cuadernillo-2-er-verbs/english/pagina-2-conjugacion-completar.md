@@ -1,6 +1,4 @@
-# Conjugation and completion (Conjugación y completar)
-
-## Present tense - Verb COMER (to eat)
+# Present tense - Verb COMER (to eat)
 
 | yo            | como  | nosotros/nosotras   | comemos |
 | ------------- | ----- | ------------------- | ------- |

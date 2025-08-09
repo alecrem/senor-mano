@@ -1,6 +1,4 @@
-# 正誤問題
-
-## 文が正しいか間違っているか判断してください (B = bien 正しい / M = mal 間違い):
+# 文が正しいか間違っているか判断してください (B = bien 正しい / M = mal 間違い):
 
 **1.** Yo dibujé una casa ayer. [ONE_LETTER_LINE]
 

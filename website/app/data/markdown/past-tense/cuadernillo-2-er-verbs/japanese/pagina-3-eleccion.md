@@ -1,6 +1,4 @@
-# 選択問題
-
-## 正しい選択肢を選んで完全な文を書いてください:
+# 正しい選択肢を選んで完全な文を書いてください:
 
 **1.** Ana [comió | comieron] chocolate después de la cena.
 
