@@ -1,6 +1,4 @@
-# Multiple choice
-
-## Choose the correct verb form:
+# Choose the correct verb form:
 
 **1.** Ana [dibujó | dibujaron] una casa bonita ayer.
 

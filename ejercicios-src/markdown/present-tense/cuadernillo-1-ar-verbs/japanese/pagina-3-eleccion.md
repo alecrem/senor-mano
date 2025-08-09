@@ -1,6 +1,4 @@
-# 選択問題
-
-## 正しい形を選んで完全な文を書いてください:
+# 正しい形を選んで完全な文を書いてください:
 
 **1.** Mi hermana [baila | bailas] flamenco los martes.
 

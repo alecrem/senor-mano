@@ -1,6 +1,4 @@
-# Word ordering
-
-## Put the words in the correct order to complete the sentence:
+# Put the words in the correct order to complete the sentence:
 
 **1.** [ayer / comió / Ana / verduras / frescas]
 Yesterday Ana ate fresh vegetables

@@ -1,6 +1,4 @@
-# Right or wrong (Bien / Mal)
-
-## Read the sentence and write B if correct, M if incorrect, and correct the mistakes:
+# Read the sentence and write B if correct, M if incorrect, and correct the mistakes:
 
 **1.** Los estudiantes aprende matemáticas en la escuela. [ONE_LETTER_LINE]
 

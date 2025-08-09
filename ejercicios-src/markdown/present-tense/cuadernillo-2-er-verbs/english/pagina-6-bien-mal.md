@@ -1,6 +1,4 @@
-# Right or wrong (Bien / Mal)
-
-## Read the sentences. If correct, write R. If incorrect, write W and correct:
+# Read the sentences. If correct, write R. If incorrect, write W and correct:
 
 **1.** Yo comes pan en el desayuno. [ONE_LETTER_LINE]
 

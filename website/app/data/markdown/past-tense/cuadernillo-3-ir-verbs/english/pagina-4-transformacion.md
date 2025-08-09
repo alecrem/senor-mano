@@ -1,6 +1,4 @@
-# Transformation exercises
-
-## Change the person as instructed:
+# Change the person as instructed:
 
 **1.** Yo escribí → Nosotros [SHORT_LINE]
 

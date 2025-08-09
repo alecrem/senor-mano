@@ -1,11 +1,9 @@
-# 動詞の活用と完成
+# 過去形 - 動詞 HABLAR (話した)
 
-## 過去形 - 動詞 HABLAR (話した)
-
-| yo            | hablé  | nosotros/nosotras   | hablamos |
-| ------------- | ------ | ------------------- | -------- |
-| tú            | hablaste | vosotros/vosotras   | hablasteis  |
-| él/ella/usted | habló  | ellos/ellas/ustedes | hablaron   |
+| yo            | hablé    | nosotros/nosotras   | hablamos   |
+| ------------- | -------- | ------------------- | ---------- |
+| tú            | hablaste | vosotros/vosotras   | hablasteis |
+| él/ella/usted | habló    | ellos/ellas/ustedes | hablaron   |
 
 **例文:** Yo hablé español ayer con mi abuela.
 

@@ -1,6 +1,4 @@
-# Verb conjugation and completion
-
-## Past tense - Verb HABLAR (to speak)
+# Past tense - Verb HABLAR (to speak)
 
 | yo            | hablé  | nosotros/nosotras   | hablamos |
 | ------------- | ------ | ------------------- | -------- |

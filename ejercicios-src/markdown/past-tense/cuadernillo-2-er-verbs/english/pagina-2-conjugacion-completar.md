@@ -1,6 +1,4 @@
-# Verb conjugation and completion
-
-## Past tense - Verb COMER (to eat)
+# Past tense - Verb COMER (to eat)
 
 | yo            | comí  | nosotros/nosotras   | comimos |
 | ------------- | ----- | ------------------- | ------- |

@@ -21,14 +21,28 @@ def create_css_style(unit_title=""):
     css_template = """
     @page {
         size: A5;
-        margin: 10mm 8mm 15mm 8mm;
+        margin: 18mm 8mm 15mm 8mm;
+        @top-left {
+            content: "© Señor Mano · Licencia CC BY-SA 4.0";
+            font-family: "Lato";
+            font-size: 8pt;
+            color: #666666;
+        }
+        @top-right {
+            content: "https://senormano.alecrem.com/";
+            font-family: "Lato";
+            font-size: 8pt;
+            color: #666666;
+        }
         @bottom-left {
             content: "UNIT_TITLE_PLACEHOLDER";
+            font-family: "Lato";
             font-size: 9pt;
             color: #666666;
         }
         @bottom-right {
             content: counter(page);
+            font-family: "Lato";
             font-size: 9pt;
             color: #666666;
         }

@@ -1,6 +1,4 @@
-# 選択問題
-
-## 正しい動詞の形を選んでください:
+# 正しい動詞の形を選んでください:
 
 **1.** Ana [dibujó | dibujaron] una casa bonita ayer.
 

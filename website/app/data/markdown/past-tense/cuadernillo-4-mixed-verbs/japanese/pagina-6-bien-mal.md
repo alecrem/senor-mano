@@ -1,6 +1,4 @@
-# 正誤問題
-
-## 文が正しければB（bien）、間違っていればM（mal）を書いてください:
+# 文が正しければB（bien）、間違っていればM（mal）を書いてください:
 
 **1.** Mi hermano habló con el director ayer. [ONE_LETTER_LINE]
 

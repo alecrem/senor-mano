@@ -1,6 +1,4 @@
-# Right or wrong (Bien / Mal)
-
-## Read the sentences. If correct, write R. If incorrect, write W and correct:
+# Read the sentences. If correct, write R. If incorrect, write W and correct:
 
 **1.** Yo vives en una casa azul. [ONE_LETTER_LINE]
 
