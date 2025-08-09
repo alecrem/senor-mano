@@ -25,44 +25,45 @@ def create_css_style(cuadernillo_title=""):
         @bottom-left {
             content: "CUADERNILLO_TITLE_PLACEHOLDER";
             font-size: 9pt;
-            color: #666;
+            color: #666666;
         }
         @bottom-right {
             content: counter(page);
             font-size: 9pt;
-            color: #666;
+            color: #666666;
         }
     }
     
     body {
-        font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+        font-family: "Lato", "Hiragino Maru Gothic ProN", sans-serif;
         font-size: 11pt;
         line-height: 1.3;
-        color: #333;
+        color: #1a1a1a;
         margin: 0;
         padding: 0;
     }
     
     h1 {
+        font-family: "Delius", "Hiragino Maru Gothic ProN", sans-serif;
         font-size: 14pt;
-        font-weight: bold;
+        font-weight: 400;
         margin: 0 0 6mm 0;
         text-align: center;
-        color: #2c3e50;
+        color: #1a1a1a;
     }
     
     h2 {
         font-size: 12pt;
         font-weight: bold;
         margin: 4mm 0 2mm 0;
-        color: #34495e;
+        color: #1a1a1a;
     }
     
     h3 {
         font-size: 11pt;
         font-weight: bold;
         margin: 3mm 0 1mm 0;
-        color: #34495e;
+        color: #1a1a1a;
     }
     
     p {
@@ -84,7 +85,7 @@ def create_css_style(cuadernillo_title=""):
     }
     
     th {
-        background-color: #f8f9fa;
+        background-color: #f5f5f5;
         font-weight: bold;
     }
     
@@ -94,19 +95,20 @@ def create_css_style(cuadernillo_title=""):
     
     /* Ensure dialogue formatting */
     p strong {
-        color: #2980b9;
+        color: #1a1a1a;
+        font-weight: 700;
     }
     
     /* Exercise lines */
     hr {
         border: none;
-        border-top: 1px solid #bdc3c7;
+        border-top: 1px solid #cccccc;
         margin: 4mm 0;
     }
     
     /* Blank lines for answers */
     ._blank_line {
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #1a1a1a;
         display: inline-block;
         width: 50mm;
         margin: 0 1mm;
@@ -114,7 +116,7 @@ def create_css_style(cuadernillo_title=""):
     
     /* Longer blank lines for verb exercises (pages 2, 4) */
     ._long_blank_line {
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #1a1a1a;
         display: inline-block;
         width: 25mm;
         margin: 0 1mm;
@@ -122,7 +124,7 @@ def create_css_style(cuadernillo_title=""):
     
     /* Full-width correction lines (page 6) */
     ._correction_line {
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #1a1a1a;
         display: inline-block;
         width: 80mm;
         margin: 0 1mm;
@@ -131,7 +133,7 @@ def create_css_style(cuadernillo_title=""):
     
     /* Very short lines for B/M answers (page 6) */
     ._short_line {
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #1a1a1a;
         display: inline-block;
         width: 8mm;
         margin: 0 1mm;
@@ -139,7 +141,7 @@ def create_css_style(cuadernillo_title=""):
     
     /* New HTML placeholder styles for answer lines */
     .answer-line-short {
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #1a1a1a;
         display: inline-block;
         width: 25mm;
         margin: 0 1mm;
@@ -147,7 +149,7 @@ def create_css_style(cuadernillo_title=""):
     }
     
     .answer-line-long {
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #1a1a1a;
         display: inline-block;
         width: 80mm;
         margin: 0 1mm;
@@ -156,7 +158,7 @@ def create_css_style(cuadernillo_title=""):
     
     /* B/M answer space for page 6 */
     .b-m-space {
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #1a1a1a;
         display: inline-block;
         width: 8mm;
         margin: 0 2mm;
@@ -165,7 +167,7 @@ def create_css_style(cuadernillo_title=""):
     
     /* Writing space for page 5 with more vertical room */
     .writing-space {
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #1a1a1a;
         display: block;
         width: 100%;
         margin: 4mm 0;
@@ -194,7 +196,9 @@ def create_css_style(cuadernillo_title=""):
     """
 
     # Replace the placeholder with the actual cuadernillo title
-    css_content = css_template.replace("CUADERNILLO_TITLE_PLACEHOLDER", cuadernillo_title)
+    css_content = css_template.replace(
+        "CUADERNILLO_TITLE_PLACEHOLDER", cuadernillo_title
+    )
     return CSS(string=css_content)
 
 
@@ -210,7 +214,9 @@ def markdown_to_html(markdown_content):
     markdown_content = markdown_content.replace(
         "[LONG_LINE]", "{{LONG_LINE_PLACEHOLDER}}"
     )
-    markdown_content = markdown_content.replace("[ONE_LETTER_LINE]", "{{ONE_LETTER_LINE_PLACEHOLDER}}")
+    markdown_content = markdown_content.replace(
+        "[ONE_LETTER_LINE]", "{{ONE_LETTER_LINE_PLACEHOLDER}}"
+    )
     markdown_content = markdown_content.replace(
         "[LONG_TALL_LINE]", "{{LONG_TALL_LINE_PLACEHOLDER}}"
     )
@@ -274,44 +280,54 @@ def get_available_cuadernillos(unit="present-tense", language="japanese"):
     """Get list of available cuadernillos for a given unit and language."""
     available = []
     verb_types = {1: "ar", 2: "er", 3: "ir", 4: "mixed"}
-    
+
     for cuadernillo_num, verb_type in verb_types.items():
         # Check if cuadernillo directory exists for this unit
-        cuadernillo_dir = Path(f"../markdown/{unit}/cuadernillo-{cuadernillo_num}-{verb_type}-verbs/{language}")
-        
+        cuadernillo_dir = Path(
+            f"../markdown/{unit}/cuadernillo-{cuadernillo_num}-{verb_type}-verbs/{language}"
+        )
+
         # Fallback to legacy multilingual structure
         if not cuadernillo_dir.exists():
-            cuadernillo_dir = Path(f"../markdown/cuadernillo-{cuadernillo_num}-{verb_type}-verbs/{language}")
-            
+            cuadernillo_dir = Path(
+                f"../markdown/cuadernillo-{cuadernillo_num}-{verb_type}-verbs/{language}"
+            )
+
             # Fallback to legacy structure
             if not cuadernillo_dir.exists():
                 cuadernillo_dir = Path(f"../markdown/cuadernillo-{cuadernillo_num}")
-        
+
         # Check if any required page files exist
         if cuadernillo_dir.exists():
             page_files = ["pagina-1-dialogo.md", "pagina-2-conjugacion-completar.md"]
             if any((cuadernillo_dir / page_file).exists() for page_file in page_files):
                 available.append(cuadernillo_num)
-    
+
     return available
 
 
-def generate_cuadernillo_pdf(cuadernillo_number, language="japanese", unit="present-tense"):
+def generate_cuadernillo_pdf(
+    cuadernillo_number, language="japanese", unit="present-tense"
+):
     """Generate PDF for a specific cuadernillo and language."""
     # Map cuadernillo numbers to verb types
     verb_types = {1: "ar", 2: "er", 3: "ir", 4: "mixed"}
     verb_type = verb_types.get(cuadernillo_number)
 
     # Try new units structure first
-    cuadernillo_dir = Path(f"../markdown/{unit}/cuadernillo-{cuadernillo_number}-{verb_type}-verbs/{language}")
+    cuadernillo_dir = Path(
+        f"../markdown/{unit}/cuadernillo-{cuadernillo_number}-{verb_type}-verbs/{language}"
+    )
 
     # Fallback to legacy multilingual structure for backward compatibility
     if not cuadernillo_dir.exists():
         print(
             f"Warning: Units structure {cuadernillo_dir} not found, trying legacy multilingual structure"
         )
-        cuadernillo_dir = Path(f"../markdown/cuadernillo-{cuadernillo_number}-{verb_type}-verbs/{language}")
-        
+        cuadernillo_dir = Path(
+            f"../markdown/cuadernillo-{cuadernillo_number}-{verb_type}-verbs/{language}"
+        )
+
         # Fallback to legacy structure for backward compatibility
         if not cuadernillo_dir.exists():
             print(
@@ -345,12 +361,16 @@ def generate_cuadernillo_pdf(cuadernillo_number, language="japanese", unit="pres
             print(f"Warning: {page_file} not found")
 
     if not pages:
-        print(f"Error: No pages found for cuadernillo {cuadernillo_number} in {language}")
+        print(
+            f"Error: No pages found for cuadernillo {cuadernillo_number} in {language}"
+        )
         return False
 
     # Read cuadernillo metadata for title insertion (try both locations)
     metadata_file = cuadernillo_dir / "cuadernillo.yaml"
-    legacy_metadata = Path(f"../markdown/cuadernillo-{cuadernillo_number}") / "cuadernillo.yaml"
+    legacy_metadata = (
+        Path(f"../markdown/cuadernillo-{cuadernillo_number}") / "cuadernillo.yaml"
+    )
 
     cuadernillo_title_for_page = f"Cuadernillo {cuadernillo_number}"  # Default fallback
 
@@ -360,7 +380,9 @@ def generate_cuadernillo_pdf(cuadernillo_number, language="japanese", unit="pres
             try:
                 with open(meta_path, "r", encoding="utf-8") as f:
                     metadata = yaml.safe_load(f)
-                    cuadernillo_title_for_page = metadata.get("title", cuadernillo_title_for_page)
+                    cuadernillo_title_for_page = metadata.get(
+                        "title", cuadernillo_title_for_page
+                    )
                     break
             except Exception as e:
                 print(f"Warning: Could not read metadata from {meta_path}: {e}")
@@ -400,14 +422,16 @@ def generate_cuadernillo_pdf(cuadernillo_number, language="japanese", unit="pres
     # Generate PDF with language-specific filename (output to website directory only)
     lang_code = {"japanese": "ja", "english": "en"}
     file_suffix = f"-{lang_code.get(language, 'ja')}"
-    
+
     # Always include unit in filename for consistency
     unit_suffix = f"-{unit}"
-    
+
     # Output to website public directory for web serving
     output_dir = Path(f"../../website/public/pdfs/{language}")
     output_dir.mkdir(parents=True, exist_ok=True)
-    output_file = output_dir / f"cuadernillo-{cuadernillo_number}{unit_suffix}{file_suffix}.pdf"
+    output_file = (
+        output_dir / f"cuadernillo-{cuadernillo_number}{unit_suffix}{file_suffix}.pdf"
+    )
 
     # Use the same cuadernillo title we read earlier for the footer
     cuadernillo_title = cuadernillo_title_for_page
@@ -426,7 +450,9 @@ def generate_cuadernillo_pdf(cuadernillo_number, language="japanese", unit="pres
         return True
 
     except Exception as e:
-        print(f"❌ Error generating PDF for cuadernillo {cuadernillo_number} ({language}): {e}")
+        print(
+            f"❌ Error generating PDF for cuadernillo {cuadernillo_number} ({language}): {e}"
+        )
         return False
 
 
@@ -462,8 +488,12 @@ def main():
             print(
                 "  python generate_pdf.py english            # Generate all available cuadernillos for all units in English"
             )
-            print("  python generate_pdf.py 1 japanese         # Generate cuadernillo 1 for all units in Japanese")
-            print("  python generate_pdf.py 1 english past-tense # Generate cuadernillo 1 past-tense in English")
+            print(
+                "  python generate_pdf.py 1 japanese         # Generate cuadernillo 1 for all units in Japanese"
+            )
+            print(
+                "  python generate_pdf.py 1 english past-tense # Generate cuadernillo 1 past-tense in English"
+            )
             sys.exit(1)
         i += 1
 
@@ -474,30 +504,46 @@ def main():
             units_to_generate = ["present-tense", "past-tense"]
             total_success = 0
             total_attempted = 0
-            
+
             for unit_name in units_to_generate:
                 available = get_available_cuadernillos(unit_name, language)
                 if cuadernillo_number in available:
-                    print(f"Generating cuadernillo {cuadernillo_number} ({unit_name}) in {language}...")
+                    print(
+                        f"Generating cuadernillo {cuadernillo_number} ({unit_name}) in {language}..."
+                    )
                     total_attempted += 1
-                    if generate_cuadernillo_pdf(cuadernillo_number, language, unit_name):
+                    if generate_cuadernillo_pdf(
+                        cuadernillo_number, language, unit_name
+                    ):
                         total_success += 1
-                        
+
             if total_attempted == 0:
-                print(f"❌ Cuadernillo {cuadernillo_number} not found in any unit for {language}")
+                print(
+                    f"❌ Cuadernillo {cuadernillo_number} not found in any unit for {language}"
+                )
                 sys.exit(1)
             elif total_success == total_attempted:
-                print(f"\n🎉 Successfully generated cuadernillo {cuadernillo_number} PDFs for all available units in {language}")
+                print(
+                    f"\n🎉 Successfully generated cuadernillo {cuadernillo_number} PDFs for all available units in {language}"
+                )
             else:
-                print(f"\n⚠️  Generated {total_success}/{total_attempted} cuadernillo {cuadernillo_number} PDFs in {language}")
+                print(
+                    f"\n⚠️  Generated {total_success}/{total_attempted} cuadernillo {cuadernillo_number} PDFs in {language}"
+                )
         else:
             # Generate for specific unit
-            print(f"Generating cuadernillo {cuadernillo_number} ({unit}) in {language}...")
+            print(
+                f"Generating cuadernillo {cuadernillo_number} ({unit}) in {language}..."
+            )
             success = generate_cuadernillo_pdf(cuadernillo_number, language, unit)
             if success:
-                print(f"\n🎉 Successfully generated cuadernillo {cuadernillo_number} ({unit}) PDF in {language}")
+                print(
+                    f"\n🎉 Successfully generated cuadernillo {cuadernillo_number} ({unit}) PDF in {language}"
+                )
             else:
-                print(f"\n❌ Failed to generate cuadernillo {cuadernillo_number} ({unit}) PDF in {language}")
+                print(
+                    f"\n❌ Failed to generate cuadernillo {cuadernillo_number} ({unit}) PDF in {language}"
+                )
                 sys.exit(1)
     else:
         # Generate all available cuadernillos
@@ -505,14 +551,16 @@ def main():
             units_to_generate = ["present-tense", "past-tense"]
         else:
             units_to_generate = [unit]
-            
+
         total_success = 0
         total_attempted = 0
-        
+
         for unit_name in units_to_generate:
             available = get_available_cuadernillos(unit_name, language)
             if available:
-                print(f"Generating {unit_name} cuadernillos {available} in {language}...")
+                print(
+                    f"Generating {unit_name} cuadernillos {available} in {language}..."
+                )
                 for cuadernillo_num in available:
                     total_attempted += 1
                     if generate_cuadernillo_pdf(cuadernillo_num, language, unit_name):
@@ -524,11 +572,17 @@ def main():
             print(f"❌ No cuadernillos found for {language}")
             sys.exit(1)
         else:
-            print(f"\n🎉 Successfully generated {total_success}/{total_attempted} cuadernillo PDFs in {language}")
+            print(
+                f"\n🎉 Successfully generated {total_success}/{total_attempted} cuadernillo PDFs in {language}"
+            )
             if total_success == total_attempted:
-                print(f"\nAll available {language} PDFs are ready for printing in DIN A5 format!")
+                print(
+                    f"\nAll available {language} PDFs are ready for printing in DIN A5 format!"
+                )
             else:
-                print(f"\nSome {language} PDFs failed to generate. Check the error messages above.")
+                print(
+                    f"\nSome {language} PDFs failed to generate. Check the error messages above."
+                )
 
 
 if __name__ == "__main__":
