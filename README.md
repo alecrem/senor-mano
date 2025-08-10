@@ -136,21 +136,19 @@ PYTHON_VERSION=python3.11 ./setup.sh
 
 #### Error: "No module named 'weasyprint'"
 
-Reactiva el entorno virtual y reinstala las dependencias:
+Re-run the setup script:
 
 ```bash
 cd ejercicios-src/scripts
-source ../../venv/bin/activate
-pip install -r requirements.txt
+./setup.sh
 ```
 
 #### Error: "Failed to load font"
 
-En macOS, instala las fuentes del sistema:
-
-```bash
-brew install --cask font-noto-sans-cjk
-```
+The script requires specific fonts to be installed:
+- **Lato** - Main body font ([Download from Adobe Fonts](https://fonts.adobe.com/fonts/lato) or [Font Squirrel](https://www.fontsquirrel.com/fonts/lato))
+- **Delius** - Header font ([Download from Font Library](https://fontlibrary.org/en/font/delius) or [1001 Fonts](https://www.1001fonts.com/delius-font.html))
+- **Hiragino Maru Gothic ProN** - For Japanese text support (pre-installed on macOS)
 
 #### PDFs no se generan correctamente
 
@@ -169,7 +167,10 @@ Para contribuir al proyecto:
 1. Crea una rama nueva para tu funcionalidad
 2. Mantén la estructura multilingüe
 3. Asegúrate de que los ejercicios en español sean idénticos en ambas versiones
-4. Ejecuta las pruebas antes de enviar un pull request
+4. Generate PDFs to verify everything works before submitting a pull request:
+   ```bash
+   ./generate_pdfs.sh
+   ```
 
 ### Soporte
 
@@ -205,4 +206,3 @@ Los materiales educativos están licenciados bajo **Creative Commons Attribution
 
 Ver [LICENSE-CC-BY-SA-4.0](LICENSE-CC-BY-SA-4.0) para más detalles.
 
-Esta estructura permite el uso libre del software técnico mientras garantiza que las mejoras al contenido educativo se compartan con la comunidad.

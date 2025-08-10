@@ -27,7 +27,7 @@ Files follow the naming pattern: `cuadernillo-[number]-[tense]-[language].pdf`
 
 - **DIN A5 Format**: Optimized for A5 paper size
 - **Large Text**: 14pt base font size, suitable for children
-- **Japanese Font Support**: Includes Hiragino Sans and Yu Gothic fonts
+- **Font Support**: Uses Lato, Delius, and Hiragino Maru Gothic ProN fonts
 - **Proper Page Breaks**: Each exercise page starts on a new page
 - **Table Formatting**: Clean tables for verb conjugations
 - **Answer Lines**: Underscores converted to proper blank lines
