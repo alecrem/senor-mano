@@ -460,7 +460,7 @@ def generate_cuadernillo_pdf(
             output_file, stylesheets=[css_style], font_config=font_config
         )
 
-        print(f"✅ Generated {output_file}")
+        print(f"• Generated {output_file}")
         return True
 
     except Exception as e:
@@ -471,132 +471,51 @@ def generate_cuadernillo_pdf(
 
 
 def main():
-    """Main function to generate PDFs."""
-    # Parse arguments
-    args = sys.argv[1:]
-    cuadernillo_number = None
-    language = "japanese"  # Default language
-    unit = "all"  # Default to all units
+    """Main function to generate all PDFs."""
+    # Check for any arguments and show error if provided
+    if len(sys.argv) > 1:
+        print("Error: This script does not accept any arguments.")
+        print("Usage: python generate_pdf.py")
+        print("This script always generates ALL available cuadernillos for ALL units in BOTH languages.")
+        print("This ensures consistency and prevents partial generations that could cause confusion.")
+        sys.exit(1)
 
-    # Parse command line arguments
-    i = 0
-    while i < len(args):
-        arg = args[i]
+    # Always generate all available cuadernillos for all units in all languages
+    languages_to_generate = ["japanese", "english"]
+    units_to_generate = ["present-tense", "past-tense"]
+    
+    total_success = 0
+    total_attempted = 0
 
-        if arg in ["japanese", "english"]:
-            language = arg
-        elif arg in ["present-tense", "past-tense", "all"]:
-            unit = arg
-        elif arg.isdigit() and int(arg) in [1, 2, 3, 4]:
-            cuadernillo_number = int(arg)
-        else:
-            print(f"Error: Unknown argument '{arg}'")
-            print("Usage: python generate_pdf.py [CUADERNILLO] [LANGUAGE] [UNIT]")
-            print("  CUADERNILLO: 1, 2, 3, or 4 (optional)")
-            print("  LANGUAGE: japanese or english (default: japanese)")
-            print("  UNIT: present-tense, past-tense, or all (default: all)")
-            print("Examples:")
-            print(
-                "  python generate_pdf.py                    # Generate all available cuadernillos for all units in Japanese"
-            )
-            print(
-                "  python generate_pdf.py english            # Generate all available cuadernillos for all units in English"
-            )
-            print(
-                "  python generate_pdf.py 1 japanese         # Generate cuadernillo 1 for all units in Japanese"
-            )
-            print(
-                "  python generate_pdf.py 1 english past-tense # Generate cuadernillo 1 past-tense in English"
-            )
-            sys.exit(1)
-        i += 1
-
-    if cuadernillo_number is not None:
-        # Generate specific cuadernillo
-        if unit == "all":
-            # Generate for all available units
-            units_to_generate = ["present-tense", "past-tense"]
-            total_success = 0
-            total_attempted = 0
-
-            for unit_name in units_to_generate:
-                available = get_available_cuadernillos(unit_name, language)
-                if cuadernillo_number in available:
-                    print(
-                        f"Generating cuadernillo {cuadernillo_number} ({unit_name}) in {language}..."
-                    )
-                    total_attempted += 1
-                    if generate_cuadernillo_pdf(
-                        cuadernillo_number, language, unit_name
-                    ):
-                        total_success += 1
-
-            if total_attempted == 0:
-                print(
-                    f"❌ Cuadernillo {cuadernillo_number} not found in any unit for {language}"
-                )
-                sys.exit(1)
-            elif total_success == total_attempted:
-                print(
-                    f"\n🎉 Successfully generated cuadernillo {cuadernillo_number} PDFs for all available units in {language}"
-                )
-            else:
-                print(
-                    f"\n⚠️  Generated {total_success}/{total_attempted} cuadernillo {cuadernillo_number} PDFs in {language}"
-                )
-        else:
-            # Generate for specific unit
-            print(
-                f"Generating cuadernillo {cuadernillo_number} ({unit}) in {language}..."
-            )
-            success = generate_cuadernillo_pdf(cuadernillo_number, language, unit)
-            if success:
-                print(
-                    f"\n🎉 Successfully generated cuadernillo {cuadernillo_number} ({unit}) PDF in {language}"
-                )
-            else:
-                print(
-                    f"\n❌ Failed to generate cuadernillo {cuadernillo_number} ({unit}) PDF in {language}"
-                )
-                sys.exit(1)
-    else:
-        # Generate all available cuadernillos
-        if unit == "all":
-            units_to_generate = ["present-tense", "past-tense"]
-        else:
-            units_to_generate = [unit]
-
-        total_success = 0
-        total_attempted = 0
-
+    for lang in languages_to_generate:
         for unit_name in units_to_generate:
-            available = get_available_cuadernillos(unit_name, language)
+            available = get_available_cuadernillos(unit_name, lang)
             if available:
                 print(
-                    f"Generating {unit_name} cuadernillos {available} in {language}..."
+                    f"Generating {unit_name} cuadernillos {available} in {lang}..."
                 )
                 for cuadernillo_num in available:
                     total_attempted += 1
-                    if generate_cuadernillo_pdf(cuadernillo_num, language, unit_name):
+                    if generate_cuadernillo_pdf(cuadernillo_num, lang, unit_name):
                         total_success += 1
             else:
-                print(f"No {unit_name} cuadernillos found for {language}")
+                print(f"No {unit_name} cuadernillos found for {lang}")
 
-        if total_attempted == 0:
-            print(f"❌ No cuadernillos found for {language}")
-            sys.exit(1)
+    if total_attempted == 0:
+        print(f"❌ No cuadernillos found")
+        sys.exit(1)
+    else:
+        print(
+            f"\n🎉 Successfully generated {total_success}/{total_attempted} cuadernillo PDFs for all languages"
+        )
+        if total_success == total_attempted:
+            print(
+                f"\nAll available PDFs are ready for printing in DIN A5 format!"
+            )
         else:
             print(
-                f"\n🎉 Successfully generated {total_success}/{total_attempted} cuadernillo PDFs in {language}"
+                f"\nSome PDFs failed to generate. Check the error messages above."
             )
-            if total_success == total_attempted:
-                print(
-                    f"\nAll available {language} PDFs are ready for printing in DIN A5 format!"
-                )
-            else:
-                print(
-                    f"\nSome {language} PDFs failed to generate. Check the error messages above."
-                )
 
 
 if __name__ == "__main__":
