@@ -10,51 +10,39 @@ El sitio web incluye:
 
 - Descripción completa del proyecto en español
 - Descarga directa de todos los PDFs organizados por idioma de instrucciones
-- Interfaz responsive optimizada para móviles y desktop
-- Información detallada sobre cómo usar cada cuadernillo
+- Interfaz responsive optimizada para móviles y escritorio
+- Información detallada sobre cómo usar los cuadernillos
 
 ## Estructura del proyecto
 
-El proyecto contiene ejercicios de español organizados por cuadernillos de conjugación:
-
-- **Cuadernillo 1**: Verbos de primera conjugación (-AR): dibujar, buscar, hablar, bailar
-- **Cuadernillo 2**: Verbos de segunda conjugación (-ER): comer, leer, aprender, beber
-- **Cuadernillo 3**: Verbos de tercera conjugación (-IR): vivir, escribir, abrir, subir
+El proyecto contiene ejercicios de español organizados por unidades y cuadernillos.
 
 ### Estructura del repositorio
 
-El repositorio está organizado de la siguiente manera:
-
 ```
 ejercicios-src/
-├── markdown/              # Archivos fuente de los ejercicios
-│   ├── cuadernillo-1-ar-verbs/
-│   │   ├── content/       # Contenido base en español
-│   │   ├── japanese/      # Páginas con instrucciones en japonés
-│   │   └── english/       # Páginas con instrucciones en inglés
-│   ├── cuadernillo-2-er-verbs/
-│   │   └── (misma estructura)
-│   └── cuadernillo-3-ir-verbs/
-│       └── (misma estructura)
+├── assets/                # Recursos (logos, imágenes)
+├── markdown/              # Archivos fuente organizados por unidad
+│   ├── present-tense/     # Ejercicios de tiempo presente
+│   ├── past-tense/        # Ejercicios de tiempo pasado
+│   └── [otras-unidades]/  # Unidades adicionales
+│       └── cuadernillo-[N]-[tipo]-verbs/
+│           ├── cuadernillo.yaml  # Metadatos del cuadernillo
+│           ├── japanese/         # Páginas con instrucciones en japonés
+│           └── english/          # Páginas con instrucciones en inglés
 └── scripts/               # Herramientas de generación de PDF
-    ├── generate_pdf.py
-    ├── generate_pdfs.sh
-    ├── requirements.txt
-    └── setup.sh
 
-website/                   # Sitio web Remix.js para acceso fácil
-├── app/                   # Aplicación Remix
+website/                   # Sitio web para acceso fácil
+├── app/                   # Aplicación web
 │   ├── components/        # Componentes React
-│   ├── routes/            # Páginas del sitio
-│   └── styles/            # Estilos CSS
-├── public/
-│   └── pdfs/             # PDFs servidos por el sitio web
-│       ├── japanese/
-│       └── english/
-└── package.json
+│   ├── data/              # Datos copiados para preview web
+│   └── routes/            # Páginas del sitio
+└── public/pdfs/          # PDFs generados
+    ├── japanese/
+    └── english/
 ```
 
-**Nota**: Los ejercicios de español son idénticos en ambas versiones, solo cambian las instrucciones y encabezados.
+**Nota**: Los ejercicios de español son idénticos en ambas versiones (japonés, inglés), solo cambian las instrucciones y encabezados.
 
 ## Generación de PDFs
 
@@ -94,53 +82,8 @@ website/                   # Sitio web Remix.js para acceso fácil
 
 ### Generación de PDFs
 
-#### Opción 1: Usar el script automatizado (recomendado)
-
 ```bash
-# Generar todos los cuadernillos para ambos idiomas (japonés e inglés)
 ./generate_pdfs.sh
-
-# Generar solo un cuadernillo específico para ambos idiomas
-./generate_pdfs.sh 1    # Solo cuadernillo 1 (japonés e inglés)
-./generate_pdfs.sh 2    # Solo cuadernillo 2 (japonés e inglés)
-./generate_pdfs.sh 3    # Solo cuadernillo 3 (japonés e inglés)
-
-# Generar para un idioma específico
-./generate_pdfs.sh -l japanese        # Todos los cuadernillos en japonés
-./generate_pdfs.sh -l english         # Todos los cuadernillos en inglés
-./generate_pdfs.sh 1 -l english       # Solo cuadernillo 1 en inglés
-./generate_pdfs.sh 2 -l japanese      # Solo cuadernillo 2 en japonés
-
-# Ver todas las opciones disponibles
-./generate_pdfs.sh --help
-```
-
-#### Opción 2: Uso manual
-
-```bash
-# Navegar al directorio de scripts
-cd ejercicios-src/scripts
-
-# Activar el entorno virtual
-source ../../venv/bin/activate
-
-# Generar todos los cuadernillos en japonés (por defecto)
-python generate_pdf.py
-
-# Generar todos los cuadernillos en inglés
-python generate_pdf.py english
-
-# Generar un cuadernillo específico en japonés
-python generate_pdf.py 1
-python generate_pdf.py 1 japanese
-
-# Generar un cuadernillo específico en inglés
-python generate_pdf.py 1 english
-python generate_pdf.py 2 english
-python generate_pdf.py 3 english
-
-# Desactivar el entorno virtual
-deactivate
 ```
 
 ### Archivos generados
@@ -149,15 +92,15 @@ Los PDFs se generan en formato DIN A5 (148 × 210 mm) optimizado para niños:
 
 - **Ubicación**: Directorio `website/public/pdfs/`
 - **Nombres**:
-  - Japonés: `website/public/pdfs/japanese/cuadernillo-1-ja.pdf`, `cuadernillo-2-ja.pdf`, `cuadernillo-3-ja.pdf`
-  - Inglés: `website/public/pdfs/english/cuadernillo-1-en.pdf`, `cuadernillo-2-en.pdf`, `cuadernillo-3-en.pdf`
+  - Japonés: `cuadernillo-1-present-tense-ja.pdf`, etc.
+  - Inglés: `cuadernillo-1-present-tense-en.pdf`, etc.
 - **Formato**: A5 con texto grande y espaciado amplio
 - **Contenido**: 6 páginas por cuadernillo (diálogo, conjugación, elección, transformación, ordenar, corrección)
 - **Idiomas**: Los ejercicios en español son idénticos, solo cambian las instrucciones y encabezados
 
 ### Estructura de cada cuadernillo
 
-Cada PDF contiene 6 páginas:
+Cada PDF contiene 6 páginas. Típicamente:
 
 1. **Página 1 - Diálogo**: Conversación contextualizada usando los verbos del cuadernillo
 2. **Página 2 - Conjugación**: Tabla de conjugación y ejercicios de completar
@@ -167,21 +110,6 @@ Cada PDF contiene 6 páginas:
 6. **Página 6 - Corrección**: Ejercicios de identificar errores y corregir
 
 ### Personalización
-
-#### Cambiar idioma de las instrucciones
-
-Los scripts ahora soportan automáticamente ambos idiomas. No es necesario editar archivos:
-
-```bash
-# Generar en japonés (por defecto)
-./generate_pdfs.sh
-
-# Generar en inglés
-./generate_pdfs.sh -l english
-
-# Generar ambos idiomas
-./generate_pdfs.sh -l both
-```
 
 #### Modificar el estilo del PDF
 
