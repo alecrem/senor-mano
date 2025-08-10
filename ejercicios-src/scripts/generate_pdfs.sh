@@ -31,7 +31,7 @@ echo ""
 
 # Generate all PDFs for all languages and units
 echo "📚 Generating all PDFs..."
-python generate_pdf.py
+python generate_pdfs.py
 echo ""
 
 # Deactivate virtual environment
