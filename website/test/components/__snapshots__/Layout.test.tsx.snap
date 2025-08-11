@@ -1,0 +1,73 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Layout > matches snapshot 1`] = `
+<div>
+  <header
+    style="background-color: transparent; padding: 1rem 0px;"
+  >
+    <div
+      style="max-width: 1200px; margin: 0px auto; padding: 0px 1rem;"
+    >
+      <div
+        style="display: flex; align-items: center; gap: 1rem;"
+      >
+        <img
+          alt="Señor Mano Logo"
+          src="/logo-200.png"
+          style="width: 80px; height: 80px;"
+        />
+        <a
+          href="/"
+          style="font-size: 2rem; font-weight: 700; color: rgb(26, 26, 26); text-decoration: none; font-family: "Delius", system-ui, sans-serif;"
+        >
+          Señor Mano
+        </a>
+      </div>
+    </div>
+  </header>
+  <main
+    style="flex: 1 1 0%; padding: 2rem 0px;"
+  >
+    <div
+      style="max-width: 1200px; margin: 0px auto; padding: 0px 1rem;"
+    >
+      <div>
+        Test content
+      </div>
+    </div>
+  </main>
+  <footer
+    style="background-color: rgb(106, 173, 47); border-top: 1px solid rgb(229, 229, 229); padding: 2rem 0px; text-align: center; color: rgb(255, 255, 255);"
+  >
+    <div
+      style="max-width: 1200px; margin: 0px auto; padding: 0px 1rem;"
+    >
+      <p>
+        © 
+        2025
+         Señor Mano
+         · 
+        Contenido educativo bajo licencia
+         
+        <a
+          href="https://creativecommons.org/licenses/by-sa/4.0/"
+          rel="noopener noreferrer"
+          style="color: rgb(255, 255, 255); text-decoration: underline;"
+          target="_blank"
+        >
+          CC BY-SA 4.0
+        </a>
+         · 
+        <a
+          href="https://github.com/alecrem/ejercicios-espanol"
+          rel="noopener noreferrer"
+          style="color: rgb(255, 255, 255); text-decoration: underline;"
+          target="_blank"
+        >
+          Código fuente
+        </a>
+      </p>
+    </div>
+  </footer>
+</div>
+`;

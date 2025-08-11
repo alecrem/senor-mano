@@ -1,0 +1,94 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DialoguePreview > matches snapshot 1`] = `
+<div>
+  <div>
+    <h2
+      style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; font-family: "Delius", system-ui, sans-serif;"
+    >
+      Un día en casa
+    </h2>
+    <h3
+      style="font-size: 1.2rem; font-weight: 600; margin-bottom: 1.5rem; color: rgb(75, 85, 99);"
+    >
+      Conversación entre Ana y Carlos
+    </h3>
+    <div
+      style="line-height: 1.8; font-size: 1.1rem;"
+    >
+      <div
+        style="margin-bottom: 0.8rem;"
+      >
+        <span
+          style="font-weight: 600; color: rgb(26, 26, 26);"
+        >
+          Ana
+          :
+        </span>
+         
+        <span>
+          ¡Hola Carlos! ¿Cómo 
+          <strong>
+            estás
+          </strong>
+           hoy?
+        </span>
+      </div>
+      <div
+        style="margin-bottom: 0.8rem;"
+      >
+        <span
+          style="font-weight: 600; color: rgb(26, 26, 26);"
+        >
+          Carlos
+          :
+        </span>
+         
+        <span>
+          ¡Hola Ana! Estoy 
+          <strong>
+            muy bien
+          </strong>
+          , gracias. ¿Y tú?
+        </span>
+      </div>
+      <div
+        style="margin-bottom: 0.8rem;"
+      >
+        <span
+          style="font-weight: 600; color: rgb(26, 26, 26);"
+        >
+          Ana
+          :
+        </span>
+         
+        <span>
+          Yo también estoy bien. ¿Qué planes 
+          <strong>
+            tienes
+          </strong>
+           para hoy?
+        </span>
+      </div>
+      <div
+        style="margin-bottom: 0.8rem;"
+      >
+        <span
+          style="font-weight: 600; color: rgb(26, 26, 26);"
+        >
+          Carlos
+          :
+        </span>
+         
+        <span>
+          Voy a 
+          <strong>
+            estudiar
+          </strong>
+           español. ¿Te gustaría estudiar conmigo?
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

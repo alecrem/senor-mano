@@ -6,7 +6,6 @@
 
 import type { AppLoadContext, EntryContext } from "@remix-run/node";
 import { RemixServer } from "@remix-run/react";
-import { isbot } from "isbot";
 import { renderToString } from "react-dom/server";
 
 export default function handleRequest(
@@ -14,7 +13,7 @@ export default function handleRequest(
   responseStatusCode: number,
   responseHeaders: Headers,
   remixContext: EntryContext,
-  loadContext: AppLoadContext
+  _loadContext: AppLoadContext
 ) {
   const markup = renderToString(
     <RemixServer context={remixContext} url={request.url} />

@@ -12,6 +12,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "target": "ES2022",
+    "module": "ESNext",
     "strict": true,
     "allowJs": true,
     "skipLibCheck": true,

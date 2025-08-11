@@ -1,3 +1,4 @@
+
 interface ConjugationPreviewProps {
   content: string;
 }
@@ -48,14 +49,16 @@ function parseConjugation(content: string) {
   const lines = content.split('\n').filter(line => line.trim());
   
   let title = "";
-  let sections: Array<{
+  type Section = {
     subtitle: string;
     example?: string;
     exercises: Array<{ number: string; text: string }>;
     tableRows?: Array<{ pronoun: string; conjugation: string; pronoun2?: string; conjugation2?: string }>;
-  }> = [];
+  };
+
+  let sections: Array<Section> = [];
   
-  let currentSection: any = null;
+  let currentSection: Section | null = null;
   let tableRows: Array<{ pronoun: string; conjugation: string; pronoun2?: string; conjugation2?: string }> = [];
   
   for (const line of lines) {
