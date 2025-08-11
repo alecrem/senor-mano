@@ -27,6 +27,9 @@ const pages = [
 
 console.log('Copying markdown files...');
 
+let totalFiles = 0;
+let copiedFiles = 0;
+
 for (const tense of tenses) {
   for (const cuadernillo of cuadernillos) {
     for (const language of languages) {
@@ -41,11 +44,12 @@ for (const tense of tenses) {
       for (const page of pages) {
         const sourcePath = join(sourceDir, page);
         const destPath = join(destDir, page);
+        totalFiles++;
         
         try {
           const content = readFileSync(sourcePath, 'utf-8');
           writeFileSync(destPath, content);
-          console.log(`✓ ${tense}/${cuadernillo}/${language}/${page}`);
+          copiedFiles++;
         } catch (error) {
           console.error(`✗ Failed to copy ${sourcePath}:`, error.message);
         }
@@ -54,4 +58,4 @@ for (const tense of tenses) {
   }
 }
 
-console.log('Markdown files copied successfully!');
+console.log(`✓ Copied ${copiedFiles}/${totalFiles} markdown files successfully!`);

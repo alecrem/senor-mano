@@ -36,16 +36,3 @@ pip install -r requirements.txt
 chmod +x generate_pdf.py
 
 echo "✅ Setup complete!"
-echo ""
-echo "Usage:"
-echo "  cd ejercicios-src/scripts         # Navigate to scripts directory"
-echo "  source ../../venv/bin/activate    # Activate virtual environment"
-echo "  python generate_pdf.py            # Generate all cuadernillos"
-echo "  python generate_pdf.py 1          # Generate cuadernillo 1 only"
-echo "  python generate_pdf.py 2          # Generate cuadernillo 2 only"
-echo "  python generate_pdf.py 3          # Generate cuadernillo 3 only"
-echo "  ./generate_pdfs.sh                # Use the wrapper script"
-echo "  deactivate                        # Exit virtual environment"
-echo ""
-echo "To use a different Python version:"
-echo "  PYTHON_VERSION=python3.11 ./setup.sh"

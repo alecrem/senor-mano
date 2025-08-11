@@ -15,9 +15,6 @@ fi
 source ../../venv/bin/activate
 
 echo "🚀 Generating all PDF files..."
-echo "Cuadernillos: All (1, 2, 3, 4)"
-echo "Units: All (present-tense, past-tense)"
-echo "Languages: Both (Japanese, English)"
 echo ""
 
 # Update website markdown files for preview functionality
@@ -32,13 +29,9 @@ else
 fi
 echo ""
 
-# Generate all PDFs
-echo "📚 Generating Japanese versions..."
-python generate_pdf.py japanese all
-echo ""
-
-echo "📚 Generating English versions..."
-python generate_pdf.py english all
+# Generate all PDFs for all languages and units
+echo "📚 Generating all PDFs..."
+python generate_pdfs.py
 echo ""
 
 # Deactivate virtual environment
