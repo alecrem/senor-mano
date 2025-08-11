@@ -1,10 +1,11 @@
+import React from "react";
 import { render, screen } from "@testing-library/react";
 import { describe, it, expect, vi } from "vitest";
 import Layout from "~/components/Layout";
 
 // Mock @remix-run/react
 vi.mock("@remix-run/react", () => ({
-  Link: ({ children, to, ...props }: { children: React.ReactNode; to: string; [key: string]: any }) => 
+  Link: ({ children, to, ...props }: { children: React.ReactNode; to: string; [key: string]: unknown }) => 
     <a href={to} {...props}>{children}</a>,
 }));
 

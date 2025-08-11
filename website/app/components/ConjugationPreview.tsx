@@ -1,3 +1,5 @@
+import React from "react";
+
 interface ConjugationPreviewProps {
   content: string;
 }
@@ -55,7 +57,7 @@ function parseConjugation(content: string) {
     tableRows?: Array<{ pronoun: string; conjugation: string; pronoun2?: string; conjugation2?: string }>;
   }> = [];
   
-  let currentSection: any = null;
+  let currentSection: { title: string; content: React.ReactNode } | null = null;
   let tableRows: Array<{ pronoun: string; conjugation: string; pronoun2?: string; conjugation2?: string }> = [];
   
   for (const line of lines) {

@@ -1,3 +1,4 @@
+import React from "react";
 import { render, screen } from "@testing-library/react";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import type { MetaArgs } from "@remix-run/node";
@@ -6,7 +7,7 @@ import * as RemixReact from "@remix-run/react";
 
 vi.mock("@remix-run/react", () => ({
   useLoaderData: vi.fn(),
-  Link: ({ children, to, ...props }: { children: React.ReactNode; to: string; [key: string]: any }) => 
+  Link: ({ children, to, ...props }: { children: React.ReactNode; to: string; [key: string]: unknown }) => 
     <a href={to} {...props}>{children}</a>,
 }));
 

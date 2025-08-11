@@ -226,6 +226,7 @@ export default function Index() {
                       minWidth: "300px",
                     }}
                   >
+                    {/* eslint-disable jsx-a11y/mouse-events-have-key-events */}
                     <div style={{ display: "flex", gap: "0.5rem" }}>
                       <Link
                         to={`/preview/${unidad.id}/${cuadernillo.number}/japanese`}
@@ -335,6 +336,7 @@ export default function Index() {
                         📖 Descargar (EN)
                       </a>
                     </div>
+                    {/* eslint-enable jsx-a11y/mouse-events-have-key-events */}
                   </div>
                 </div>
               ))}
@@ -362,8 +364,9 @@ export default function Index() {
           </h3>
           <p style={{ color: "#B8842B", fontSize: "0.9rem" }}>
             Los PDFs están optimizados para formato DIN A5 (148 × 210 mm). Para
-            imprimir en papel A4 estándar, recomendamos seleccionar la opción "2
-            páginas por hoja" en tu impresora.
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
+            imprimir en papel A4 estándar, recomendamos seleccionar la opción &quot;2
+            páginas por hoja&quot; en tu impresora.
           </p>
         </div>
       </section>

@@ -3,6 +3,7 @@
  * Licensed under the MIT License. See LICENSE file for details.
  */
 
+import React from "react";
 import { Link } from "@remix-run/react";
 
 interface LayoutProps {

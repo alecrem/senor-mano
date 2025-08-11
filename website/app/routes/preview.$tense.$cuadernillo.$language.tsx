@@ -59,7 +59,7 @@ export async function loader({ params }: LoaderFunctionArgs) {
     throw new Response("Invalid language", { status: 400 });
   }
 
-  const basePath = join(process.cwd(), "app", "data", "markdown", tense);
+  const basePath = join(typeof process !== 'undefined' ? process.cwd() : '', "app", "data", "markdown", tense);
   const cuadernilloMap: Record<string, string> = {
     "1": "cuadernillo-1-ar-verbs",
     "2": "cuadernillo-2-er-verbs", 
@@ -92,10 +92,9 @@ export async function loader({ params }: LoaderFunctionArgs) {
       tense, 
       cuadernillo, 
       language, 
-      copyrightYear,
-      cuadernilloDir 
+      copyrightYear
     });
-  } catch (error) {
+  } catch {
     throw new Response("Content not found", { status: 404 });
   }
 }
@@ -158,7 +157,7 @@ const styles = {
 };
 
 export default function PreviewPage() {
-  const { content, tense, cuadernillo, language, copyrightYear, cuadernilloDir } = useLoaderData<typeof loader>();
+  const { content, tense, cuadernillo, language, copyrightYear } = useLoaderData<typeof loader>();
 
   const tenseTitle = tense === "present-tense" ? "Presente de indicativo" : "Pasado de indicativo";
   const languageTitle = language === "japanese" ? "Japonés" : "Inglés";
@@ -181,6 +180,7 @@ export default function PreviewPage() {
           <p style={styles.subtitle}>
             {tenseTitle} - Instrucciones en {languageTitle}
           </p>
+          {/* eslint-disable jsx-a11y/mouse-events-have-key-events */}
           <div style={styles.actions}>
             <a
               href={pdfUrl}
@@ -214,6 +214,7 @@ export default function PreviewPage() {
               ← Volver al inicio
             </Link>
           </div>
+          {/* eslint-enable jsx-a11y/mouse-events-have-key-events */}
         </div>
 
         <div style={styles.section}>
