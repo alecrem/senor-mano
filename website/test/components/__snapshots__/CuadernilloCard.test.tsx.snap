@@ -1,0 +1,50 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CuadernilloCard > matches snapshot 1`] = `
+<div>
+  <div
+    class="cuadernillo-card"
+  >
+    <div
+      class="cuadernillo-number"
+    >
+      Cuadernillo 
+      1
+    </div>
+    <h3
+      class="cuadernillo-title"
+    >
+      primera conjugación (-AR)
+    </h3>
+    <div
+      class="cuadernillo-verbs"
+    >
+      Verbos: 
+      dibujar, buscar, hablar, bailar
+    </div>
+    <p
+      class="cuadernillo-content"
+    >
+      Aprende los verbos de la primera conjugación
+    </p>
+    <div
+      class="download-buttons"
+    >
+      <a
+        class="download-btn download-btn-primary"
+        download=""
+        href="/pdfs/japanese/cuadernillo-1-ja.pdf"
+      >
+        📖 Descargar en Japonés
+      </a>
+      <a
+        class="download-btn download-btn-secondary"
+        download=""
+        href="/pdfs/english/cuadernillo-1-en.pdf"
+      >
+        📖 Descargar en Inglés
+      </a>
+    </div>
+  </div>
+</div>
+`;

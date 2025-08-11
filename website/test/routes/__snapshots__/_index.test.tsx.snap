@@ -1,0 +1,595 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Index Route > Index Component > matches snapshot 1`] = `
+<div>
+  <header
+    style="background-color: transparent; padding: 1rem 0px;"
+  >
+    <div
+      style="max-width: 1200px; margin: 0px auto; padding: 0px 1rem;"
+    >
+      <div
+        style="display: flex; align-items: center; gap: 1rem;"
+      >
+        <img
+          alt="Señor Mano Logo"
+          src="/logo-200.png"
+          style="width: 80px; height: 80px;"
+        />
+        <a
+          href="/"
+          style="font-size: 2rem; font-weight: 700; color: rgb(26, 26, 26); text-decoration: none; font-family: "Delius", system-ui, sans-serif;"
+        >
+          Señor Mano
+        </a>
+      </div>
+    </div>
+  </header>
+  <main
+    style="flex: 1 1 0%; padding: 2rem 0px;"
+  >
+    <div
+      style="max-width: 1200px; margin: 0px auto; padding: 0px 1rem;"
+    >
+      <section
+        style="text-align: center; padding: 2rem; background-color: rgb(255, 255, 255); border-radius: 12px; margin-bottom: 3rem;"
+      >
+        <h1
+          style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem; color: rgb(26, 26, 26); font-family: "Delius", system-ui, sans-serif;"
+        >
+          Señor Mano te enseña castellano
+        </h1>
+        <p
+          style="font-size: 1.25rem; color: rgb(107, 114, 128); margin-bottom: 2rem;"
+        />
+        <div
+          style="max-width: 800px; margin: 0px auto; text-align: left;"
+        >
+          <p>
+            Estos cuadernillos para practicar español están diseñados específicamente para niños que escuchan suficiente español en casa, pero reciben su educación en otro idioma. Esto es común si vives en un país en el que no se habla español.
+          </p>
+          <p>
+            Se necesita saber leer y escribir un poco para aprender con Señor Mano, así que lo recomendamos a partir de unos 7 años. Pero cada niño es un mundo.
+          </p>
+          <p>
+            Con Señor Mano, tus niños podrán:
+          </p>
+          <ul>
+            <li>
+              Practicar la lectura y escritura
+            </li>
+            <li>
+              Aprender vocabulario y ortografía
+            </li>
+            <li>
+              Dar estructura a sus conocimientos
+            </li>
+            <li>
+              Comprender conceptos gramaticales que ya usaban de forma natural
+               
+            </li>
+          </ul>
+          <p>
+            Las instrucciones de los cuadernillos deberían estar en el idioma que usan los niños en la escuela, para que se concentren en lo importante. Ahora mismo están disponibles en japonés y en inglés. Contáctanos si te gustaría que hubiera versiones en otro idioma.
+          </p>
+          <p>
+            Señor Mano no es un método de estudio hecho por profesionales, sino una forma de compartir los materiales que hacemos para nuestrops propios niños. Esperamos que te sea de ayuda.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2
+          style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 2rem; color: rgb(26, 26, 26); font-family: "Delius", system-ui, sans-serif;"
+        >
+          Descargar cuadernillos
+        </h2>
+        <div
+          style="background: rgb(255, 255, 255); border-radius: 12px; padding: 2rem; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); border: 1px solid rgb(229, 229, 229); margin-bottom: 2rem;"
+        >
+          <h3
+            style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; color: rgb(26, 26, 26); font-family: "Delius", system-ui, sans-serif;"
+          >
+            El presente de indicativo
+          </h3>
+          <div
+            style="display: grid; gap: 1rem;"
+          >
+            <div
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+            >
+              <div
+                style="flex: 1 1 0%; min-width: 200px;"
+              >
+                <h4
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                >
+                  Cuadernillo 
+                  1
+                  : 
+                  primera conjugación (-AR)
+                </h4>
+              </div>
+              <div
+                style="display: flex; gap: 0.5rem; flex-direction: column; min-width: 300px;"
+              >
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    href="/preview/present-tense/1/japanese"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (JA)
+                  </a>
+                  <a
+                    href="/preview/present-tense/1/english"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (EN)
+                  </a>
+                </div>
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    download=""
+                    href="/pdfs/japanese/cuadernillo-1-present-tense-ja.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (JA)
+                  </a>
+                  <a
+                    download=""
+                    href="/pdfs/english/cuadernillo-1-present-tense-en.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (EN)
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+            >
+              <div
+                style="flex: 1 1 0%; min-width: 200px;"
+              >
+                <h4
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                >
+                  Cuadernillo 
+                  2
+                  : 
+                  segunda conjugación (-ER)
+                </h4>
+              </div>
+              <div
+                style="display: flex; gap: 0.5rem; flex-direction: column; min-width: 300px;"
+              >
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    href="/preview/present-tense/2/japanese"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (JA)
+                  </a>
+                  <a
+                    href="/preview/present-tense/2/english"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (EN)
+                  </a>
+                </div>
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    download=""
+                    href="/pdfs/japanese/cuadernillo-2-present-tense-ja.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (JA)
+                  </a>
+                  <a
+                    download=""
+                    href="/pdfs/english/cuadernillo-2-present-tense-en.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (EN)
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+            >
+              <div
+                style="flex: 1 1 0%; min-width: 200px;"
+              >
+                <h4
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                >
+                  Cuadernillo 
+                  3
+                  : 
+                  tercera conjugación (-IR)
+                </h4>
+              </div>
+              <div
+                style="display: flex; gap: 0.5rem; flex-direction: column; min-width: 300px;"
+              >
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    href="/preview/present-tense/3/japanese"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (JA)
+                  </a>
+                  <a
+                    href="/preview/present-tense/3/english"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (EN)
+                  </a>
+                </div>
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    download=""
+                    href="/pdfs/japanese/cuadernillo-3-present-tense-ja.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (JA)
+                  </a>
+                  <a
+                    download=""
+                    href="/pdfs/english/cuadernillo-3-present-tense-en.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (EN)
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+            >
+              <div
+                style="flex: 1 1 0%; min-width: 200px;"
+              >
+                <h4
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                >
+                  Cuadernillo 
+                  4
+                  : 
+                  todos los verbos regulares
+                </h4>
+              </div>
+              <div
+                style="display: flex; gap: 0.5rem; flex-direction: column; min-width: 300px;"
+              >
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    href="/preview/present-tense/4/japanese"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (JA)
+                  </a>
+                  <a
+                    href="/preview/present-tense/4/english"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (EN)
+                  </a>
+                </div>
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    download=""
+                    href="/pdfs/japanese/cuadernillo-4-present-tense-ja.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (JA)
+                  </a>
+                  <a
+                    download=""
+                    href="/pdfs/english/cuadernillo-4-present-tense-en.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (EN)
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="background: rgb(255, 255, 255); border-radius: 12px; padding: 2rem; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); border: 1px solid rgb(229, 229, 229); margin-bottom: 2rem;"
+        >
+          <h3
+            style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; color: rgb(26, 26, 26); font-family: "Delius", system-ui, sans-serif;"
+          >
+            El pasado de indicativo
+          </h3>
+          <div
+            style="display: grid; gap: 1rem;"
+          >
+            <div
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+            >
+              <div
+                style="flex: 1 1 0%; min-width: 200px;"
+              >
+                <h4
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                >
+                  Cuadernillo 
+                  1
+                  : 
+                  primera conjugación (-AR)
+                </h4>
+              </div>
+              <div
+                style="display: flex; gap: 0.5rem; flex-direction: column; min-width: 300px;"
+              >
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    href="/preview/past-tense/1/japanese"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (JA)
+                  </a>
+                  <a
+                    href="/preview/past-tense/1/english"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (EN)
+                  </a>
+                </div>
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    download=""
+                    href="/pdfs/japanese/cuadernillo-1-past-tense-ja.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (JA)
+                  </a>
+                  <a
+                    download=""
+                    href="/pdfs/english/cuadernillo-1-past-tense-en.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (EN)
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+            >
+              <div
+                style="flex: 1 1 0%; min-width: 200px;"
+              >
+                <h4
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                >
+                  Cuadernillo 
+                  2
+                  : 
+                  segunda conjugación (-ER)
+                </h4>
+              </div>
+              <div
+                style="display: flex; gap: 0.5rem; flex-direction: column; min-width: 300px;"
+              >
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    href="/preview/past-tense/2/japanese"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (JA)
+                  </a>
+                  <a
+                    href="/preview/past-tense/2/english"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (EN)
+                  </a>
+                </div>
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    download=""
+                    href="/pdfs/japanese/cuadernillo-2-past-tense-ja.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (JA)
+                  </a>
+                  <a
+                    download=""
+                    href="/pdfs/english/cuadernillo-2-past-tense-en.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (EN)
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+            >
+              <div
+                style="flex: 1 1 0%; min-width: 200px;"
+              >
+                <h4
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                >
+                  Cuadernillo 
+                  3
+                  : 
+                  tercera conjugación (-IR)
+                </h4>
+              </div>
+              <div
+                style="display: flex; gap: 0.5rem; flex-direction: column; min-width: 300px;"
+              >
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    href="/preview/past-tense/3/japanese"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (JA)
+                  </a>
+                  <a
+                    href="/preview/past-tense/3/english"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (EN)
+                  </a>
+                </div>
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    download=""
+                    href="/pdfs/japanese/cuadernillo-3-past-tense-ja.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (JA)
+                  </a>
+                  <a
+                    download=""
+                    href="/pdfs/english/cuadernillo-3-past-tense-en.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (EN)
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+            >
+              <div
+                style="flex: 1 1 0%; min-width: 200px;"
+              >
+                <h4
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                >
+                  Cuadernillo 
+                  4
+                  : 
+                  todos los verbos regulares
+                </h4>
+              </div>
+              <div
+                style="display: flex; gap: 0.5rem; flex-direction: column; min-width: 300px;"
+              >
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    href="/preview/past-tense/4/japanese"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (JA)
+                  </a>
+                  <a
+                    href="/preview/past-tense/4/english"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                  >
+                    👁️ Vista previa (EN)
+                  </a>
+                </div>
+                <div
+                  style="display: flex; gap: 0.5rem;"
+                >
+                  <a
+                    download=""
+                    href="/pdfs/japanese/cuadernillo-4-past-tense-ja.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (JA)
+                  </a>
+                  <a
+                    download=""
+                    href="/pdfs/english/cuadernillo-4-past-tense-en.pdf"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                  >
+                    📖 Descargar (EN)
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="background: rgb(253, 242, 224); border: 1px solid rgb(245, 191, 102); border-radius: 8px; padding: 1rem; margin-top: 2rem;"
+        >
+          <h3
+            style="color: rgb(184, 132, 43); font-weight: 600; margin-bottom: 0.5rem;"
+          >
+            📋 Información de impresión
+          </h3>
+          <p
+            style="color: rgb(184, 132, 43); font-size: 0.9rem;"
+          >
+            Los PDFs están optimizados para formato DIN A5 (148 × 210 mm). Para imprimir en papel A4 estándar, recomendamos seleccionar la opción "2 páginas por hoja" en tu impresora.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer
+    style="background-color: rgb(106, 173, 47); border-top: 1px solid rgb(229, 229, 229); padding: 2rem 0px; text-align: center; color: rgb(255, 255, 255);"
+  >
+    <div
+      style="max-width: 1200px; margin: 0px auto; padding: 0px 1rem;"
+    >
+      <p>
+        © 
+        2025
+         Señor Mano
+         · 
+        Contenido educativo bajo licencia
+         
+        <a
+          href="https://creativecommons.org/licenses/by-sa/4.0/"
+          rel="noopener noreferrer"
+          style="color: rgb(255, 255, 255); text-decoration: underline;"
+          target="_blank"
+        >
+          CC BY-SA 4.0
+        </a>
+         · 
+        <a
+          href="https://github.com/alecrem/ejercicios-espanol"
+          rel="noopener noreferrer"
+          style="color: rgb(255, 255, 255); text-decoration: underline;"
+          target="_blank"
+        >
+          Código fuente
+        </a>
+      </p>
+    </div>
+  </footer>
+</div>
+`;
