@@ -1,6 +1,6 @@
 # Testing Guidelines
 
-This document provides guidelines for testing in the Ejercicios Español website.
+This document provides guidelines for testing in the Señor Mano website.
 
 ## Test Setup
 
