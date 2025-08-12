@@ -180,7 +180,6 @@ export default function PreviewPage() {
           <p style={styles.subtitle}>
             {tenseTitle} - Instrucciones en {languageTitle}
           </p>
-          {/* eslint-disable jsx-a11y/mouse-events-have-key-events */}
           <div style={styles.actions}>
             <a
               href={pdfUrl}
@@ -193,6 +192,12 @@ export default function PreviewPage() {
                 e.currentTarget.style.backgroundColor = "#5A9426";
               }}
               onMouseOut={(e) => {
+                e.currentTarget.style.backgroundColor = "#6AAD2F";
+              }}
+              onFocus={(e) => {
+                e.currentTarget.style.backgroundColor = "#5A9426";
+              }}
+              onBlur={(e) => {
                 e.currentTarget.style.backgroundColor = "#6AAD2F";
               }}
             >
@@ -210,11 +215,16 @@ export default function PreviewPage() {
               onMouseOut={(e) => {
                 e.currentTarget.style.backgroundColor = "#f3f4f6";
               }}
+              onFocus={(e) => {
+                e.currentTarget.style.backgroundColor = "#e5e7eb";
+              }}
+              onBlur={(e) => {
+                e.currentTarget.style.backgroundColor = "#f3f4f6";
+              }}
             >
               ← Volver al inicio
             </Link>
           </div>
-          {/* eslint-enable jsx-a11y/mouse-events-have-key-events */}
         </div>
 
         <div style={styles.section}>

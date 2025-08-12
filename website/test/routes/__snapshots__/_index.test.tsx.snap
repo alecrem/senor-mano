@@ -552,8 +552,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
           <p
             style="color: rgb(184, 132, 43); font-size: 0.9rem;"
           >
-            Los PDFs están optimizados para formato DIN A5 (148 × 210 mm). Para
-            imprimir en papel A4 estándar, recomendamos seleccionar la opción "2 páginas por hoja" en tu impresora.
+            Los PDFs están optimizados para formato DIN A5 (148 × 210 mm). Para imprimir en papel A4 estándar, recomendamos seleccionar la opción "2 páginas por hoja" en tu impresora.
           </p>
         </div>
       </section>
