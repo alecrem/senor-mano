@@ -57,8 +57,8 @@ website/                   # Sitio web para acceso fácil
 1. **Clonar el repositorio**:
 
    ```bash
-   git clone https://github.com/tu-usuario/ejercicios-espanol.git
-   cd ejercicios-espanol
+   git clone https://github.com/tu-usuario/senor-mano.git
+   cd senor-mano
    ```
 
 2. **Ejecutar el script de configuración**:

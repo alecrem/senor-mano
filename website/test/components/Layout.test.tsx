@@ -79,7 +79,7 @@ describe("Layout", () => {
 
     const sourceLink = screen.getByRole("link", { name: "Código fuente" });
     expect(sourceLink).toBeInTheDocument();
-    expect(sourceLink).toHaveAttribute("href", "https://github.com/alecrem/ejercicios-espanol");
+    expect(sourceLink).toHaveAttribute("href", "https://github.com/alecrem/senor-mano");
     expect(sourceLink).toHaveAttribute("target", "_blank");
   });
 
