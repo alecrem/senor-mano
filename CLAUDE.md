@@ -163,6 +163,35 @@ find website/public/pdfs -name "*.pdf" -exec sh -c 'echo "=== $1 ===" && pdfinfo
 
 Each cuadernillo should have exactly 6 pages. If any PDF has more or fewer pages, investigate and fix the content causing page overflow or underflow before finalizing the work.
 
+## Website Development Protocol
+
+**Always run the following commands from the `website/` directory using `pnpm`** before committing changes that affect the website:
+
+```bash
+cd website
+pnpm typecheck
+pnpm lint  
+pnpm test
+```
+
+### Test Snapshot Management
+
+When changes affect component rendering, test snapshots may need updating:
+
+1. **Review snapshot changes**: Always examine snapshot diffs to ensure they make sense with your code changes
+2. **Update snapshots cautiously**: Only update snapshots without confirmation if the diff clearly reflects expected changes from your code modifications
+3. **Ask for confirmation**: If snapshot changes seem unexpected or you're unsure, ask the user before updating snapshots with `pnpm test -- --updateSnapshot`
+
+**Example of expected snapshot changes:**
+- URL changes (like GitHub links) when project names change
+- Text content changes when copy is updated  
+- Structure changes when components are modified
+
+**Example of unexpected changes requiring confirmation:**
+- Large formatting changes when only text was modified
+- Missing elements that should still be present
+- Unexpected styling or attribute changes
+
 ## Git Workflow Memories
 
 - Delete @projectplan.md and @markdown.md before making a PR

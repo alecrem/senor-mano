@@ -91,7 +91,7 @@ export default function Layout({ copyrightYear, children }: LayoutProps) {
             </a>
             {" · "}
             <a
-              href="https://github.com/alecrem/ejercicios-espanol"
+              href="https://github.com/alecrem/senor-mano"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "#ffffff", textDecoration: "underline" }}
