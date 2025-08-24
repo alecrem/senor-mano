@@ -6,7 +6,7 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "prebuild": "node copy-markdown.js",
+    "prebuild": "node generate-markdown-imports.js",
     "build": "remix vite:build",
     "dev": "remix vite:dev",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",

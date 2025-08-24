@@ -1,8 +1,6 @@
 import type { LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { useLoaderData, Link } from "@remix-run/react";
-import { readFileSync } from "fs";
-import { join } from "path";
 import Layout from "~/components/Layout";
 import DialoguePreview from "~/components/DialoguePreview";
 import ConjugationPreview from "~/components/ConjugationPreview";
@@ -10,6 +8,7 @@ import ChoicePreview from "~/components/ChoicePreview";
 import TransformationPreview from "~/components/TransformationPreview";
 import OrderingPreview from "~/components/OrderingPreview";
 import EvaluationPreview from "~/components/EvaluationPreview";
+import { markdownContent } from "~/data/markdown-content";
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
   if (!data) {
@@ -31,14 +30,6 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => {
   ];
 };
 
-interface CuadernilloContent {
-  dialogue: string;
-  conjugation: string;
-  choice: string;
-  transformation: string;
-  ordering: string;
-  evaluation: string;
-}
 
 export async function loader({ params }: LoaderFunctionArgs) {
   const { tense, cuadernillo, language } = params;
@@ -59,44 +50,36 @@ export async function loader({ params }: LoaderFunctionArgs) {
     throw new Response("Invalid language", { status: 400 });
   }
 
-  const basePath = join(typeof process !== 'undefined' ? process.cwd() : '', "app", "data", "markdown", tense);
-  const cuadernilloMap: Record<string, string> = {
-    "1": "cuadernillo-1-ar-verbs",
-    "2": "cuadernillo-2-er-verbs", 
-    "3": "cuadernillo-3-ir-verbs",
-    "4": "cuadernillo-4-mixed-verbs"
-  };
-
-  const cuadernilloDir = cuadernilloMap[cuadernillo];
-  const contentDir = join(basePath, cuadernilloDir, language);
-
-  try {
-    const content: CuadernilloContent = {
-      dialogue: readFileSync(join(contentDir, "pagina-1-dialogo.md"), "utf-8"),
-      conjugation: readFileSync(join(contentDir, "pagina-2-conjugacion-completar.md"), "utf-8"),
-      choice: readFileSync(join(contentDir, "pagina-3-eleccion.md"), "utf-8"),
-      transformation: readFileSync(join(contentDir, "pagina-4-transformacion.md"), "utf-8"),
-      ordering: readFileSync(join(contentDir, "pagina-5-ordenar.md"), "utf-8"),
-      evaluation: readFileSync(join(contentDir, "pagina-6-bien-mal.md"), "utf-8"),
-    };
-
-    const startYear = 2025;
-    const currentYear = new Date().getFullYear();
-    const copyrightYear =
-      currentYear === startYear
-        ? `${startYear}`
-        : `${startYear} - ${currentYear}`;
-
-    return json({ 
-      content, 
-      tense, 
-      cuadernillo, 
-      language, 
-      copyrightYear
-    });
-  } catch {
-    throw new Response("Content not found", { status: 404 });
+  // Get content from imported markdown data
+  const tenseData = markdownContent[tense];
+  if (!tenseData) {
+    throw new Response("Tense not found", { status: 404 });
   }
+
+  const cuadernilloData = tenseData[cuadernillo];
+  if (!cuadernilloData) {
+    throw new Response("Cuadernillo not found", { status: 404 });
+  }
+
+  const content = cuadernilloData[language];
+  if (!content) {
+    throw new Response("Language not found", { status: 404 });
+  }
+
+  const startYear = 2025;
+  const currentYear = new Date().getFullYear();
+  const copyrightYear =
+    currentYear === startYear
+      ? `${startYear}`
+      : `${startYear} - ${currentYear}`;
+
+  return json({ 
+    content, 
+    tense, 
+    cuadernillo, 
+    language, 
+    copyrightYear
+  });
 }
 
 const styles = {
