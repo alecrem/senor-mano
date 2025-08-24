@@ -3,7 +3,6 @@ import { spawn } from "child_process";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { setTimeout, clearTimeout } from "timers";
-import { utimesSync } from "fs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -34,17 +33,7 @@ function generateMarkdownImports() {
     if (code === 0) {
       console.log("✅ Markdown imports regenerated successfully!");
       
-      // Touch the markdown-content.ts file after a small delay to trigger Vite hot reload
-      setTimeout(() => {
-        const markdownContentPath = join(__dirname, "app", "data", "markdown-content.ts");
-        try {
-          const now = new Date();
-          utimesSync(markdownContentPath, now, now);
-          console.log("🔄 Triggered Vite hot reload for markdown content");
-        } catch (error) {
-          console.warn("⚠️  Could not trigger hot reload:", error.message);
-        }
-      }, 100);
+      console.log("✨ Content regenerated. Refresh your browser to see changes.");
     } else {
       console.error("❌ Failed to regenerate markdown imports");
     }
