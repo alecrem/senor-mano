@@ -10,11 +10,11 @@ overrides:
 
 dependencies:
   '@fontsource/delius':
-    specifier: ^5.2.6
-    version: 5.2.6
+    specifier: ^5.2.7
+    version: 5.2.7
   '@fontsource/lato':
-    specifier: ^5.2.6
-    version: 5.2.6
+    specifier: ^5.2.7
+    version: 5.2.7
   '@remix-run/node':
     specifier: ^2.17.1
     version: 2.17.1(typescript@5.9.2)
@@ -1147,12 +1147,12 @@ packages:
       levn: 0.4.1
     dev: true
 
-  /@fontsource/delius@5.2.6:
-    resolution: {integrity: sha512-EDiWqw+TsoT3PESH4aWEqu3FB72tsgyqAlULwNmSBZ72rnW/F2HU9RubLE4zoTClvfUOiduGDsjenV0T4iAQFA==}
+  /@fontsource/delius@5.2.7:
+    resolution: {integrity: sha512-xSMcJBEceQ7T3JVrN8NB6pc9HgWKQY3LFddfimTAons5PrfUHk2iA2oUSPejL6WLoaMbJNwzCjydWjrg8DSwuA==}
     dev: false
 
-  /@fontsource/lato@5.2.6:
-    resolution: {integrity: sha512-ykbyuHKHdFsV8QNWPgo2kkCV0veY8/w1HzPlTd7f08LRGGYijPoN7QHkVKPq5QLpgeNauPPe+0a6oRhd8b6MpQ==}
+  /@fontsource/lato@5.2.7:
+    resolution: {integrity: sha512-k5mum1ADbDW5cTw1Ett1eQVWeoZ6gq0ct6SFBibEhB4LRxhniChJZTBgd6ph5yBxLkN1fcnsnmicBNA4S/3nbw==}
     dev: false
 
   /@humanfs/core@0.19.1:
