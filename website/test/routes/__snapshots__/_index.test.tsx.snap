@@ -84,7 +84,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
           Descargar cuadernillos
         </h2>
         <div
-          style="background: rgb(255, 255, 255); border-radius: 12px; padding: 2rem; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); border: 1px solid rgb(229, 229, 229); margin-bottom: 2rem;"
+          style="background: rgb(255, 255, 255); border-radius: 12px; padding: 2rem; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); margin-bottom: 2rem;"
         >
           <h3
             style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; color: rgb(26, 26, 26); font-family: "Delius", system-ui, sans-serif;"
@@ -95,7 +95,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
             style="display: grid; gap: 1rem;"
           >
             <div
-              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; background-color: rgb(240, 248, 240);"
             >
               <div
                 style="flex: 1 1 0%; min-width: 200px;"
@@ -117,13 +117,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/present-tense/1/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/present-tense/1/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -149,7 +149,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
               </div>
             </div>
             <div
-              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; background-color: rgb(240, 248, 240);"
             >
               <div
                 style="flex: 1 1 0%; min-width: 200px;"
@@ -171,13 +171,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/present-tense/2/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/present-tense/2/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -203,7 +203,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
               </div>
             </div>
             <div
-              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; background-color: rgb(240, 248, 240);"
             >
               <div
                 style="flex: 1 1 0%; min-width: 200px;"
@@ -225,13 +225,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/present-tense/3/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/present-tense/3/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -257,7 +257,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
               </div>
             </div>
             <div
-              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; background-color: rgb(240, 248, 240);"
             >
               <div
                 style="flex: 1 1 0%; min-width: 200px;"
@@ -279,13 +279,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/present-tense/4/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/present-tense/4/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -313,7 +313,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          style="background: rgb(255, 255, 255); border-radius: 12px; padding: 2rem; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); border: 1px solid rgb(229, 229, 229); margin-bottom: 2rem;"
+          style="background: rgb(255, 255, 255); border-radius: 12px; padding: 2rem; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); margin-bottom: 2rem;"
         >
           <h3
             style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; color: rgb(26, 26, 26); font-family: "Delius", system-ui, sans-serif;"
@@ -324,7 +324,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
             style="display: grid; gap: 1rem;"
           >
             <div
-              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; background-color: rgb(240, 248, 240);"
             >
               <div
                 style="flex: 1 1 0%; min-width: 200px;"
@@ -346,13 +346,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/past-tense/1/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/past-tense/1/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -378,7 +378,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
               </div>
             </div>
             <div
-              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; background-color: rgb(240, 248, 240);"
             >
               <div
                 style="flex: 1 1 0%; min-width: 200px;"
@@ -400,13 +400,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/past-tense/2/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/past-tense/2/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -432,7 +432,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
               </div>
             </div>
             <div
-              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; background-color: rgb(240, 248, 240);"
             >
               <div
                 style="flex: 1 1 0%; min-width: 200px;"
@@ -454,13 +454,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/past-tense/3/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/past-tense/3/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -486,7 +486,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
               </div>
             </div>
             <div
-              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; border: 1px solid rgb(240, 240, 240); background-color: rgb(240, 248, 240);"
+              style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1rem; border-radius: 8px; background-color: rgb(240, 248, 240);"
             >
               <div
                 style="flex: 1 1 0%; min-width: 200px;"
@@ -508,13 +508,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/past-tense/4/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/past-tense/4/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -542,7 +542,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          style="background: rgb(253, 242, 224); border: 1px solid rgb(245, 191, 102); border-radius: 8px; padding: 1rem; margin-top: 2rem;"
+          style="background: rgb(253, 242, 224); border-radius: 8px; padding: 1rem; margin-top: 2rem;"
         >
           <h3
             style="color: rgb(184, 132, 43); font-weight: 600; margin-bottom: 0.5rem;"
@@ -559,7 +559,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
     </div>
   </main>
   <footer
-    style="background-color: rgb(106, 173, 47); border-top: 1px solid rgb(229, 229, 229); padding: 2rem 0px; text-align: center; color: rgb(255, 255, 255);"
+    style="background-color: rgb(106, 173, 47); padding: 2rem 0px; text-align: center; color: rgb(255, 255, 255);"
   >
     <div
       style="max-width: 1200px; margin: 0px auto; padding: 0px 1rem;"
