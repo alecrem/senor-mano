@@ -292,7 +292,6 @@ export default function Index() {
                         👁️ Vista previa (EN)
                       </Link>
                     </div>
-                    
                     <div style={{ display: "flex", gap: "0.5rem" }}>
                       <a
                         href={`/pdfs/japanese/cuadernillo-${cuadernillo.number}-${unidad.id}-ja.pdf`}
@@ -386,8 +385,8 @@ export default function Index() {
           </h3>
           <p style={{ color: "#B8842B", fontSize: "0.9rem" }}>
             Los PDFs están optimizados para formato DIN A5 (148 × 210 mm). Para
-            imprimir en papel A4 estándar, recomendamos seleccionar la opción &quot;2
-            páginas por hoja&quot; en tu impresora.
+            imprimir en papel A4 estándar, recomendamos seleccionar la opción
+            &quot;2 páginas por hoja&quot; en tu impresora.
           </p>
         </div>
       </section>
