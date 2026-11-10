@@ -18,7 +18,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
         />
         <a
           href="/"
-          style="font-size: 2rem; font-weight: 700; color: rgb(26, 26, 26); text-decoration: none; font-family: "Delius", system-ui, sans-serif;"
+          style="font-size: 2rem; font-weight: 700; color: rgb(26, 26, 26); text-decoration: none; font-family: Delius, system-ui, sans-serif;"
         >
           Señor Mano
         </a>
@@ -35,7 +35,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
         style="text-align: center; padding: 2rem; background-color: rgb(255, 255, 255); border-radius: 12px; margin-bottom: 3rem;"
       >
         <h1
-          style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem; color: rgb(26, 26, 26); font-family: "Delius", system-ui, sans-serif;"
+          style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem; color: rgb(26, 26, 26); font-family: Delius, system-ui, sans-serif;"
         >
           Señor Mano te enseña castellano
         </h1>
@@ -79,15 +79,15 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
       </section>
       <section>
         <h2
-          style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 2rem; color: rgb(26, 26, 26); font-family: "Delius", system-ui, sans-serif;"
+          style="font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 2rem; color: rgb(26, 26, 26); font-family: Delius, system-ui, sans-serif;"
         >
           Descargar cuadernillos
         </h2>
         <div
-          style="background: rgb(255, 255, 255); border-radius: 12px; padding: 2rem; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); border: 1px solid rgb(229, 229, 229); margin-bottom: 2rem;"
+          style="background: rgb(255, 255, 255); border-radius: 12px; padding: 2rem; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px; border: 1px solid rgb(229, 229, 229); margin-bottom: 2rem;"
         >
           <h3
-            style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; color: rgb(26, 26, 26); font-family: "Delius", system-ui, sans-serif;"
+            style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; color: rgb(26, 26, 26); font-family: Delius, system-ui, sans-serif;"
           >
             El presente de indicativo
           </h3>
@@ -101,7 +101,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 style="flex: 1 1 0%; min-width: 200px;"
               >
                 <h4
-                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: Delius, system-ui, sans-serif;"
                 >
                   Cuadernillo 
                   1
@@ -117,13 +117,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/present-tense/1/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/present-tense/1/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -134,14 +134,14 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                   <a
                     download=""
                     href="/pdfs/japanese/cuadernillo-1-present-tense-ja.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (JA)
                   </a>
                   <a
                     download=""
                     href="/pdfs/english/cuadernillo-1-present-tense-en.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (EN)
                   </a>
@@ -155,7 +155,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 style="flex: 1 1 0%; min-width: 200px;"
               >
                 <h4
-                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: Delius, system-ui, sans-serif;"
                 >
                   Cuadernillo 
                   2
@@ -171,13 +171,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/present-tense/2/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/present-tense/2/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -188,14 +188,14 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                   <a
                     download=""
                     href="/pdfs/japanese/cuadernillo-2-present-tense-ja.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (JA)
                   </a>
                   <a
                     download=""
                     href="/pdfs/english/cuadernillo-2-present-tense-en.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (EN)
                   </a>
@@ -209,7 +209,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 style="flex: 1 1 0%; min-width: 200px;"
               >
                 <h4
-                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: Delius, system-ui, sans-serif;"
                 >
                   Cuadernillo 
                   3
@@ -225,13 +225,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/present-tense/3/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/present-tense/3/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -242,14 +242,14 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                   <a
                     download=""
                     href="/pdfs/japanese/cuadernillo-3-present-tense-ja.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (JA)
                   </a>
                   <a
                     download=""
                     href="/pdfs/english/cuadernillo-3-present-tense-en.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (EN)
                   </a>
@@ -263,7 +263,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 style="flex: 1 1 0%; min-width: 200px;"
               >
                 <h4
-                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: Delius, system-ui, sans-serif;"
                 >
                   Cuadernillo 
                   4
@@ -279,13 +279,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/present-tense/4/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/present-tense/4/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -296,14 +296,14 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                   <a
                     download=""
                     href="/pdfs/japanese/cuadernillo-4-present-tense-ja.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (JA)
                   </a>
                   <a
                     download=""
                     href="/pdfs/english/cuadernillo-4-present-tense-en.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (EN)
                   </a>
@@ -313,10 +313,10 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
           </div>
         </div>
         <div
-          style="background: rgb(255, 255, 255); border-radius: 12px; padding: 2rem; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); border: 1px solid rgb(229, 229, 229); margin-bottom: 2rem;"
+          style="background: rgb(255, 255, 255); border-radius: 12px; padding: 2rem; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px; border: 1px solid rgb(229, 229, 229); margin-bottom: 2rem;"
         >
           <h3
-            style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; color: rgb(26, 26, 26); font-family: "Delius", system-ui, sans-serif;"
+            style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; color: rgb(26, 26, 26); font-family: Delius, system-ui, sans-serif;"
           >
             El pasado de indicativo
           </h3>
@@ -330,7 +330,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 style="flex: 1 1 0%; min-width: 200px;"
               >
                 <h4
-                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: Delius, system-ui, sans-serif;"
                 >
                   Cuadernillo 
                   1
@@ -346,13 +346,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/past-tense/1/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/past-tense/1/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -363,14 +363,14 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                   <a
                     download=""
                     href="/pdfs/japanese/cuadernillo-1-past-tense-ja.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (JA)
                   </a>
                   <a
                     download=""
                     href="/pdfs/english/cuadernillo-1-past-tense-en.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (EN)
                   </a>
@@ -384,7 +384,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 style="flex: 1 1 0%; min-width: 200px;"
               >
                 <h4
-                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: Delius, system-ui, sans-serif;"
                 >
                   Cuadernillo 
                   2
@@ -400,13 +400,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/past-tense/2/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/past-tense/2/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -417,14 +417,14 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                   <a
                     download=""
                     href="/pdfs/japanese/cuadernillo-2-past-tense-ja.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (JA)
                   </a>
                   <a
                     download=""
                     href="/pdfs/english/cuadernillo-2-past-tense-en.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (EN)
                   </a>
@@ -438,7 +438,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 style="flex: 1 1 0%; min-width: 200px;"
               >
                 <h4
-                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: Delius, system-ui, sans-serif;"
                 >
                   Cuadernillo 
                   3
@@ -454,13 +454,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/past-tense/3/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/past-tense/3/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -471,14 +471,14 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                   <a
                     download=""
                     href="/pdfs/japanese/cuadernillo-3-past-tense-ja.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (JA)
                   </a>
                   <a
                     download=""
                     href="/pdfs/english/cuadernillo-3-past-tense-en.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (EN)
                   </a>
@@ -492,7 +492,7 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 style="flex: 1 1 0%; min-width: 200px;"
               >
                 <h4
-                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: "Delius", system-ui, sans-serif;"
+                  style="font-size: 1.25rem; font-weight: 600; margin: 0px; font-family: Delius, system-ui, sans-serif;"
                 >
                   Cuadernillo 
                   4
@@ -508,13 +508,13 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                 >
                   <a
                     href="/preview/past-tense/4/japanese"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (JA)
                   </a>
                   <a
                     href="/preview/past-tense/4/english"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(243, 244, 246); color: rgb(55, 65, 81); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%; border: 1px solid rgb(209, 213, 219);"
                   >
                     👁️ Vista previa (EN)
                   </a>
@@ -525,14 +525,14 @@ exports[`Index Route > Index Component > matches snapshot 1`] = `
                   <a
                     download=""
                     href="/pdfs/japanese/cuadernillo-4-past-tense-ja.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (JA)
                   </a>
                   <a
                     download=""
                     href="/pdfs/english/cuadernillo-4-past-tense-en.pdf"
-                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: all 0.2s ease; white-space: nowrap; flex: 1 1 0%;"
+                    style="text-align: center; display: block; padding: 0.6rem 1rem; background-color: rgb(106, 173, 47); color: rgb(255, 255, 255); text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.8rem; transition: 0.2s; white-space: nowrap; flex: 1 1 0%;"
                   >
                     📖 Descargar (EN)
                   </a>
