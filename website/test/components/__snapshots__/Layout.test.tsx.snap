@@ -18,7 +18,7 @@ exports[`Layout > matches snapshot 1`] = `
         />
         <a
           href="/"
-          style="font-size: 2rem; font-weight: 700; color: rgb(26, 26, 26); text-decoration: none; font-family: "Delius", system-ui, sans-serif;"
+          style="font-size: 2rem; font-weight: 700; color: rgb(26, 26, 26); text-decoration: none; font-family: Delius, system-ui, sans-serif;"
         >
           Señor Mano
         </a>

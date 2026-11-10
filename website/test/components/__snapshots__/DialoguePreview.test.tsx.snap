@@ -4,7 +4,7 @@ exports[`DialoguePreview > matches snapshot 1`] = `
 <div>
   <div>
     <h2
-      style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; font-family: "Delius", system-ui, sans-serif;"
+      style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; font-family: Delius, system-ui, sans-serif;"
     >
       Un día en casa
     </h2>
